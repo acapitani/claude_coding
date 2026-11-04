@@ -40,6 +40,8 @@ Altre assunzioni:
 
 ## 3. Cronologia verificata di Claude Code (sintesi)
 
+> **Aggiornamento S1 (2026-11-04)**: il registro autorevole è `research/FATTI.md` (129 voci). In caso di differenze vale FATTI.md. Questa sezione è stata corretta con i risultati di S1.
+
 Affidabilità: **A** = alta (fonte primaria), **M** = media (stampa o secondaria), **B** = bassa. Il registro completo sta in `research/FATTI.md` (id `F-xxx`). Le date delle funzionalità derivano dal `CHANGELOG.md` ufficiale (https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md) incrociato con la data di pubblicazione della versione nel registro npm (https://registry.npmjs.org/@anthropic-ai/claude-code, campo `time`). Data di accesso di tutte le fonti: 2026-11-04.
 
 ### 3.1 Origini
@@ -62,7 +64,12 @@ Affidabilità: **A** = alta (fonte primaria), **M** = media (stampa o secondaria
 | 08/12/2025 | Claude Code in Slack (beta) | https://siliconangle.com/?p=724020 | M |
 | 07/01/2026 | Versione 2.1.0 | npm | A |
 | 31/03/2026 | Il sorgente finisce per errore nel pacchetto npm 2.1.88 (source map); Anthropic conferma: errore umano | https://bleepingcomputer.com/news/artificial-intelligence/claude-code-source-code-accidentally-leaked-in-npm-package | A |
-| — | Data di lancio dell'app desktop, dell'installer nativo e dell'uscita dalla beta del plugin JetBrains | **NON VERIFICATO**: da ricercare nella Sessione 1, altrimenti si omette | — |
+| 11/07/2025 | Supporto Windows nativo senza WSL (v1.0.51) | CHANGELOG | A |
+| 24/11/2025 | Claude Code for Desktop (v2.0.51) | CHANGELOG; https://www.anthropic.com/news/claude-opus-4-5 | A |
+| 03/12/2025 | 1 miliardo di dollari annualizzati; acquisizione di Bun | https://www.anthropic.com/news/anthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone | A |
+| 14/04/2026 | Routines (research preview) | https://claude.com/blog/introducing-routines-in-claude-code | A |
+| 23/09/2026 | Claude Code sul web disponibile a tutti ("cloud sessions") | https://claude.com/blog/claude-code-on-the-web | A |
+| — | Installer nativo: `claude install` dal 20/06/2025 (1.0.31), npm deprecato dal 21/01/2026 (2.1.15); JetBrains ancora in beta; Slack sostituito da Claude Tag (23/06/2026) | FATTI.md F-310, F-325, F-215, F-213 | A |
 
 ### 3.3 Funzionalità (versione → data)
 | Funzionalità | Versione | Data | Aff. |
@@ -71,7 +78,7 @@ Affidabilità: **A** = alta (fonte primaria), **M** = media (stampa o secondaria
 | Supporto MCP (presente almeno da) | ≤0.2.31 | entro 05/03/2025 | M |
 | Memoria rapida con `#` | 0.2.54 | 25/03/2025 | A |
 | Import in CLAUDE.md (CLAUDE.md già esisteva prima) | 0.2.107 | 09/05/2025 | A |
-| Plan mode (presente almeno da) | ≤1.0.33 | entro 23/06/2025 | M |
+| Plan mode (nel codice, senza annuncio) | 1.0.7 | 30/05/2025 | A |
 | Hook | 1.0.38 | 30/06/2025 | A |
 | Sottoagenti personalizzati (`/agents`) | 1.0.60 | 24/07/2025 | A |
 | Comandi bash in background | 1.0.71 | 07/08/2025 | A |
@@ -83,7 +90,8 @@ Affidabilità: **A** = alta (fonte primaria), **M** = media (stampa o secondaria
 | Impostazione `spinnerVerbs` (https://github.com/anthropics/claude-code/issues/21599) | 2.1.23 | inizio 2026 | M |
 | Agent Teams (research preview, con Opus 4.6) | — | 05/02/2026 | M |
 | Voice mode, `/loop`, contesto 1M di default con Opus 4.6 | ~2.1.75 | mar 2026 | M |
-| Modalità headless `-p`, Routines, app desktop | — | **da verificare** | — |
+| Modalità headless `-p` (presente dal lancio) | 0.2.9 | 24/02/2025 | A |
+| `/loop` | 2.1.71 | 06/03/2026 | A |
 
 ### 3.4 Modelli
 | Modello | Data | Aff. |
@@ -97,23 +105,32 @@ Affidabilità: **A** = alta (fonte primaria), **M** = media (stampa o secondaria
 | Opus 4.6 | 05/02/2026 | M |
 | Opus 5 (https://www.anthropic.com/news/claude-opus-5) | 24/07/2026 | A |
 | Opus 5.5 | 22/09/2026 | M |
-| Opus 4.7/4.8, Sonnet 4.6, Sonnet 5.5, Haiku 5.5, Fable 5.x | **da verificare** | — |
+| Sonnet 4.6 | 17/02/2026 | A |
+| Opus 4.7 | 16/04/2026 | A |
+| Opus 4.8 | 28/05/2026 | A |
+| Fable 5 e Mythos 5 | 09/06/2026 | A |
+| Sonnet 5 (predefinito in Claude Code) | 30/06/2026 | A |
+| Fable 5.1 e Mythos 5.1 | settembre 2026 | A |
+| Sonnet 5.5 | 28/09/2026 | A |
+| Haiku 5.5 | 07/10/2026 | A |
+
+(Tutte le date di questa tabella sono confermate sulle pagine ufficiali anthropic.com: vedi F-401…F-417.)
 
 ### 3.5 Numeri
 | Fatto | Fonte | Aff. |
 |---|---|---|
 | Oltre l'80% degli ingegneri Anthropic che scrivono codice lo usa ogni giorno (metà 2025) | Pragmatic Engineer (sopra) | A |
 | Fatturato annualizzato di Claude Code oltre 2,5 miliardi di dollari (12/02/2026, annuncio Series G) | https://feeds.simonwillison.net/2026/Feb/12/anthropic/ | A |
-| Superata la soglia di 1 miliardo annualizzato circa 6 mesi dopo il lancio | comunicazioni Anthropic feb 2026 | M |
+| Superata la soglia di 1 miliardo annualizzato a novembre 2025, ~6 mesi dopo la GA | https://www.anthropic.com/news/anthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone | A |
 
 ### 3.6 Curiosità
 | Curiosità | Fonte | Aff. |
 |---|---|---|
-| **Glifi dello spinner**: la sequenza va avanti e poi torna indietro. Su Windows/Linux `· ✢ * ✶ ✻ ✽`; su macOS `· ✢ ✳ ✶ ✻ ✽`. **✻ è presente ovunque**, quindi è il glifo del titolo | Osservazione diretta della console (da documentare con registrazione nella Sessione 1); conferma: https://github.com/anthropics/claude-code/issues/24926 e analisi pubbliche | A da confermare con l'osservazione |
-| **Colore**: arancio "Claude" `rgb(215,119,87)` = **#D77757** nella console. Il valore di marca che circola online è #D97757 (rosso 217 invece di 215), ma non è confermato da una guida ufficiale | Da misurare sulla console (screenshot + contagocce); #D97757: fonti secondarie | M |
-| **Verbi buffi** dello spinner ("Clauding", "Flibbertigibbeting", "Combobulating", "Moonwalking", "Pontificating"…), personalizzabili con `spinnerVerbs` | issue #21599; osservazione diretta | A |
+| **Glifi dello spinner** (v2.1.318): `· ✢ * ✶ ✻ ✽` avanti e indietro su tutti i sistemi (Ghostty: `· ✢ ✳ ✶ ✻ ✻`). Al lancio il quarto glifo era ∗. **✻ c'è dal primo giorno** → glifo del titolo confermato | Binario installato 2.1.318; pacchetto npm 0.2.9 (`research/note/spinner.md`) | A |
+| **Colore**: arancio "Claude" del tema `rgb(215,119,87)` = **#D77757** (confermato, è l'accento del libro). #D97757 resta il "colore di marca" citato online, non ufficiale | Binario 2.1.318 | A |
+| **Verbi buffi** dello spinner: 56 al lancio, 187 nella 2.1.318 ("Clauding", "Flibbertigibbeting", "Combobulating"…), personalizzabili con `spinnerVerbs` | pacchetto 0.2.9; binario 2.1.318; issue #21599 | A |
 | **Clawd**, la mascotte a granchio in caratteri a blocchi mostrata all'avvio; il nome "Clawd" è d'uso nella comunità, non ufficiale | https://github.com/anthropics/claude-code/issues/24926 ; https://www.starkinsider.com/2025/10/clawd-ai-retro-mascot-command-line.html | M |
-| **Claude Code scrive Claude Code**: "circa l'80%" (Latent Space, mag 2025), "~90%" (Pragmatic Engineer 2025), "100%" (Cherny su X, mar 2026). Fortune (29/01/2026) riporta anche il 70–90% a livello aziendale indicato da Anthropic | https://fortune.com/2026/01/29/100-percent-of-code-at-anthropic-and-openai-is-now-ai-written-boris-cherny-roon/ | M (dichiarazioni dei diretti interessati) |
+| **Claude Code scrive Claude Code**: "80, 90%" (Cherny, Latent Space, 7/5/2025); "ogni singola riga" negli ultimi 30 giorni (Cherny su X, 27/12/2025) | https://www.latent.space/p/claude-code ; https://simonwillison.net/2025/Dec/27/boris-cherny/ | A (dichiarazioni del diretto interessato) |
 | Origine del nome / nome interno originale | **NON VERIFICATO**: escluso finché non si trova una fonte | — |
 
 ---
@@ -482,7 +499,7 @@ Ogni sessione si chiude con un commit git (regole in CLAUDE.md, sezione "Git"). 
 | # | Elemento | Pagine budget | Parole target | Stato | Pagine reali | Note |
 |---|---|---|---|---|---|---|
 | S0 | Fondamenta (CLAUDE.md, cartelle, strumenti) | — | — | ✅ 2026-11-04 | — | Installati: pacchetti Python, LibreOffice 26.8, Graphviz 16.1, Playwright+Chromium. Test DOCX→PDF 17×24 ok, ✻ incorporato (Segoe UI Symbol). Consolas/Cambria senza ✻: vedi research/note/font.md |
-| S1 | Ricerca (FATTI.md, CREDITI.md, spinner) | — | — | ☐ | | |
+| S1 | Ricerca (FATTI.md, CREDITI.md, spinner) | — | — | ✅ 2026-11-04 | — | FATTI.md: 129 voci (9 non verificate, escluse). Spinner e colore verificati sul binario 2.1.318 e sul pacchetto 0.2.9. 7 immagini Wikimedia in assets/cap01 (4 + 3 di riserva), licenze ricontrollate via API. Da leggere a mano prima del cap. 2: "The Making of Claude Code" (F-106) |
 | S2 | Toolchain di build | — | — | ☐ | | |
 | S3 | Copertina e pagine preliminari | 4 | 300 | ☐ | | |
 | — | Indice + Prefazione | 8 | 900 | ☐ | | |

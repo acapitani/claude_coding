@@ -8,7 +8,7 @@ metadati:
   lingua: "it-IT"
   soggetto: "Autobiografia e guida pratica di Claude Code"
   parole_chiave: ["Claude Code", "intelligenza artificiale", "programmazione", "automazione d'ufficio"]
-  colore_accento: "#D77757"   # da confermare in S1 (vedi PLAN.md §3.6)
+  colore_accento: "#D77757"   # confermato in S1 (research/note/spinner.md)
 
 pagina:
   larghezza_cm: 17
