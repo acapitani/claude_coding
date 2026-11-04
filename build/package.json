@@ -1,0 +1,9 @@
+{
+  "name": "claude-coding-build",
+  "private": true,
+  "type": "module",
+  "description": "Strumenti di rendering (copertina, finti terminali, SVG -> PNG) per il libro /claude ✻ Coding",
+  "devDependencies": {
+    "playwright": "^1.64.1"
+  }
+}

@@ -1,0 +1,55 @@
+# Metadati e ordine dei sorgenti del libro "/claude ✻ Coding".
+# Letto da build/build_book.py. I file non ancora scritti vengono saltati con un avviso.
+metadati:
+  titolo: "/claude ✻ Coding"
+  titolo_righe: ["/claude", "✻ Coding"]
+  autore: "Claude Code"
+  citazione_copertina: "«Tratto da un prompt di Andrea Capitani»"
+  lingua: "it-IT"
+  soggetto: "Autobiografia e guida pratica di Claude Code"
+  parole_chiave: ["Claude Code", "intelligenza artificiale", "programmazione", "automazione d'ufficio"]
+  colore_accento: "#D77757"   # da confermare in S1 (vedi PLAN.md §3.6)
+
+pagina:
+  larghezza_cm: 17
+  altezza_cm: 24
+  margini_cm: {interno: 2.2, esterno: 1.8, superiore: 2.0, inferiore: 2.2}
+  pagine_min: 160
+  pagine_max: 200
+  pagine_obiettivo: 180
+
+copertina: assets/copertina/cover.png
+
+preliminari:            # numerazione romana
+  - capitoli/00-frontespizio.md
+  - capitoli/00-colophon.md
+  - capitoli/00-dedica.md
+  - indice                # campo TOC generato
+  - capitoli/00-prefazione.md
+
+parti:                  # numerazione araba da qui
+  - titolo: "Le origini"
+    apertura: capitoli/parte-1.md
+    capitoli: [01-da-dove-vengo, 02-la-nascita, 03-il-lancio, 04-crescere-in-pubblico]
+  - titolo: "Primi passi insieme"
+    apertura: capitoli/parte-2.md
+    capitoli: [05-installazione, 06-la-prima-sessione, 07-come-parlarmi, 08-claude-md-e-la-memoria, 09-permessi-e-sicurezza]
+  - titolo: "Costruire applicazioni"
+    apertura: capitoli/parte-3.md
+    capitoli: [10-dal-requisito-al-prototipo, 11-test-e-debug, 12-git-e-revisione, 13-un-progetto-completo]
+  - titolo: "L'ufficio automatico"
+    apertura: capitoli/parte-4.md
+    capitoli: [14-documenti, 15-fogli-di-calcolo, 16-pdf, 17-file-e-cartelle, 18-report-periodici, 19-script-riutilizzabili]
+  - titolo: "Superpoteri"
+    apertura: capitoli/parte-5.md
+    capitoli: [20-slash-command-e-skill, 21-hook, 22-sottoagenti, 23-mcp-e-connettori, 24-plugin-e-headless]
+  - titolo: "Io, oggi"
+    apertura: capitoli/parte-6.md
+    capitoli: [25-dove-sono-adesso, 26-cosa-ho-imparato]
+
+appendici:
+  - capitoli/app-a-comandi.md
+  - capitoli/app-b-glossario.md
+  - capitoli/app-c-risorse.md
+  - capitoli/app-d-crediti.md       # generata da assets/CREDITI.md
+  - indice-analitico

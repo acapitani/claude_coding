@@ -1,0 +1,27 @@
+# --- Generati dalla build (si ricreano con build/build_book.py) ---
+output/*
+!output/.gitkeep
+
+# --- Dipendenze ---
+build/node_modules/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- Impostazioni locali di Claude Code ---
+.claude/settings.local.json
+
+# --- File temporanei di Office / LibreOffice ---
+~$*
+.~lock.*#
+*.tmp
+
+# --- Sistema operativo / editor ---
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
