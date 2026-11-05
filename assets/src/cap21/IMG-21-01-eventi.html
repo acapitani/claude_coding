@@ -1,0 +1,14 @@
+<!doctype html><html lang="it"><meta charset="utf-8"><style>
+* { box-sizing:border-box; margin:0; padding:0 }
+body { background:#fff; font-family:Calibri,sans-serif; color:#1F1E1D; padding:0.15cm 0.1cm }
+.linea { position:relative; display:flex; justify-content:space-between }
+.linea::before { content:""; position:absolute; left:0.3cm; right:0.3cm; top:0.16cm; border-top:1.2pt solid #B8B2A7 }
+.e { width:2.05cm; text-align:center; position:relative; font-size:7.3pt; line-height:1.25 }
+.e i { display:block; margin:0 auto 0.12cm; width:0.32cm; height:0.32cm; border-radius:50%; background:#fff; border:1.4pt solid #8C867D }
+.e b { display:block; font:bold 7.3pt Consolas,monospace; margin-bottom:0.04cm }
+.e span { color:#6E6962 }
+.e.on i { background:#D77757; border-color:#D77757 } .e.on b { color:#D77757 }
+.giro { margin:0.25cm 0 0 4.1cm; width:4.6cm; border:1pt dashed #D77757; border-radius:0.15cm; padding:0.12cm 0.18cm; font-size:7.5pt; background:#FBF0EB }
+.giro b { color:#D77757 }
+</style><div class="linea"><div class="e "><i></i><b>SessionStart</b><span>inizia la sessione</span></div><div class="e "><i></i><b>UserPromptSubmit</b><span>scrivi una richiesta</span></div><div class="e on"><i></i><b>PreToolUse</b><span>prima di ogni strumento</span></div><div class="e "><i></i><b>PostToolUse</b><span>dopo ogni strumento</span></div><div class="e "><i></i><b>Notification</b><span>ti serve una risposta</span></div><div class="e "><i></i><b>Stop</b><span>ho finito di rispondere</span></div></div>
+<div class="giro"><b>PreToolUse + exit 2</b> = l'azione non parte. Il messaggio dell'hook arriva a me, e cerco un'altra strada.</div></html>
