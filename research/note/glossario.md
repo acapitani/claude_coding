@@ -111,3 +111,7 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | sottoagente | 22 | Assistente con contesto, istruzioni e strumenti propri, a cui Claude Code affida una parte del lavoro |
 | Agent Teams | 22 | Squadre sperimentali di istanze di Claude Code che si scambiano messaggi |
 | Haiku | 22 | Il modello più piccolo ed economico della famiglia Claude |
+| MCP (Model Context Protocol) | 23 | Standard aperto con cui Claude Code si collega a strumenti e dati esterni |
+| server MCP | 23 | Programma, locale o in rete, che offre a Claude Code strumenti con nome e descrizione |
+| connettore | 23 | Server MCP aggiunto all'account claude.ai, disponibile anche in Claude Code |
+| stdio | 23 | Canale di testo (ingresso e uscita standard) con cui un server MCP locale comunica |

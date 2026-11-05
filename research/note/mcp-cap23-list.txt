@@ -1,0 +1,8 @@
+Checking MCP server health…
+
+claude.ai Claude Docs: https://api.anthropic.com/v1/pages/mcp - ✔ Connected
+claude.ai Figma: https://mcp.figma.com/mcp - ! Needs authentication
+claude.ai HubSpot: https://mcp.hubspot.com/anthropic - ! Needs authentication
+claude.ai CB Insights: https://mcp.cbinsights.com - ! Needs authentication
+claude.ai Microsoft Learn: https://learn.microsoft.com/api/mcp - ✔ Connected
+archivio: py archivio.py - ✔ Connected

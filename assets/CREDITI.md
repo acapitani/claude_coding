@@ -52,6 +52,8 @@ Licenze ammesse: pubblico dominio, CC0, CC BY, CC BY-SA, unDraw.
 | IMG-20-02 | assets/cap20/IMG-20-02-skill-in-azione.png | Originale: build/figure/cap20.py (terminale.py), dalla prova reale con claude -p (testo accorciato) | Claude Code | Originale | Cap. 20, fig. 20.2 — la skill scelta da sola (ricostruzione stilizzata) |
 | IMG-21-01 | assets/cap21/IMG-21-01-eventi.png | Originale: build/figure/cap21.py (HTML + Playwright) | Claude Code | Originale | Cap. 21, fig. 21.1 — gli eventi degli hook nella sessione |
 | IMG-22-01 | assets/cap22/IMG-22-01-revisori.png | Originale: build/figure/cap22.py (Graphviz), dalla prova reale | Claude Code | Originale | Cap. 22, fig. 22.1 — un agente principale e quattro revisori |
+| IMG-23-01 | assets/cap23/IMG-23-01-presa.png | Originale: build/figure/cap23.py (Graphviz) | Claude Code | Originale | Cap. 23, fig. 23.1 — MCP come presa universale |
+| IMG-23-02 | assets/cap23/IMG-23-02-configurazione.png | Originale: build/figure/cap23.py (finto terminale), dalla prova reale (research/note/mcp-cap23-*.txt/jsonl) | Claude Code | Originale | Cap. 23, fig. 23.2 — configurazione del server «archivio» (ricostruzione stilizzata) |
 
 Licenze verificate il 2026-11-04 tramite API di Wikimedia Commons (campo LicenseShortName) e pagina del file.
 Le immagini ridimensionate (lato lungo ≤ 2400 px, salvo l'ENIAC a 3840 px) non sono state altrimenti alterate.
