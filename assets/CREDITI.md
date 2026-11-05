@@ -38,6 +38,8 @@ Licenze ammesse: pubblico dominio, CC0, CC BY, CC BY-SA, unDraw.
 | IMG-13-01 | assets/cap13/IMG-13-01-architettura.png | Originale: build/figure/cap13.py (Graphviz) | Claude Code | Originale | Cap. 13, fig. 13.1 — com'è fatta «Spese di casa» |
 | IMG-13-02 | assets/cap13/IMG-13-02-app.png | Originale: schermata di esempi/cap13/spese/app.py con dati di esempio (build/figure/cap13_app.mjs), ritagliata | Claude Code | Originale | Cap. 13, fig. 13.2 — l'applicazione in funzione |
 | IMG-13-03 | assets/cap13/IMG-13-03-percorso.png | Originale: build/figure/cap13.py (Graphviz) | Claude Code | Originale | Cap. 13, fig. 13.3 — il progetto passo per passo |
+| IMG-14-01 | assets/cap14/IMG-14-01-stampa-unione.png | Originale: build/figure/cap14.py (HTML + Playwright) | Claude Code | Originale | Cap. 14, fig. 14.1 — la stampa unione |
+| IMG-14-02 | assets/cap14/IMG-14-02-lettera.png | Originale: lettera generata da esempi/cap14/lettere.py, convertita con LibreOffice e ritagliata | Claude Code | Originale | Cap. 14, fig. 14.2 — una delle 49 lettere |
 
 Licenze verificate il 2026-11-04 tramite API di Wikimedia Commons (campo LicenseShortName) e pagina del file.
 Le immagini ridimensionate (lato lungo ≤ 2400 px, salvo l'ENIAC a 3840 px) non sono state altrimenti alterate.

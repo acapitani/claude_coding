@@ -81,3 +81,7 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | localhost | 13 | Il nome con cui un computer chiama se stesso: una pagina «locale» |
 | caso limite | 13 | Situazione ai margini (gennaio, campo vuoto, zero) dove si nascondono gli errori |
 | CSV | 13 | File di testo con dati in colonne separate da un simbolo, leggibile da Excel |
+| stampa unione | 14 | Un documento per ogni riga di un elenco, partendo da un modello con segnaposto |
+| segnaposto | 14 | Parola tra parentesi (es. {cognome}) che verrà sostituita con un dato |
+| libreria | 14 | Raccolta di funzioni pronte che un programma usa (es. per leggere file Word o Excel) |
+| LibreOffice | 14 | Programma gratuito per l'ufficio; converte anche documenti in PDF |

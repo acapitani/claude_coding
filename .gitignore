@@ -28,3 +28,4 @@ desktop.ini
 
 # database generati dagli esempi
 esempi/**/*.db
+esempi/cap14/lettere/
