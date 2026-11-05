@@ -13,6 +13,8 @@ Licenze ammesse: pubblico dominio, CC0, CC BY, CC BY-SA, unDraw.
 | IMG-01-R1 | assets/cap01/IMG-01-R1-grace-hopper.jpg | https://commons.wikimedia.org/wiki/File:Commodore_Grace_M._Hopper,_USN_(covered).jpg | James S. Davis, U.S. Navy, 1984 | Pubblico dominio (opera del governo USA) | Riserva — Cap. 1 |
 | IMG-01-05 | assets/cap01/IMG-01-05-primo-bug.jpg | https://commons.wikimedia.org/wiki/File:H96566k.jpg | Naval Surface Warfare Center, Dahlgren, VA (1988) | Pubblico dominio (U.S. Navy) | Cap. 1 — il "primo bug" nel registro del Mark II |
 | IMG-01-R3 | assets/cap01/IMG-01-R3-asr33.jpg | https://commons.wikimedia.org/wiki/File:ASR-33_at_CHM.agr.jpg | Arnold Reinhold | CC BY-SA 3.0 (attribuzione; non modificare, solo ridimensionare) | Riserva — Cap. 1 (telescrivente) |
+| IMG-02-01 | assets/cap02/IMG-02-01-musica.png | Originale: build/figure/cap02.py (terminale.py + Playwright) | Claude Code | Originale | Cap. 2, fig. 2.1 — il prototipo e la musica (ricostruzione di fantasia) |
+| IMG-02-02 | assets/cap02/IMG-02-02-ciclo-agente.png | Originale: build/figure/cap02.py (Graphviz) | Claude Code | Originale | Cap. 2, fig. 2.2 — il ciclo dell'agente |
 | IMG-06-01 | assets/cap06/IMG-06-01-anatomia.png | Originale: build/figure/cap06.py (terminale.py + Playwright) | Claude Code | Originale | Cap. 6 — anatomia dello schermo (ricostruzione stilizzata) |
 | IMG-06-02 | assets/cap06/IMG-06-02-permesso.png | Originale: build/figure/cap06.py (terminale.py + Playwright) | Claude Code | Originale | Cap. 6 — richiesta di permesso (ricostruzione stilizzata) |
 

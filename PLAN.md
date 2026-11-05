@@ -508,7 +508,7 @@ Ogni sessione si chiude con un commit git (regole in CLAUDE.md, sezione "Git"). 
 | S3 | Copertina e pagine preliminari | 4 | 300 | ✅ 2026-11-05 | 6 (con bianche) | Copertina concept A in `assets/copertina/cover.html` → `cover.png` 2009×2834 px a 300 dpi, titolo allineato come nella specifica (✻ sporgente, «Coding» sotto «/claude»). Frontespizio dai metadati, colophon (in basso sul retro), dedica. Word e LibreOffice identici. Tolta la centratura verticale (Word e LibreOffice la trattano diversamente) |
 | — | Indice + Prefazione | 8 | 900 | 🟡 bozza 2026-11-05 | 4 (prefazione) | Bozza S5: 941 parole, 235 parole/pagina, 2 box, 5 rimandi ai fatti. Patto col lettore, tre percorsi di lettura, convenzioni. Da rivedere in S30 (rimandi alle appendici, numeri di pagina reali)|
 | 1 | Da dove vengo | 8 | 1.900 | ✅ 2026-11-05 | 8 | 2.075 parole (+9%), 259 parole/pagina, 5 foto storiche (Wikimedia; IMG-01-R2 promossa a IMG-01-05, il «primo bug»), 2 box consiglio + 1 nota, 31 rimandi ai fatti. Regola dei capitoli autobiografici rispettata (una figura ogni 1,6 pp.). Riserve non usate: Hopper, ASR-33 |
-| 2 | La nascita | 6 | 1.400 | ☐ | | |
+| 2 | La nascita | 6 | 1.400 | ✅ 2026-11-05 | 6 (con bianca) | 1.398 parole, 233 parole/pagina, 2 figure (terminale «di fantasia» sulla musica; ciclo dell'agente in Graphviz), 1 nota + 1 consiglio finale, 30 rimandi. Nuovi fatti F-130…F-134 dal Making-of; F-131 ambiguo, non usato. Le due versioni del prototipo musicale (AppleScript / screenshot) riportate entrambe |
 | 3 | Il lancio | 5 | 1.150 | ☐ | | |
 | 4 | Crescere in pubblico | 7 | 1.600 | ☐ | | |
 | 5 | Installazione | 6 | 1.350 | ☐ | | |

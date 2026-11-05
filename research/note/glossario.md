@@ -19,3 +19,8 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | modello linguistico | 1 | Programma che ha imparato da molto testo a prevedere come continua una frase |
 | Transformer | 1 | Architettura dei modelli linguistici moderni (2017) |
 | agente | 1 | Programma che porta avanti un incarico da solo, a passi: guarda, decide, agisce, verifica |
+| CLI | 2 | Command-line interface: programma che si usa scrivendo comandi nel terminale |
+| container | 2 | Ambiente isolato, una specie di piccolo computer dentro il computer |
+| linter | 2 | Programma che controlla il codice e segnala errori e problemi di stile |
+| strumento (tool) | 2 | Azione che il programma intorno al modello esegue per lui: leggere, scrivere, eseguire comandi |
+| product overhang | 2 | Quando un modello sa fare più di quanto i prodotti esistenti gli permettano |
