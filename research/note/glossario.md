@@ -59,3 +59,8 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | allow / ask / deny | 9 | Regole: permesso senza chiedere / chiedere sempre / vietato |
 | prompt injection | 9 | Istruzioni nascoste in un contenuto per manipolare un assistente |
 | .env | 9 | File in cui i programmi tengono di solito password e chiavi |
+| requisito | 10 | Descrizione di che cosa deve fare uno strumento: chi lo usa, che cosa fa, i vincoli |
+| prototipo | 10 | La versione minima di uno strumento, abbastanza buona da essere usata e criticata |
+| HTML | 10 | Linguaggio con cui si descrive una pagina web |
+| JavaScript | 10 | Linguaggio che dà vita alle pagine web, eseguito dal browser |
+| Python | 10 | Linguaggio molto usato per lavorare con file e dati |

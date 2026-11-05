@@ -43,7 +43,7 @@ parti:                  # numerazione araba da qui
   - titolo: "Costruire applicazioni"
     apertura: capitoli/parte-3.md
     capitoli: [10-dal-requisito-al-prototipo, 11-test-e-debug, 12-git-e-revisione, 13-un-progetto-completo]
-  - titolo: "L'ufficio automatico"
+  - titolo: "L’ufficio automatico"
     apertura: capitoli/parte-4.md
     capitoli: [14-documenti, 15-fogli-di-calcolo, 16-pdf, 17-file-e-cartelle, 18-report-periodici, 19-script-riutilizzabili]
   - titolo: "Superpoteri"

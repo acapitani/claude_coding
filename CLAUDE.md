@@ -44,6 +44,7 @@
 - Formato: PNG 300 dpi (le foto possono restare JPEG, ma con intestazione JFIF: python-docx non legge i JPEG senza; in caso di errore `UnrecognizedImageError` risalvarle con Pillow), larghezza massima 13 cm, didascalia obbligatoria "Figura N.M – …".
 
 ## Cartelle e nomi
+- `esempi/capNN/`: i programmi d'esempio costruiti e provati davvero per i capitoli-guida (es. la mini-app del cap. 10).
 - `capitoli/NN-slug.md`, `assets/capNN/IMG-NN-MM-slug.png`, `research/FATTI.md` (F-NNN),
   `build/` (script), `output/` (generati, mai modificati a mano).
 - Minuscole e trattini, niente accenti nei nomi dei file.
