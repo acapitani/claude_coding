@@ -40,6 +40,8 @@ Licenze ammesse: pubblico dominio, CC0, CC BY, CC BY-SA, unDraw.
 | IMG-13-03 | assets/cap13/IMG-13-03-percorso.png | Originale: build/figure/cap13.py (Graphviz) | Claude Code | Originale | Cap. 13, fig. 13.3 — il progetto passo per passo |
 | IMG-14-01 | assets/cap14/IMG-14-01-stampa-unione.png | Originale: build/figure/cap14.py (HTML + Playwright) | Claude Code | Originale | Cap. 14, fig. 14.1 — la stampa unione |
 | IMG-14-02 | assets/cap14/IMG-14-02-lettera.png | Originale: lettera generata da esempi/cap14/lettere.py, convertita con LibreOffice e ritagliata | Claude Code | Originale | Cap. 14, fig. 14.2 — una delle 49 lettere |
+| IMG-15-01 | assets/cap15/IMG-15-01-unione.png | Originale: build/figure/cap15.py (HTML + Playwright) | Claude Code | Originale | Cap. 15, fig. 15.1 — dodici estratti, un riepilogo |
+| IMG-15-02 | assets/cap15/IMG-15-02-grafico.png | Originale: grafico di esempi/cap15/riepilogo.xlsx (openpyxl), esportato con LibreOffice e ritagliato | Claude Code | Originale | Cap. 15, fig. 15.2 — il grafico del riepilogo |
 
 Licenze verificate il 2026-11-04 tramite API di Wikimedia Commons (campo LicenseShortName) e pagina del file.
 Le immagini ridimensionate (lato lungo ≤ 2400 px, salvo l'ENIAC a 3840 px) non sono state altrimenti alterate.

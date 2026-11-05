@@ -85,3 +85,7 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | segnaposto | 14 | Parola tra parentesi (es. {cognome}) che verrà sostituita con un dato |
 | libreria | 14 | Raccolta di funzioni pronte che un programma usa (es. per leggere file Word o Excel) |
 | LibreOffice | 14 | Programma gratuito per l'ufficio; converte anche documenti in PDF |
+| macro | 15 | Piccolo programma dentro un file Office; può fare di tutto, da trattare con prudenza |
+| formula | 15 | Istruzione di calcolo in una cella di un foglio, es. =SOMMA(B2:B13) |
+| SOMMA.PIÙ.SE (SUMIFS) | 15 | Funzione che somma solo le righe che rispettano più condizioni |
+| totale di controllo | 15 | Totale calcolato in modo indipendente per verificare un risultato |

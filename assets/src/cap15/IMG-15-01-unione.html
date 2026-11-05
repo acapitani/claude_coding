@@ -1,0 +1,21 @@
+<!doctype html><html lang="it"><meta charset="utf-8"><style>
+* { box-sizing:border-box; margin:0; padding:0 }
+body { background:#fff; font-family:Calibri,sans-serif; color:#1F1E1D; padding:0.1cm; display:flex; align-items:center; gap:0.25cm }
+.griglia { display:grid; grid-template-columns:repeat(3, 1.55cm); gap:0.12cm }
+.f { height:1.05cm; border:0.8pt solid #B8B2A7; border-radius:0.08cm; background:#F1F6EE; padding:0.06cm 0.08cm;
+      font-size:6.3pt; line-height:1.15; position:relative }
+.f b { display:block; font-size:7.5pt } .f span { color:#C0504D }
+.f::after { content:"xlsx"; position:absolute; right:0.06cm; bottom:0.04cm; font-size:5.5pt; color:#8C867D }
+.f.x { border-color:#C0504D; background:#FBEDEC }
+.freccia { font-size:18pt; color:#8C867D }
+.motore { width:2.5cm; text-align:center; background:#1F1E1D; color:#F0EEE6; border-radius:0.15cm; padding:0.25cm 0.15cm; font-size:8pt }
+.motore b { display:block; font:bold 9pt Consolas,monospace; color:#D77757; margin-bottom:0.05cm }
+.esito { border:0.8pt solid #6B9B57; border-radius:0.12cm; padding:0.15cm 0.2cm; width:3.4cm; font-size:8pt; background:#F1F6EE }
+.esito b { display:block; font-size:9.5pt; margin-bottom:0.06cm }
+.esito div { margin:0.04cm 0 }
+</style>
+<div class="griglia"><div class="f"><b>2026-01</b><span></span></div><div class="f"><b>2026-02</b><span></span></div><div class="f x"><b>2026-03</b><span>importi come testo</span></div><div class="f"><b>2026-04</b><span></span></div><div class="f x"><b>2026-05</b><span>colonne in altro ordine</span></div><div class="f"><b>2026-06</b><span></span></div><div class="f"><b>2026-07</b><span></span></div><div class="f x"><b>2026-08</b><span>riga doppia</span></div><div class="f"><b>2026-09</b><span></span></div><div class="f"><b>2026-10</b><span></span></div><div class="f x"><b>2026-11</b><span>date come testo</span></div><div class="f"><b>2026-12</b><span></span></div></div><div class="freccia">→</div>
+<div class="motore"><b>unisci.py</b>legge, ripulisce,<br>segnala, unisce</div>
+<div class="freccia">→</div>
+<div class="esito"><b>riepilogo.xlsx</b><div>▸ Movimenti: 229 righe</div><div>▸ Mesi: formule SOMMA.PIÙ.SE</div><div>▸ grafico entrate/uscite</div></div>
+</html>

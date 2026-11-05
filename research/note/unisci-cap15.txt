@@ -1,0 +1,9 @@
+Movimenti uniti: 229 da 12 file
+Controllo: entrate 269.698,24  uscite 114.698,08  saldo 155.000,16
+Sistemazioni fatte:
+  - 2026-05.xlsx: colonne nell'ordine ['descrizione', 'data', 'importo'], riordinate
+  - 2026-08.xlsx: riga ripetuta 03/08 Spese bancarie -18.53 (tenuta una sola volta: controlla che non fossero due pagamenti veri)
+  - 2026-11.xlsx: data scritta come testo «01/11/2026»
+  - 2026-11.xlsx: data scritta come testo «08/11/2026»
+  - 2026-11.xlsx: data scritta come testo «28/11/2026»
+  - 2026-03.xlsx: 18 importi scritti come testo (es. «-1200,00»), convertiti
