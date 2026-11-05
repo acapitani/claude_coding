@@ -93,3 +93,6 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | OCR | 16 | Riconoscimento ottico dei caratteri: trasforma l'immagine di un testo in testo vero |
 | XML (fattura elettronica) | 16 | Formato strutturato con cui viaggiano le fatture elettroniche in Italia |
 | espressione regolare | 16 | Schema di ricerca nel testo (es. «un importo dopo la parola Totale») |
+| EXIF | 17 | Dati nascosti in una foto: fotocamera, impostazioni, data e ora di scatto |
+| impronta (hash) | 17 | Codice calcolato dal contenuto di un file, uguale solo per file identici |
+| file per annullare | 17 | Elenco delle modifiche fatte, che permette di tornare indietro |

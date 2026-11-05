@@ -44,6 +44,7 @@ Licenze ammesse: pubblico dominio, CC0, CC BY, CC BY-SA, unDraw.
 | IMG-15-02 | assets/cap15/IMG-15-02-grafico.png | Originale: grafico di esempi/cap15/riepilogo.xlsx (openpyxl), esportato con LibreOffice e ritagliato | Claude Code | Originale | Cap. 15, fig. 15.2 — il grafico del riepilogo |
 | IMG-16-01 | assets/cap16/IMG-16-01-da-pdf-a-riga.png | Originale: build/figure/cap16.py (HTML + Playwright) | Claude Code | Originale | Cap. 16, fig. 16.1 — da fattura PDF a riga di tabella |
 | IMG-16-02 | assets/cap16/IMG-16-02-scansione.png | Originale: la fattura scansionata di esempi/cap16 (fattura-23.pdf) resa come immagine | Claude Code | Originale | Cap. 16, fig. 16.2 — una fattura scansionata |
+| IMG-17-01 | assets/cap17/IMG-17-01-prima-dopo.png | Originale: build/figure/cap17.py (terminale.py), nomi reali da esempi/cap17/piano.csv | Claude Code | Originale | Cap. 17, fig. 17.1 — la cartella prima e dopo |
 
 Licenze verificate il 2026-11-04 tramite API di Wikimedia Commons (campo LicenseShortName) e pagina del file.
 Le immagini ridimensionate (lato lungo ≤ 2400 px, salvo l'ENIAC a 3840 px) non sono state altrimenti alterate.
