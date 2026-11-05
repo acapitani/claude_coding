@@ -13,6 +13,8 @@ Licenze ammesse: pubblico dominio, CC0, CC BY, CC BY-SA, unDraw.
 | IMG-01-R1 | assets/cap01/IMG-01-R1-grace-hopper.jpg | https://commons.wikimedia.org/wiki/File:Commodore_Grace_M._Hopper,_USN_(covered).jpg | James S. Davis, U.S. Navy, 1984 | Pubblico dominio (opera del governo USA) | Riserva — Cap. 1 |
 | IMG-01-R2 | assets/cap01/IMG-01-R2-primo-bug.jpg | https://commons.wikimedia.org/wiki/File:H96566k.jpg | Naval Surface Warfare Center, Dahlgren, VA (1988) | Pubblico dominio (U.S. Navy) | Riserva — Cap. 1 o 11 (il "primo bug") |
 | IMG-01-R3 | assets/cap01/IMG-01-R3-asr33.jpg | https://commons.wikimedia.org/wiki/File:ASR-33_at_CHM.agr.jpg | Arnold Reinhold | CC BY-SA 3.0 (attribuzione; non modificare, solo ridimensionare) | Riserva — Cap. 1 (telescrivente) |
+| IMG-06-01 | assets/cap06/IMG-06-01-anatomia.png | Originale: build/figure/cap06.py (terminale.py + Playwright) | Claude Code | Originale | Cap. 6 — anatomia dello schermo (ricostruzione stilizzata) |
+| IMG-06-02 | assets/cap06/IMG-06-02-permesso.png | Originale: build/figure/cap06.py (terminale.py + Playwright) | Claude Code | Originale | Cap. 6 — richiesta di permesso (ricostruzione stilizzata) |
 
 Licenze verificate il 2026-11-04 tramite API di Wikimedia Commons (campo LicenseShortName) e pagina del file.
 Le immagini ridimensionate (lato lungo ≤ 2400 px, salvo l'ENIAC a 3840 px) non sono state altrimenti alterate.

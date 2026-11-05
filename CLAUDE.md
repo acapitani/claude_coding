@@ -32,6 +32,10 @@
 - Affidabilità B o "NON VERIFICATO": non si usa come fatto (al massimo "si racconta che…", con fonte).
 - Non riprodurre codice proveniente dalla fuga del sorgente di marzo 2026.
 - Il futuro è sempre presentato come ipotesi.
+- Comportamenti e testi dell'interfaccia (comandi, scorciatoie, messaggi): verificarli sul binario installato
+  (`claude --help`, ricerca delle stringhe in `~/.local/bin/claude.exe`) o sulla documentazione ufficiale,
+  registrarli in FATTI.md e dire nel testo a quale versione si riferiscono. Le figure di interfaccia sono
+  «ricostruzioni stilizzate» e la didascalia lo dice.
 
 ## Regole sulle immagini
 - Ogni immagine sta in `assets/CREDITI.md` (id, file, fonte/URL, autore, licenza, uso) **prima** di essere inserita.
@@ -61,6 +65,7 @@
      (`--foglio` = libro aperto; `--sample 12` = campione; `--tutte --dpi 50` = provino).
 - Solo il .docx, veloce (numeri di pagina dell'ultima impaginazione): `py build/build_book.py`
 - Prova della toolchain: aggiungere `--config book-prova.yaml` (capitoli di prova in `capitoli/_prova`).
+- Finte schermate di terminale: `build/figure/terminale.py` (vedi `cap06.py`); uno script `build/figure/capNN.py` per capitolo.
 - Figure: diagrammi con `build/figure/grafo.py` (stile del libro già applicato, vedi `prova_ciclo.py`);
   HTML/SVG → PNG con `node build/figure/render.mjs in.html out.png --larghezza-cm 13 [--altezza-cm 8] [--dpi 300]`.
 - Copertina: modificare `assets/copertina/cover.html`, poi
@@ -94,7 +99,7 @@
 1. Lunghezza entro ±10% del budget di parole in PLAN.md §5.
 2. Ogni fatto ha `<!-- F-NNN -->` e la voce esiste in FATTI.md.
 3. Figure previste presenti, con didascalia e voce in CREDITI.md.
-4. Almeno un box e il riepilogo "In breve"; nuovi termini nel glossario.
+4. Almeno un box e il riepilogo "In breve"; nuovi termini in `research/note/glossario.md`.
 5. Italiano corretto (rilettura), tono coerente, licenza narrativa dichiarata.
 6. Build + update_indexes + check_book senza errori; anteprima delle pagine del capitolo ispezionata.
 7. Tabella di avanzamento in PLAN.md aggiornata (pagine reali, parole, note).

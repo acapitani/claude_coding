@@ -197,6 +197,28 @@ Numerazione: F-0xx storia dell'informatica · F-1xx origini · F-2xx lancio e ta
 | F-609 | Fortune (29/01/2026): per Anthropic, a livello aziendale, il codice scritto con l'IA è tra il 70 e il 90% | https://fortune.com/2026/01/29/100-percent-of-code-at-anthropic-and-openai-is-now-ai-written-boris-cherny-roon/ | M | 25 |
 | F-610 | Il nome "Claude" onorerebbe Claude Shannon secondo Britannica; Anthropic non l'ha mai confermato → solo "si dice che…" | https://www.britannica.com/topic/Claude-AI | M | 1 |
 
+### Interfaccia (verificata sul binario installato, 05/11/2026)
+
+| Id | Affermazione | Fonte | Aff. | Cap. |
+|---|---|---|---|---|
+| F-611 | Durante l'elaborazione l'interfaccia mostra «esc to interrupt»: il tasto Esc interrompe il lavoro in corso | binario 2.1.318 (stringhe dell'interfaccia) | A | 6 |
+| F-612 | Nella casella di input compare il suggerimento «? for shortcuts» (il punto interrogativo mostra le scorciatoie) | binario 2.1.318 (stringhe dell'interfaccia) | A | 6 |
+| F-613 | Prima di un'azione che richiede permesso compare la domanda «Do you want to proceed?», con opzioni come «Yes», «Yes, and don't ask again for … commands» e «No»; nei menu il puntatore è ❯ | binario 2.1.318 (stringhe dell'interfaccia) | A | 6, 9 |
+| F-614 | Maiusc+Tab (shift+tab) cambia modalità; gli indicatori sono «accept edits on», «plan mode on» e, dove disponibile, «auto mode on» | binario 2.1.318 (stringhe dell'interfaccia) | A | 6, 7, 9 |
+| F-615 | Suggerimento dell'interfaccia: «Double-tap esc to rewind the conversation to a previous point in time»; `/rewind` (alias `checkpoint`, `undo`) «Restore the code and/or conversation to a previous point» | binario 2.1.318 (stringhe dell'interfaccia) | A | 6 |
+| F-616 | `/clear` (alias `reset`, `new`) «Start a new session with empty context»; `/compact` «Free up context by summarizing the conversation so far»; `/help` «Show help and available commands»; `/usage` (alias `cost`, `stats`) mostra costi e consumi | binario 2.1.318 (stringhe dell'interfaccia) | A | 6, App. A |
+| F-617 | `claude --help`: «Claude Code - starts an interactive session by default, use -p/--print for non-interactive output» | binario 2.1.318 (stringhe dell'interfaccia) | A | 5, 6, 24 |
+
+### Checkpoint e primo avvio (documentazione ufficiale)
+
+| Id | Affermazione | Fonte | Aff. | Cap. |
+|---|---|---|---|---|
+| F-618 | Ogni richiesta che avvia un turno crea un checkpoint; Claude Code traccia le modifiche fatte con i suoi strumenti di modifica dei file | https://code.claude.com/docs/en/checkpointing | A | 6 |
+| F-619 | Un file modificato **solo** da comandi Bash/shell non è tracciato e il rewind non lo ripristina («use version control, such as Git»); dopo che Claude lo ha modificato con i suoi strumenti, anche le successive modifiche via shell a quel file si annullano | https://code.claude.com/docs/en/checkpointing | A | 6, 12 |
+| F-620 | Il menu di rewind si apre con `/rewind` o con Esc due volte a casella vuota; opzioni: ripristinare codice e conversazione, solo la conversazione, solo il codice, oppure riassumere da/fino a quel punto | https://code.claude.com/docs/en/checkpointing | A | 6 |
+| F-621 | I checkpoint si salvano con la conversazione (valgono anche riprendendo la sessione), ultimi 100 per sessione, cancellati di norma dopo circa 30 giorni (`cleanupPeriodDays`) | https://code.claude.com/docs/en/checkpointing | A | 6 |
+| F-622 | Al primo utilizzo Claude Code chiede di accedere (login) | https://code.claude.com/docs/en/quickstart | A | 5, 6 |
+
 ## F-7xx — Uso reale, anche fuori dalla programmazione (Parte IV, cap. 4)
 
 Fonte per tutta la sezione: "How Anthropic teams use Claude Code" (24/07/2025), https://claude.com/blog/how-anthropic-teams-use-claude-code — **A**.

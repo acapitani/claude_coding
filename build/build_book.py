@@ -582,10 +582,15 @@ class Costruttore:
                 righe.append(corrente)
                 intest.append(in_head)
         n = max(len(r) for r in righe)
-        lun = [max(1, max(len(testo_piano(r[c])) if c < len(r) else 0 for r in righe)) for c in range(n)]
-        lun = [min(max(x, 6), 60) for x in lun]
-        tot = sum(lun)
-        larghezze = [stili.LARGHEZZA_TESTO_CM * x / tot for x in lun]
+        testi = [[testo_piano(r[c]) if c < len(r) else "" for r in righe] for c in range(n)]
+        # minimo: la parola più lunga della colonna non deve spezzarsi (≈0,19 cm per carattere + margini)
+        minimi = [max(len(w) for t in col for w in (t.split() or [""])) * 0.19 + 0.35 for col in testi]
+        lun = [min(max(max(len(t) for t in col), 6), 60) for col in testi]
+        resto = max(stili.LARGHEZZA_TESTO_CM - sum(minimi), 0)
+        larghezze = [m + resto * x / sum(lun) for m, x in zip(minimi, lun)]
+        if sum(minimi) > stili.LARGHEZZA_TESTO_CM:
+            comune.avviso("tabella troppo larga: alcune parole andranno a capo")
+            larghezze = [stili.LARGHEZZA_TESTO_CM * m / sum(minimi) for m in minimi]
         tab = target.add_table(rows=len(righe), cols=n)
         tab.alignment = WD_TABLE_ALIGNMENT.CENTER
         larghezza_tabella(tab, stili.LARGHEZZA_TESTO_CM, larghezze)
@@ -678,8 +683,15 @@ class Costruttore:
         p.add_run("Indice")
         self._segnaposto_indice = self.doc.add_paragraph(style="Normal")
 
-    def capitolo(self, percorso, tipo, numero=None, preliminare=False):
+    def leggi_md(self, percorso):
+        """Legge un sorgente togliendo i rimandi ai fatti <!-- F-NNN --> (e lo spazio che li precede),
+        che altrimenti lascerebbero spazi doppi nel testo giustificato."""
         testo = percorso.read_text(encoding="utf-8")
+        self._marcatori(testo)
+        return re.sub(r"[ \t]*<!--\s*(F-\d{3}[\s,;]*)+-->", "", testo)
+
+    def capitolo(self, percorso, tipo, numero=None, preliminare=False):
+        testo = self.leggi_md(percorso)
         tokens = self.md.parse(testo)
         titolo_tok = None
         for k, t in enumerate(tokens):

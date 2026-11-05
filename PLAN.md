@@ -174,6 +174,8 @@ Obiettivo **180 pagine** fisiche (intervallo accettato 160–200). Parole per pa
 | Appendici | 12 |
 | **Totale** | **180** |
 
+> **Calibrazione dal pilota S4 (cap. 6)**: un capitolo-guida con 2 figure, 2 terminali, 3 box e una tabella rende **224 parole/pagina**; una pagina di solo testo ne contiene **~390** (misura S2). I budget di parole dei capitoli-guida restano validi. I capitoli autobiografici (1–4, 25, 26), più narrativi, tenderebbero a ~300 parole/pagina: per restare nel budget di pagine devono avere **almeno una figura ogni 3 pagine** oppure ~15% di parole in più rispetto alla tabella §13 (da verificare dopo il cap. 1 e correggere i budget successivi). Controllo della proiezione totale ogni 5 capitoli con `check_book.py`.
+
 Ogni capitolo ha: apertura (ricordo dell'autore o consiglio), corpo, almeno un box (Nota / Consiglio / Attenzione), riepilogo finale "In breve". Rimandi `F-xxx` → `research/FATTI.md`; `IMG-cc-nn` → §6.
 
 ### Pagine preliminari
@@ -510,7 +512,7 @@ Ogni sessione si chiude con un commit git (regole in CLAUDE.md, sezione "Git"). 
 | 3 | Il lancio | 5 | 1.150 | ☐ | | |
 | 4 | Crescere in pubblico | 7 | 1.600 | ☐ | | |
 | 5 | Installazione | 6 | 1.350 | ☐ | | |
-| 6 | La prima sessione (pilota) | 6 | 1.350 | ☐ | | |
+| 6 | La prima sessione (pilota) | 6 | 1.350 | ✅ 2026-11-05 | 6 | 1.346 parole, 224 parole/pagina, 2 figure (T), 2 terminali, 3 box, 1 tabella, 17 rimandi ai fatti. Interfaccia verificata sul binario 2.1.318 (F-611…F-617) e sulla documentazione dei checkpoint (F-618…F-622) |
 | 7 | Come parlarmi | 7 | 1.650 | ☐ | | |
 | 8 | CLAUDE.md e la memoria | 6 | 1.350 | ☐ | | |
 | 9 | Permessi e sicurezza | 5 | 1.150 | ☐ | | |
