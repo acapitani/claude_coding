@@ -54,6 +54,8 @@ Licenze ammesse: pubblico dominio, CC0, CC BY, CC BY-SA, unDraw.
 | IMG-22-01 | assets/cap22/IMG-22-01-revisori.png | Originale: build/figure/cap22.py (Graphviz), dalla prova reale | Claude Code | Originale | Cap. 22, fig. 22.1 — un agente principale e quattro revisori |
 | IMG-23-01 | assets/cap23/IMG-23-01-presa.png | Originale: build/figure/cap23.py (Graphviz) | Claude Code | Originale | Cap. 23, fig. 23.1 — MCP come presa universale |
 | IMG-23-02 | assets/cap23/IMG-23-02-configurazione.png | Originale: build/figure/cap23.py (finto terminale), dalla prova reale (research/note/mcp-cap23-*.txt/jsonl) | Claude Code | Originale | Cap. 23, fig. 23.2 — configurazione del server «archivio» (ricostruzione stilizzata) |
+| IMG-24-01 | assets/cap24/IMG-24-01-plugin.png | Originale: build/figure/cap24.py (finto terminale), struttura reale di esempi/cap24/marketplace | Claude Code | Originale | Cap. 24, fig. 24.1 — il plugin ufficio-anna (ricostruzione stilizzata) |
+| IMG-24-02 | assets/cap24/IMG-24-02-pipeline.png | Originale: build/figure/cap24.py (Graphviz), dalla prova reale | Claude Code | Originale | Cap. 24, fig. 24.2 — claude -p dentro uno script |
 
 Licenze verificate il 2026-11-04 tramite API di Wikimedia Commons (campo LicenseShortName) e pagina del file.
 Le immagini ridimensionate (lato lungo ≤ 2400 px, salvo l'ENIAC a 3840 px) non sono state altrimenti alterate.

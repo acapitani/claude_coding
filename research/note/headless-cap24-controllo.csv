@@ -1,0 +1,3 @@
+﻿file;fornitore;totale_euro;corretta;nota;costo_usd
+fattura-03.pdf;Pulizie Lampo di G. Neri;3136.82;True;"FATTURA CORRETTA. Fatt. 102/2026 del 29/07/2026. Imponibile 2.571,16 €; IVA 22% 565,66 € (calcolata 565,6552 → 565,66, differenza 0,00 €); imponibile + IVA = 3.136,82 €, pari al totale indicato (differenza 0,00 €).";0.262
+fattura-14.pdf;TecnoService S.p.A.;331.04;False;IVA 22% corretta (41,66 €), ma il totale non torna: imponibile 189,38 € + IVA 41,66 € fa 231,04 €, non 331,04 €. Differenza di 100,00 € sul totale da pagare.;0.106

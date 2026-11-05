@@ -1,0 +1,14 @@
+{
+  "name": "studio",
+  "owner": {
+    "name": "Studio di Anna"
+  },
+  "description": "I plugin interni dello studio",
+  "plugins": [
+    {
+      "name": "ufficio-anna",
+      "source": "./ufficio-anna",
+      "description": "Gli attrezzi dello studio"
+    }
+  ]
+}

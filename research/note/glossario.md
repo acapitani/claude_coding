@@ -115,3 +115,6 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | server MCP | 23 | Programma, locale o in rete, che offre a Claude Code strumenti con nome e descrizione |
 | connettore | 23 | Server MCP aggiunto all'account claude.ai, disponibile anche in Claude Code |
 | stdio | 23 | Canale di testo (ingresso e uscita standard) con cui un server MCP locale comunica |
+| headless | 24 | Modalità senza interfaccia (`claude -p`): una richiesta, un risultato, poi Claude Code esce |
+| JSON Schema | 24 | Descrizione di un formato di dati; con `--json-schema` Claude Code risponde in quel formato |
+| Agent SDK | 24 | Librerie Python e TypeScript per usare il motore di Claude Code nei propri programmi |

@@ -1,0 +1,8 @@
+Installed plugins:
+
+  ❯ ufficio-anna@studio
+    Version: 1.0.0
+    Read from: C:\workspace\source\personal\claude_coding\esempi\cap24\marketplace\ufficio-anna
+    Scope: local
+    Status: ✔ enabled
+
