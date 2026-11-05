@@ -44,7 +44,7 @@ body { background: #FFFFFF; padding: 0.15cm; }
      background: #D77757; color: #1F1E1D; font: bold 7.5pt/1.35em Calibri, sans-serif; text-align: center; }
 """
 
-GLIFI = set("✻✢✶✽✳●❯⏺⎿")
+GLIFI = set("✻✢✶✽✳●❯⏺⎿✔✘→")
 
 
 def _glifi(s: str) -> str:

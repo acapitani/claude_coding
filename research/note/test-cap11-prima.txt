@@ -1,0 +1,9 @@
+✔ 1 miglia → chilometri: 1,6093 chilometri
+✔ 12 pollici → centimetri: 30,48 centimetri
+✔ 10 libbre → chilogrammi: 4,5359 chilogrammi
+✔ -40 gradi Celsius → gradi Fahrenheit: -40 gradi Fahrenheit
+✔ 100 gradi Celsius → kelvin: 373,15 kelvin
+✘ 1,5 metri → centimetri: 1500 centimetri   (atteso: 150 centimetri)
+✘ -10 kelvin → gradi Celsius: -283,15 gradi Celsius   (atteso: Sotto lo zero assoluto: controlla il valore)
+
+2 test falliti

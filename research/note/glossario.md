@@ -64,3 +64,7 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | HTML | 10 | Linguaggio con cui si descrive una pagina web |
 | JavaScript | 10 | Linguaggio che dà vita alle pagine web, eseguito dal browser |
 | Python | 10 | Linguaggio molto usato per lavorare con file e dati |
+| test | 11 | Domanda di cui si conosce la risposta, controllata automaticamente da un programma |
+| debug | 11 | Caccia all'errore: riprodurre, isolare, capire, correggere, verificare |
+| rosso-verde | 11 | Metodo: prima un test che fallisce, poi la correzione che lo fa passare |
+| messaggio d'errore (traceback) | 11 | Resoconto di un errore; si legge dal basso |

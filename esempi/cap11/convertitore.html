@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Convertitore di unità</title>
+<style>
+  body { font-family: system-ui, sans-serif; background: #f4f1ea; margin: 0;
+         display: grid; place-items: center; min-height: 100vh; }
+  main { background: #fff; padding: 24px 28px; border-radius: 12px;
+         box-shadow: 0 4px 16px rgba(0,0,0,.08); width: 340px; }
+  h1 { font-size: 20px; margin: 0 0 16px; }
+  label { display: block; font-size: 13px; color: #666; margin: 12px 0 4px; }
+  select, input { width: 100%; font-size: 16px; padding: 8px;
+                  border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; }
+  .riga { display: flex; gap: 8px; align-items: end; }
+  .riga > div { flex: 1; }
+  button { font-size: 18px; padding: 6px 10px; border: 1px solid #ccc;
+           border-radius: 6px; background: #fff; cursor: pointer; }
+  #risultato { margin-top: 18px; font-size: 22px; font-weight: bold; color: #c15f3c; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Convertitore di unità</h1>
+
+  <label for="categoria">Che cosa vuoi convertire?</label>
+  <select id="categoria"></select>
+
+  <label for="valore">Valore</label>
+  <input id="valore" type="text" inputmode="decimal" value="1">
+
+  <div class="riga">
+    <div><label for="da">Da</label><select id="da"></select></div>
+    <button id="scambia" title="Scambia le unità">⇄</button>
+    <div><label for="a">A</label><select id="a"></select></div>
+  </div>
+
+  <div id="risultato"></div>
+</main>
+
+<script>
+// Fattori di conversione verso l'unità di base di ogni categoria
+const UNITA = {
+  "Lunghezza": { base: "metri", unita: {
+    "millimetri": 0.001, "centimetri": 0.01, "metri": 1,
+    "chilometri": 1000, "pollici": 0.0254, "piedi": 0.3048, "miglia": 1609.344 } },
+  "Peso": { base: "chilogrammi", unita: {
+    "grammi": 0.001, "chilogrammi": 1, "tonnellate": 1000,
+    "once": 0.028349523125, "libbre": 0.45359237 } },
+  "Temperatura": { base: "gradi Celsius", unita: {
+    "gradi Celsius": null, "gradi Fahrenheit": null, "kelvin": null } }
+};
+
+// La temperatura non si converte con un fattore: servono formule
+function aCelsius(v, u) {
+  if (u === "gradi Fahrenheit") return (v - 32) * 5 / 9;
+  if (u === "kelvin") return v - 273.15;
+  return v;
+}
+function daCelsius(c, u) {
+  if (u === "gradi Fahrenheit") return c * 9 / 5 + 32;
+  if (u === "kelvin") return c + 273.15;
+  return c;
+}
+
+function converti(v, cat, da, a) {
+  if (cat === "Temperatura") return daCelsius(aCelsius(v, da), a);
+  const f = UNITA[cat].unita;
+  return v * f[da] / f[a];
+}
+
+const $ = id => document.getElementById(id);
+const formato = new Intl.NumberFormat("it-IT", { maximumFractionDigits: 4 });
+
+function riempiUnita() {
+  const nomi = Object.keys(UNITA[$("categoria").value].unita);
+  for (const sel of [$("da"), $("a")]) {
+    sel.innerHTML = nomi.map(n => `<option>${n}</option>`).join("");
+  }
+  $("a").selectedIndex = Math.min(1, nomi.length - 1);
+  aggiorna();
+}
+
+// Legge un numero scritto all'italiana: "1,5" e anche "1.234,5"
+function leggiNumero(testo) {
+  let s = testo.trim();
+  if (s.includes(",")) s = s.replace(/\./g, "").replace(",", ".");
+  return /^-?\d+(\.\d+)?$/.test(s) ? Number(s) : NaN;
+}
+
+function aggiorna() {
+  const v = leggiNumero($("valore").value);
+  if (isNaN(v)) { $("risultato").textContent = "Scrivi un numero"; return; }
+  const cat = $("categoria").value;
+  // Nessuna temperatura può stare sotto lo zero assoluto (-273,15 °C)
+  if (cat === "Temperatura" && aCelsius(v, $("da").value) < -273.15) {
+    $("risultato").textContent = "Sotto lo zero assoluto: controlla il valore";
+    return;
+  }
+  const r = converti(v, cat, $("da").value, $("a").value);
+  $("risultato").textContent = `${formato.format(r)} ${$("a").value}`;
+}
+
+$("categoria").innerHTML = Object.keys(UNITA).map(c => `<option>${c}</option>`).join("");
+$("categoria").addEventListener("change", riempiUnita);
+for (const id of ["valore", "da", "a"]) $(id).addEventListener("input", aggiorna);
+$("scambia").addEventListener("click", () => {
+  [$("da").value, $("a").value] = [$("a").value, $("da").value];
+  aggiorna();
+});
+riempiUnita();
+</script>
+</body>
+</html>
