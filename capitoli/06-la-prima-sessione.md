@@ -52,7 +52,7 @@ Ecco che cosa faccio, nell'ordine:
 
 1. **Guardo.** Prima di toccare qualcosa elenco i file e li conto per estensione. Questo non richiede permessi: leggere è sempre consentito nella cartella in cui mi hai avviato.
 2. **Propongo.** Ti dico che cosa intendo fare: «creo tre sottocartelle, PDF, Immagini e Archivi, e ci sposto i file; lascio dove sono i 32 file di altro tipo».
-3. **Chiedo.** Creare cartelle e spostare file *modifica* il tuo computer, quindi prima di farlo ti chiedo il permesso, come nella figura 6.2.
+3. **Chiedo.** Creare cartelle e spostare file *modifica* il tuo computer, quindi prima di farlo ti chiedo il permesso, come nella figura 6.2. Succede così nella modalità *Manual*, quella che ti consiglio per la prima sessione: come attivarla lo spiega il riquadro «Le modalità di lavoro», più avanti.
 
 ![La richiesta di permesso prima di un comando che modifica i file (ricostruzione stilizzata)](assets/cap06/IMG-06-02-permesso.png){larghezza=13}
 
@@ -92,7 +92,7 @@ Oltre alle richieste in linguaggio naturale capisco anche dei comandi brevi che 
 Il più utile, all'inizio, è `/clear`. Tendo a ricordare tutto quello che ci siamo detti nella sessione, e se passi dal riordino dei download alla lettera per il condominio, i download continuano a pesare sul mio [contesto]{xe="contesto"}, cioè su tutto quello che ho davanti mentre lavoro. Una sessione per argomento è la regola d'oro.
 
 ::: nota Le modalità di lavoro
-Premendo [Maiusc+Tab]{.tasto} cambi il mio modo di lavorare: in basso compare per esempio `accept edits on` (accetto le modifiche ai file senza chiedere) oppure `plan mode on` (prima ti presento un piano, poi agisco). <!-- F-614 --> Per la prima sessione lascia tutto com'è: le modalità le vedremo nei capitoli 7 e 9.
+Premendo [Maiusc+Tab]{.tasto} cambi il mio modo di lavorare, e in basso compare un'indicazione come `auto mode on`, `accept edits on` o `plan mode on`. <!-- F-614 --> Dalla versione 2.1.283 parto di solito in *modalità auto*: un controllore automatico esamina le mie azioni e molte richieste di permesso non compaiono. <!-- F-371 --> Per la prima sessione preferisco che tu veda tutto: premi [Maiusc+Tab]{.tasto} una volta, finché sparisce la scritta `auto mode on`, e sarai in modalità *Manual*, dove ti chiedo il permesso per ogni modifica. <!-- F-371 --> <!-- F-373 --> Tutte le modalità le vedremo nel capitolo 9.
 :::
 
 Per uscire scrivi `/exit`, oppure premi [Ctrl+C]{.tasto} due volte. Ci rivedremo alla prossima sessione, anche se io, naturalmente, non me ne ricorderò.
@@ -101,6 +101,6 @@ Per uscire scrivi `/exit`, oppure premi [Ctrl+C]{.tasto} due volte. Ci rivedremo
 
 - Avviami **dentro la cartella** su cui vuoi lavorare: posso leggere liberamente solo lì.
 - Lo schermo mostra la tua richiesta, ogni mia azione, lo spinner e la casella di input; `?` elenca le scorciatoie.
-- Prima di modificare qualcosa **ti chiedo il permesso**: leggi il comando, e ricorda che «No» con una spiegazione è una risposta utilissima.
+- In modalità Manual, prima di modificare qualcosa **ti chiedo il permesso**: leggi il comando, e ricorda che «No» con una spiegazione è una risposta utilissima.
 - **Esc** mi ferma, **Esc Esc** o `/rewind` tornano a un checkpoint; i file toccati solo da comandi del terminale però non tornano indietro.
 - `/help`, `/clear`, `/compact` e `/usage` bastano per cominciare. Una sessione per argomento.

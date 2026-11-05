@@ -1,0 +1,23 @@
+<!doctype html><html lang="it"><meta charset="utf-8"><style>* { box-sizing:border-box; margin:0; padding:0 } body { background:#fff; font-family:Calibri,sans-serif; color:#1F1E1D; padding:0.1cm }
+.sc { display:flex; gap:0.4cm; align-items:center }
+.rec { flex:1.1; border:1.6pt dashed #D77757; border-radius:0.3cm; padding:0.3cm; background:#FBF0EB; position:relative }
+.tit { position:absolute; top:-0.28cm; left:0.3cm; background:#fff; padding:0 0.15cm; font:bold 9pt Calibri; color:#D77757 }
+.dentro { background:#fff; border:0.8pt solid #D9D4CB; border-radius:0.15cm; padding:0.2cm; font-size:8pt; color:#6E6962 }
+.dentro b, .f b { display:block; font-size:9.5pt; color:#1F1E1D }
+.cmd { margin-top:0.2cm; background:#1F1E1D; color:#F0EEE6; font:8pt Consolas, monospace; padding:0.12cm 0.2cm; border-radius:0.1cm }
+.fuori { flex:1; display:flex; flex-direction:column; gap:0.15cm }
+.f { border:0.8pt solid #D9D4CB; border-radius:0.15cm; padding:0.12cm 0.2cm; font-size:7.8pt; color:#6E6962; position:relative; padding-left:0.75cm }
+.f::before { position:absolute; left:0.2cm; top:0.12cm; font:bold 11pt "Segoe UI Symbol" }
+.f.no::before { content:"✘"; color:#C0504D } .f.ok::before { content:"⚠"; color:#C9A227 }
+</style>
+<div class="sc">
+ <div class="rec"><div class="tit">Sandbox</div>
+   <div class="dentro"><b>Cartella di lavoro</b>i comandi leggono e scrivono qui</div>
+   <div class="cmd">$ comando</div>
+ </div>
+ <div class="fuori">
+   <div class="f no"><b>Resto del disco</b>scrittura bloccata</div>
+   <div class="f no"><b>Internet</b>bloccato, salvo i domini che ammetti</div>
+   <div class="f ok"><b>Lettura</b>possibile quasi ovunque: proteggi a parte i file con le password</div>
+ </div>
+</div></html>

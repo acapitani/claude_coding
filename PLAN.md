@@ -515,7 +515,7 @@ Ogni sessione si chiude con un commit git (regole in CLAUDE.md, sezione "Git"). 
 | 6 | La prima sessione (pilota) | 6 | 1.350 | ✅ 2026-11-05 | 6 | 1.346 parole, 224 parole/pagina, 2 figure (T), 2 terminali, 3 box, 1 tabella, 17 rimandi ai fatti. Interfaccia verificata sul binario 2.1.318 (F-611…F-617) e sulla documentazione dei checkpoint (F-618…F-622) |
 | 7 | Come parlarmi | 7 | 1.650 | ✅ 2026-11-05 | 6 | 1.492 parole (−10%, al limite), 249 parole/pagina, 2 figure (anatomia della richiesta; plan mode con i testi reali «Ready to code?»), 1 box attenzione, 5 esempi prima/dopo, 10 rimandi. Nuovi F-625…F-628 verificati sul binario 2.1.318 (@, Ctrl+V, Maiusc+Invio, /plan, /terminal-setup, plan mode senza modifiche) |
 | 8 | CLAUDE.md e la memoria | 6 | 1.350 | ✅ 2026-11-05 | 6 | 1.296 parole (−4%), 216 parole/pagina, 1 figura (gerarchia dei CLAUDE.md) + CLAUDE.md d'esempio per l'ufficio amministrativo, 1 box attenzione, 15 rimandi. Apertura con una riga vera del CLAUDE.md di questo libro. Fatti F-360…F-368 dalla documentazione ufficiale sulla memoria; scorciatoia `#` assente nella 2.1.318 |
-| 9 | Permessi e sicurezza | 5 | 1.150 | ☐ | | |
+| 9 | Permessi e sicurezza | 5 | 1.150 | ✅ 2026-11-05 | 4 | 1.118 parole, 280 parole/pagina, 2 figure (modalità; sandbox), settings.json d'esempio, 2 box, 23 rimandi. Fatti F-370…F-380 da permissions/permission-modes/settings/sandboxing/security. **Scoperta**: dalla 2.1.283 si parte in modalità Auto → corretto il cap. 6 (box sulle modalità: passare a Manual nella prima sessione). **Parte II completa: 30 pp. (budget 30)** |
 | 10 | Dal requisito al prototipo | 6 | 1.350 | ☐ | | |
 | 11 | Test e debug | 6 | 1.350 | ☐ | | |
 | 12 | Git e revisione del codice | 6 | 1.350 | ☐ | | |

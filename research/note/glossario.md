@@ -53,3 +53,9 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | Markdown | 8 | Formato di testo semplice: # per i titoli, - per gli elenchi |
 | import (in CLAUDE.md) | 8 | Riga @percorso che fa leggere anche un altro file |
 | memoria automatica | 8 | Note che Claude Code prende da solo tra una sessione e l'altra |
+| modalità di permesso | 9 | Grado di autonomia di Claude Code: Plan, Manual, Accept edits, Auto, Bypass |
+| auto mode | 9 | Modalità in cui un modello controllore verifica le azioni al posto delle richieste di permesso |
+| settings.json | 9 | File delle impostazioni, comprese le regole di permesso |
+| allow / ask / deny | 9 | Regole: permesso senza chiedere / chiedere sempre / vietato |
+| prompt injection | 9 | Istruzioni nascoste in un contenuto per manipolare un assistente |
+| .env | 9 | File in cui i programmi tengono di solito password e chiavi |
