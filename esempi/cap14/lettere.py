@@ -16,7 +16,13 @@ MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio",
 
 
 def data_italiana(d):
-    return f"{d.day} {MESI[d.month - 1]} {d.year}"
+    giorno = "1°" if d.day == 1 else str(d.day)          # «il 1° ottobre», non «il 1 ottobre»
+    return f"{giorno} {MESI[d.month - 1]} {d.year}"
+
+
+def con_articolo(d):
+    """«l'8 ottobre», «l'11 ottobre», ma «il 14 ottobre» (errore trovato dai revisori del cap. 22)."""
+    return ("l'" if d.day in (8, 11) else "il ") + data_italiana(d)
 
 
 def euro(valore):
@@ -63,7 +69,7 @@ def main():
             "citta": r["Città"] or "",
             "fattura": str(r["Fattura"]),
             "importo": euro(r["Importo"]),
-            "scadenza": data_italiana(scadenza),
+            "scadenza": con_articolo(scadenza),
         }
         lettera = docx.Document(modello)
         for p in lettera.paragraphs:

@@ -108,3 +108,6 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | hook | 21 | Comando che Claude Code esegue sempre in un momento preciso della sessione |
 | evento (hook) | 21 | Momento in cui un hook può scattare: PreToolUse, PostToolUse, Stop… |
 | codice di uscita | 21 | Numero con cui un programma dice com'è andata; per gli hook 2 = blocca |
+| sottoagente | 22 | Assistente con contesto, istruzioni e strumenti propri, a cui Claude Code affida una parte del lavoro |
+| Agent Teams | 22 | Squadre sperimentali di istanze di Claude Code che si scambiano messaggi |
+| Haiku | 22 | Il modello più piccolo ed economico della famiglia Claude |

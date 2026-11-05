@@ -39,7 +39,7 @@ for testo in ["Studio Amministrativo Bianchi", "Via Roma 12, 40121 Bologna", "",
               "Oggetto: sollecito di pagamento della fattura n. {fattura}", "",
               "Gentile {titolo} {cognome},",
               "ci risulta ancora da saldare la fattura n. {fattura} di {importo}, "
-              "scaduta il {scadenza}. Le chiediamo cortesemente di provvedere entro "
+              "scaduta {scadenza}. Le chiediamo cortesemente di provvedere entro "
               "quindici giorni dal ricevimento di questa lettera.",
               "Se ha già effettuato il pagamento, la preghiamo di non tenere conto di questo "
               "avviso e di scusarci per il disturbo.", "", "Cordiali saluti,", "",
