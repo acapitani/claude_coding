@@ -30,3 +30,13 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | commit | 3 | Fotografia del lavoro salvata nel repository con una descrizione |
 | npm | 3 | Registro e gestore dei pacchetti JavaScript da cui si installano programmi |
 | SDK | 3 | Kit per gli sviluppatori: strumenti per costruire altri programmi |
+| changelog | 4 | Registro delle modifiche: elenco delle novità di ogni versione |
+| versione (numero di) | 4 | Numero in tre parti (es. 2.1.318): grandi svolte, tappe importanti, piccoli aggiornamenti |
+| plugin | 4 | Pacchetto installabile di comandi, agenti, hook e skill |
+| marketplace | 4 | Catalogo da cui scegliere e installare i plugin |
+| skill | 4 | Raccolta di istruzioni e conoscenze che Claude Code carica quando servono |
+| hook | 4 | Regola automatica che scatta a un certo evento della sessione |
+| sottoagente | 4 | Aiutante con un compito preciso e un contesto separato |
+| sandbox | 4 | Recinto in cui i comandi girano isolati, con meno richieste di permesso |
+| source map | 4 | File che collega il codice distribuito al codice sorgente originale |
+| WSL | 4 | Windows Subsystem for Linux: un Linux che gira dentro Windows |

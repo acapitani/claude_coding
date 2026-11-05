@@ -17,6 +17,9 @@ Licenze ammesse: pubblico dominio, CC0, CC BY, CC BY-SA, unDraw.
 | IMG-02-02 | assets/cap02/IMG-02-02-ciclo-agente.png | Originale: build/figure/cap02.py (Graphviz) | Claude Code | Originale | Cap. 2, fig. 2.2 — il ciclo dell'agente |
 | IMG-03-01 | assets/cap03/IMG-03-01-linea-tempo.png | Originale: build/figure/cap03.py (HTML + Playwright) | Claude Code | Originale | Cap. 3, fig. 3.1 — linea del tempo set 2024 – mag 2025 |
 | IMG-03-02 | assets/cap03/IMG-03-02-allora-oggi.png | Originale: build/figure/cap03.py (terminale.py + Playwright) | Claude Code | Originale | Cap. 3, fig. 3.2 — installazione del 2025 e versione del 2026 (ricostruzione stilizzata) |
+| IMG-04-01 | assets/cap04/IMG-04-01-diario.png | Originale: build/figure/cap04.py (HTML + Playwright) | Claude Code | Originale | Cap. 4, fig. 4.1 — il diario delle funzioni 2025–2026 |
+| IMG-04-02 | assets/cap04/IMG-04-02-spinner.png | Originale: build/figure/cap04.py (HTML + Playwright) | Claude Code | Originale | Cap. 4, fig. 4.2 — la sequenza dello spinner |
+| IMG-04-03 | assets/cap04/IMG-04-03-verbi.png | Originale: build/figure/cap04.py (HTML + Playwright) | Claude Code | Originale | Cap. 4, fig. 4.3 — un campione dei verbi dello spinner |
 | IMG-06-01 | assets/cap06/IMG-06-01-anatomia.png | Originale: build/figure/cap06.py (terminale.py + Playwright) | Claude Code | Originale | Cap. 6 — anatomia dello schermo (ricostruzione stilizzata) |
 | IMG-06-02 | assets/cap06/IMG-06-02-permesso.png | Originale: build/figure/cap06.py (terminale.py + Playwright) | Claude Code | Originale | Cap. 6 — richiesta di permesso (ricostruzione stilizzata) |
 

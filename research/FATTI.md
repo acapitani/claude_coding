@@ -126,6 +126,9 @@ Numerazione: F-0xx storia dell'informatica · F-1xx origini · F-2xx lancio e ta
 | F-216 | 03/12/2025: Anthropic acquisisce Bun, il runtime JavaScript su cui gira Claude Code | https://www.anthropic.com/news/anthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone | A | 4 |
 | F-217 | 07/01/2026: versione 2.1.0 | registro npm | A | 4 |
 | F-218 | 31/03/2026: il codice sorgente finisce per errore nel pacchetto npm 2.1.88 (source map); Anthropic conferma: errore umano | https://bleepingcomputer.com/news/artificial-intelligence/claude-code-source-code-accidentally-leaked-in-npm-package | A | 4 |
+| F-220 | La versione 2.1.88 fu pubblicata su npm per poco tempo e conteneva un file `cli.js.map` di circa 60 MB con il codice sorgente; dal file si ricostruirono circa 1.900 file e 500.000 righe | https://bleepingcomputer.com/news/artificial-intelligence/claude-code-source-code-accidentally-leaked-in-npm-package (31/03/2026, accesso 2026-11-05) | A | 4 |
+| F-221 | Dichiarazione di Anthropic: «una release di Claude Code includeva del codice sorgente interno. Nessun dato sensibile dei clienti né credenziali sono stati coinvolti o esposti. È stato un problema di confezionamento della release causato da errore umano, non una violazione della sicurezza»; annunciate misure per evitare che si ripeta | https://bleepingcomputer.com/news/artificial-intelligence/claude-code-source-code-accidentally-leaked-in-npm-package (31/03/2026, accesso 2026-11-05) | A | 4 |
+| F-222 | Anthropic inviò richieste di rimozione (DMCA) per le copie pubblicate online | https://bleepingcomputer.com/news/artificial-intelligence/claude-code-source-code-accidentally-leaked-in-npm-package (31/03/2026, accesso 2026-11-05) | A | 4 |
 | F-219 | 14/04/2026: Routines in research preview — attività eseguite sull'infrastruttura web, avviate a orario, via API o da webhook GitHub; limiti giornalieri Pro 5, Max 15, Team/Enterprise 25; si creano su claude.ai/code o con `/schedule` | https://claude.com/blog/introducing-routines-in-claude-code | A | 18, 24, 25 |
 
 ## F-3xx — Funzionalità (cap. 4–9, 20–24)
@@ -233,6 +236,8 @@ Numerazione: F-0xx storia dell'informatica · F-1xx origini · F-2xx lancio e ta
 | F-620 | Il menu di rewind si apre con `/rewind` o con Esc due volte a casella vuota; opzioni: ripristinare codice e conversazione, solo la conversazione, solo il codice, oppure riassumere da/fino a quel punto | https://code.claude.com/docs/en/checkpointing | A | 6 |
 | F-621 | I checkpoint si salvano con la conversazione (valgono anche riprendendo la sessione), ultimi 100 per sessione, cancellati di norma dopo circa 30 giorni (`cleanupPeriodDays`) | https://code.claude.com/docs/en/checkpointing | A | 6 |
 | F-622 | Al primo utilizzo Claude Code chiede di accedere (login) | https://code.claude.com/docs/en/quickstart | A | 5, 6 |
+| F-623 | `/release-notes` («View release notes») mostra le note di rilascio; l'impostazione `autoUpdatesChannel` sceglie il canale degli aggiornamenti automatici, `latest` o `stable` | binario 2.1.318 (stringhe), accesso 2026-11-05 | A | 4, 5 |
+| F-624 | Il file CHANGELOG.md del repository anthropics/claude-code elenca le novità di ogni versione | https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md (accesso 2026-11-05) | A | 4 |
 
 ## F-7xx — Uso reale, anche fuori dalla programmazione (Parte IV, cap. 4)
 
