@@ -58,6 +58,7 @@ Licenze ammesse: pubblico dominio, CC0, CC BY, CC BY-SA, unDraw.
 | IMG-24-02 | assets/cap24/IMG-24-02-pipeline.png | Originale: build/figure/cap24.py (Graphviz), dalla prova reale | Claude Code | Originale | Cap. 24, fig. 24.2 — claude -p dentro uno script |
 | IMG-25-01 | assets/cap25/IMG-25-01-superfici.png | Originale: build/figure/cap25.py (HTML), dati F-210…F-219, F-351 | Claude Code | Originale | Cap. 25, fig. 25.1 — dove vivo: le superfici |
 | IMG-25-02 | assets/cap25/IMG-25-02-modelli.png | Originale: build/figure/cap25.py (HTML), dati F-401…F-417 | Claude Code | Originale | Cap. 25, fig. 25.2 — i modelli 2025–2026 |
+| IMG-26-01 | assets/cap26/IMG-26-01-commiato.png | Originale: build/figure/cap26.py (HTML, glifi DejaVu Sans) | Claude Code | Originale | Cap. 26, fig. 26.1 — vignetta di commiato |
 
 Licenze verificate il 2026-11-04 tramite API di Wikimedia Commons (campo LicenseShortName) e pagina del file.
 Le immagini ridimensionate (lato lungo ≤ 2400 px, salvo l'ENIAC a 3840 px) non sono state altrimenti alterate.
