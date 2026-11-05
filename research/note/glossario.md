@@ -75,3 +75,9 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | revisione del codice | 12 | Rilettura delle modifiche da parte di un'altra persona (o di Claude) prima di accettarle |
 | pull request | 12 | Proposta di unire un branch, da rivedere e approvare (su GitHub) |
 | GitHub | 12 | Servizio online che ospita repository e il lavoro di gruppo |
+| libreria standard | 13 | Gli strumenti che un linguaggio (es. Python) ha già di serie, senza installare altro |
+| SQLite | 13 | Database completo contenuto in un solo file |
+| database | 13 | Archivio ordinato di dati, interrogabile da un programma |
+| localhost | 13 | Il nome con cui un computer chiama se stesso: una pagina «locale» |
+| caso limite | 13 | Situazione ai margini (gennaio, campo vuoto, zero) dove si nascondono gli errori |
+| CSV | 13 | File di testo con dati in colonne separate da un simbolo, leggibile da Excel |

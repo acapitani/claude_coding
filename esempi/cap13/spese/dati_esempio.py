@@ -1,7 +1,11 @@
-"""Riempie spese.db con un mese di spese inventate, per provare l'applicazione."""
+"""Riempie spese.db con due mesi di spese inventate, per provare l'applicazione."""
 import spese
 
 ESEMPIO = [
+    ("2026-09-01", "Casa", "Affitto", "650"),
+    ("2026-09-04", "Spesa", "Supermercato", "71,10"),
+    ("2026-09-15", "Casa", "Bolletta gas", "41,80"),
+    ("2026-09-22", "Spesa", "Supermercato", "66,30"),
     ("2026-10-01", "Casa", "Affitto", "650"),
     ("2026-10-02", "Spesa", "Supermercato", "62,40"),
     ("2026-10-05", "Trasporti", "Abbonamento autobus", "35"),

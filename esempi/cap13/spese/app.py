@@ -40,6 +40,8 @@ def pagina(mese, messaggio=""):
         for i, d, c, t, cent in spese.del_mese(DB, mese))
     opzioni = "".join(f"<option>{c}</option>" for c in spese.CATEGORIE)
     totale = spese.euro(sum(totali.values()))
+    prima = spese.totale(DB, spese.mese_precedente(mese))
+    confronto = f" (mese precedente: {spese.euro(prima)})" if prima else ""
     return f"""<!doctype html><html lang="it"><meta charset="utf-8">
 <title>Spese di casa</title><style>
 body {{ font-family: system-ui, sans-serif; background: #f4f1ea; margin: 0; color: #1f1e1d }}
@@ -55,7 +57,7 @@ td button {{ border: 0; color: #999 }} svg text {{ font-size: 14px }} svg .val {
 .messaggio {{ background: #fbe9e5; padding: 8px 12px; border-radius: 6px }}
 .mese {{ display: flex; gap: 8px; align-items: center; margin: 18px 0 8px }}
 </style><main>
-<h1>Spese di casa</h1><p class="sotto">Totale di {mese[5:]}/{mese[:4]}: <b>{totale}</b></p>
+<h1>Spese di casa</h1><p class="sotto">Totale di {mese[5:]}/{mese[:4]}: <b>{totale}</b>{confronto}</p>
 {f'<p class="messaggio">{html.escape(messaggio)}</p>' if messaggio else ''}
 <form class="nuova" method="post" action="/aggiungi">
  <input type="date" name="data" value="{date.today().isoformat()}" required>

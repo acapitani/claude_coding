@@ -74,6 +74,17 @@ def totali_per_categoria(db, mese):
     return {c: t for c, t in sorted(righe, key=lambda r: -r[1])}
 
 
+def mese_precedente(mese):
+    """'2026-01' -> '2025-12'."""
+    anno, m = int(mese[:4]), int(mese[5:7])
+    return f"{anno - 1}-12" if m == 1 else f"{anno}-{m - 1:02d}"
+
+
+def totale(db, mese):
+    """Totale del mese in centesimi (0 se non ci sono spese)."""
+    return sum(totali_per_categoria(db, mese).values())
+
+
 def euro(centesimi):
     """1234567 -> '12.345,67 €' (formato italiano)."""
     intero, cent = divmod(centesimi, 100)

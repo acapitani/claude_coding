@@ -38,6 +38,13 @@ class TestSpese(unittest.TestCase):
         self.assertEqual(spese.totali_per_categoria(self.db, "2026-10"),
                          {"Casa": 8000, "Spesa": 5800})
 
+    def test_mese_precedente(self):
+        self.assertEqual(spese.mese_precedente("2026-10"), "2026-09")
+        self.assertEqual(spese.mese_precedente("2026-01"), "2025-12")
+
+    def test_totale_del_mese_vuoto(self):
+        self.assertEqual(spese.totale(self.db, "2026-09"), 0)
+
     def test_dati_sbagliati_non_entrano(self):
         with self.assertRaises(ValueError):
             spese.aggiungi(self.db, "2026-02-30", "Casa", "Data impossibile", "10")

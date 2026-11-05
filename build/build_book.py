@@ -497,6 +497,13 @@ class Costruttore:
         larghezza_tabella(tab, stili.LARGHEZZA_TESTO_CM)
         margini_cella(tab, 0.15, 0.3, 0.15, 0.3)
         cella = tab.cell(0, 0)
+        if len(contenuto.splitlines()) <= 30:     # i blocchi brevi non si spezzano tra due pagine
+            tab.rows[0]._tr.get_or_add_trPr().append(stili.elemento("w:cantSplit"))
+            # e il paragrafo che li introduce («…così:») resta sulla stessa pagina
+            prec = tab._tbl.getprevious()
+            if prec is not None and prec.tag == qn("w:p"):
+                from docx.text.paragraph import Paragraph
+                Paragraph(prec, target).paragraph_format.keep_with_next = True
         if terminale:
             bordi_tabella(tab, {})
             sfondo_cella(cella, stili.FONDO_TERMINALE)
