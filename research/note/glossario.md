@@ -118,3 +118,5 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | headless | 24 | Modalità senza interfaccia (`claude -p`): una richiesta, un risultato, poi Claude Code esce |
 | JSON Schema | 24 | Descrizione di un formato di dati; con `--json-schema` Claude Code risponde in quel formato |
 | Agent SDK | 24 | Librerie Python e TypeScript per usare il motore di Claude Code nei propri programmi |
+| cloud sessions | 25 | Sessioni di Claude Code che girano sui computer di Anthropic, avviate dal browser |
+| Claude Tag | 25 | Claude in Slack, erede di Claude Code in Slack |

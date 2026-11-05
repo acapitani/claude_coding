@@ -56,6 +56,8 @@ Licenze ammesse: pubblico dominio, CC0, CC BY, CC BY-SA, unDraw.
 | IMG-23-02 | assets/cap23/IMG-23-02-configurazione.png | Originale: build/figure/cap23.py (finto terminale), dalla prova reale (research/note/mcp-cap23-*.txt/jsonl) | Claude Code | Originale | Cap. 23, fig. 23.2 — configurazione del server «archivio» (ricostruzione stilizzata) |
 | IMG-24-01 | assets/cap24/IMG-24-01-plugin.png | Originale: build/figure/cap24.py (finto terminale), struttura reale di esempi/cap24/marketplace | Claude Code | Originale | Cap. 24, fig. 24.1 — il plugin ufficio-anna (ricostruzione stilizzata) |
 | IMG-24-02 | assets/cap24/IMG-24-02-pipeline.png | Originale: build/figure/cap24.py (Graphviz), dalla prova reale | Claude Code | Originale | Cap. 24, fig. 24.2 — claude -p dentro uno script |
+| IMG-25-01 | assets/cap25/IMG-25-01-superfici.png | Originale: build/figure/cap25.py (HTML), dati F-210…F-219, F-351 | Claude Code | Originale | Cap. 25, fig. 25.1 — dove vivo: le superfici |
+| IMG-25-02 | assets/cap25/IMG-25-02-modelli.png | Originale: build/figure/cap25.py (HTML), dati F-401…F-417 | Claude Code | Originale | Cap. 25, fig. 25.2 — i modelli 2025–2026 |
 
 Licenze verificate il 2026-11-04 tramite API di Wikimedia Commons (campo LicenseShortName) e pagina del file.
 Le immagini ridimensionate (lato lungo ≤ 2400 px, salvo l'ENIAC a 3840 px) non sono state altrimenti alterate.

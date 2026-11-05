@@ -312,6 +312,8 @@ Numerazione: F-0xx storia dell'informatica · F-1xx origini · F-2xx lancio e ta
 | F-629 | `/loop` «Run a prompt or slash command on a recurring interval (e.g. /loop 5m /foo). Omit the interval to let the model self-pace» | binario 2.1.318 (stringhe; `claude --help`), accesso 2026-11-05 | A | 18, 24 |
 | F-630 | `/schedule` (alias `routines`) «Create and manage scheduled remote Claude Code agents» | binario 2.1.318 (stringhe; `claude --help`), accesso 2026-11-05 | A | 18, 24 |
 | F-631 | `claude -p` / `--print` «Print response and exit (useful for pipes)»; `--allowedTools` / `--disallowedTools` elencano gli strumenti permessi o vietati; `--output-format` vale solo con `--print` | binario 2.1.318 (stringhe; `claude --help`), accesso 2026-11-05 | A | 18, 24 |
+| F-632 | Registro npm di `@anthropic-ai/claude-code`: 561 versioni pubblicate dal 24/02/2025 al 03/11/2026 (2.1.318), 285 nel 2025 e 276 nel 2026; canali `latest` = 2.1.318 e `stable` = 2.1.311 | https://registry.npmjs.org/@anthropic-ai/claude-code (campo `time` e `dist-tags`, accesso 2026-11-05) | A | 25 |
+| F-633 | `claude --help` (2.1.318): `--model` accetta «an alias for the latest model (e.g. 'fable', 'opus', or 'sonnet') or a model's full name». Le prove dei capitoli 20–24 sono state eseguite con `claude-opus-5-5` (campo `modelUsage` dei registri) | binario 2.1.318 ; `research/note/*.jsonl` | A | 25 |
 
 ## F-7xx — Uso reale, anche fuori dalla programmazione (Parte IV, cap. 4)
 
