@@ -51,11 +51,41 @@
 - LibreOffice (26.8): `"C:\Program Files\LibreOffice\program\soffice.com" --headless --convert-to pdf <file>`
   (usare `soffice.com`, non `soffice.exe`, per avere output in console). Non è nel PATH.
 - Graphviz (16.1): `"C:\Program Files\Graphviz\bin\dot.exe"`. Playwright + Chromium installati in `build/`.
-- Build:            `py build/build_book.py`
-- Indici + PDF:     `py build/update_indexes.py`   (LibreOffice headless)
-- Controlli:        `py build/check_book.py`       (pagine 160–200, metadati, crediti, fatti, TODO)
-- Anteprime:        `py build/render_pages.py --sample 12`
-- Una figura:       `py build/figure/<script>.py` oppure `node build/figure/render.mjs <file.html>`
+- **Ciclo normale** (dalla radice del progetto):
+  1. `py build/update_indexes.py`   — costruisce il .docx, lo impagina con LibreOffice e ripete finché
+     indici, pagine bianche e numeri di pagina sono stabili (2–3 passaggi). Scrive `output/claude-coding.docx`
+     e `.pdf`, più `.pagine.json` e `.struttura.json` (dati di impaginazione).
+  2. `py build/check_book.py`       — controlli (pagine, metadati, crediti, fatti, TODO, righe di codice,
+     **parole/pagina per capitolo**). `--finale` rende bloccante l'intervallo 160–200.
+  3. `py build/render_pages.py --pagine 13-20 --foglio` — PNG in `output/anteprime/` da guardare
+     (`--foglio` = libro aperto; `--sample 12` = campione; `--tutte --dpi 50` = provino).
+- Solo il .docx, veloce (numeri di pagina dell'ultima impaginazione): `py build/build_book.py`
+- Prova della toolchain: aggiungere `--config book-prova.yaml` (capitoli di prova in `capitoli/_prova`).
+- Figure: diagrammi con `build/figure/grafo.py` (stile del libro già applicato, vedi `prova_ciclo.py`);
+  HTML/SVG → PNG con `node build/figure/render.mjs in.html out.png --larghezza-cm 13 [--altezza-cm 8] [--dpi 300]`.
+- Word è installato: per una verifica finale aprire il .docx via COM (PowerShell) ed esportare il PDF;
+  in S2 Word e LibreOffice hanno dato la stessa impaginazione pagina per pagina.
+
+## Markdown dei capitoli
+- Il primo `# Titolo` è il titolo del capitolo (numero ed etichetta li aggiunge la build).
+  `##` entra nell'indice generale, `###` no.
+- Box: `::: nota` / `::: consiglio Titolo facoltativo` / `::: attenzione` … `:::`
+- Codice: ```` ```python ```` ; finto terminale: ```` ```terminale ```` (le righe che iniziano con `$ `, `> `,
+  `PS …> ` hanno il prompt arancio; `#` = commento; i glifi dello spinner diventano arancio).
+  Massimo **68 caratteri** per riga di codice.
+- Figura (paragrafo da sola): `![Didascalia senza "Figura N.M"](assets/capNN/IMG-NN-MM-slug.png){larghezza=10}`
+  (`larghezza` in cm, max 13; `altezza_max` in cm, predefinita 11). Numero e "Figura" li mette la build.
+- Indice analitico: `[testo]{xe="voce"}`. Tasti: `[Ctrl+C]{.tasto}`. Fatti: `<!-- F-NNN -->`.
+- `---` = separatore ✻. `> citazione` = stile citazione. Le virgolette "dritte" diventano «caporali».
+- Pagine semplici (colophon, dedica): gli a capo del sorgente restano a capo.
+
+## Impaginazione (decisioni della S2)
+- Ogni sezione inizia su pagina nuova; le **pagine bianche** per mandare a destra capitoli, parti e
+  pagine preliminari le calcola `update_indexes.py` misurando il PDF (non si usano le interruzioni
+  "pagina dispari": LibreOffice le gestisce male con le prime pagine dei capitoli).
+- Numerazione romana dalla copertina, araba da 1 alla Parte I. Prima pagina di capitolo: solo numero
+  centrato. Pari: titolo del libro a sinistra; dispari: capitolo a destra; piede con numero e "Claude Code".
+- L'indice generale e l'indice analitico contengono i numeri già calcolati (campi Word aggiornabili con F9).
 
 ## Checklist di fine capitolo
 1. Lunghezza entro ±10% del budget di parole in PLAN.md §5.

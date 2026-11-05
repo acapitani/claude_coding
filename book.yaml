@@ -18,14 +18,20 @@ pagina:
   pagine_max: 200
   pagine_obiettivo: 180
 
+output: claude-coding
 copertina: assets/copertina/cover.png
 
+# Voci speciali: frontespizio (generato dai metadati), indice (indice generale), crediti
+# (Appendice generata da assets/CREDITI.md), indice-analitico. Le altre voci sono file in capitoli/.
+cartella_capitoli: capitoli
+indice_livelli: 2
+
 preliminari:            # numerazione romana
-  - capitoli/00-frontespizio.md
-  - capitoli/00-colophon.md
-  - capitoli/00-dedica.md
-  - indice                # campo TOC generato
-  - capitoli/00-prefazione.md
+  - frontespizio
+  - 00-colophon         # sul retro del frontespizio
+  - 00-dedica
+  - indice
+  - 00-prefazione
 
 parti:                  # numerazione araba da qui
   - titolo: "Le origini"
@@ -48,8 +54,8 @@ parti:                  # numerazione araba da qui
     capitoli: [25-dove-sono-adesso, 26-cosa-ho-imparato]
 
 appendici:
-  - capitoli/app-a-comandi.md
-  - capitoli/app-b-glossario.md
-  - capitoli/app-c-risorse.md
-  - capitoli/app-d-crediti.md       # generata da assets/CREDITI.md
+  - app-a-comandi
+  - app-b-glossario
+  - app-c-risorse
+  - crediti             # Appendice D, generata da assets/CREDITI.md
   - indice-analitico

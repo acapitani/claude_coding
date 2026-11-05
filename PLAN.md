@@ -326,12 +326,13 @@ Tutte le figure generate sono originali, con licenza "© Claude Code / il proget
   - Sezione 2: pagine preliminari, numeri romani minuscoli.
   - Sezioni successive: una per capitolo, numeri arabi che ripartono da 1 all'inizio della Parte I. Intestazione pari = "/claude ✻ Coding", dispari = titolo del capitolo. Piè di pagina = numero di pagina + "Claude Code".
   - I capitoli iniziano su pagina dispari (interruzione di sezione "pagina dispari").
-- **Indice generale**: campo TOC (livelli 1–2) aggiornato da LibreOffice headless con una macro UNO (`build/update_indexes.py`), che salva sia il DOCX aggiornato sia il PDF. **Indice analitico**: campi XE + campo INDEX, aggiornati dalla stessa macro; se il risultato non è affidabile, si ripiega su un indice statico generato da un elenco di termini cercati nel PDF.
+- **Indice generale** (deciso in S2): campo TOC il cui risultato è già calcolato da `build/update_indexes.py`, che impagina in più passaggi (build → PDF con LibreOffice → lettura delle pagine reali → nuova build) finché i numeri sono stabili. Niente macro UNO: il .docx finale resta quello di python-docx, senza passaggi di salvataggio da LibreOffice. **Indice analitico**: voci `[testo]{xe="voce"}` (campi XE nel .docx) e pagine ricavate dal PDF, impaginato su due colonne. In Word i campi restano aggiornabili con F9.
+- **Pagine bianche** (deciso in S2): ogni sezione inizia su pagina nuova; le bianche che mandano a destra capitoli e parti le calcola `update_indexes.py` misurando il PDF. Le interruzioni "pagina dispari" di Word non si usano perché LibreOffice, dopo una bianca inserita da lui, applica male la prima pagina del capitolo.
 - **Metadati DOCX**: `core_properties.author = "Claude Code"`, title, subject, language `it-IT`, keywords. Lingua `it-IT` su tutti gli stili, per la correzione ortografica.
 
 ### 7.4 Pipeline di build
-1. `py build/build_book.py`: legge `book.yaml` (ordine dei capitoli e metadati), converte ogni `capitoli/*.md` e scrive `output/claude-coding.docx`.
-2. `py build/update_indexes.py`: LibreOffice headless aggiorna TOC e indice analitico ed esporta `output/claude-coding.pdf`.
+1. `py build/build_book.py`: legge `book.yaml` (ordine dei capitoli e metadati), converte ogni `capitoli/*.md` e scrive `output/claude-coding.docx` (con i numeri di pagina dell'ultima impaginazione).
+2. `py build/update_indexes.py`: ripete build e conversione PDF (LibreOffice headless, con esportazione delle pagine bianche) finché indici e pagine bianche sono stabili; scrive `output/claude-coding.docx` e `.pdf`.
 3. `py build/check_book.py`: conta le pagine (PyMuPDF), verifica l'intervallo 160–200, la presenza dell'autore nei metadati, didascalie e crediti per ogni figura, i rimandi `F-xxx` esistenti in FATTI.md, l'assenza di segnaposto TODO.
 4. `py build/render_pages.py --sample 12`: renderizza pagine a campione in PNG (`output/anteprime/`) per l'ispezione visiva (incluse copertina, pagina con box, pagina con codice, apertura di capitolo).
 5. Azioni correttive per il numero di pagine:
@@ -486,6 +487,7 @@ Ogni sessione si chiude con un commit git (regole in CLAUDE.md, sezione "Git"). 
 | Licenze delle immagini | Solo le licenze ammesse, con verifica sulla pagina originale; CC BY-SA con attribuzione e immagine non modificata; in caso di dubbio, illustrazione originale |
 | Marchi | Nessun logo; nome usato solo in modo descrittivo; disclaimer nel colophon ("libro non ufficiale, non affiliato ad Anthropic") |
 | Sforamento delle pagine (in più o in meno) | Pilota di calibrazione (S4), build ogni 5 capitoli, azioni correttive di §7.4 |
+| Densità più alta del previsto (S2: ~390 parole per pagina di solo testo, contro le 260 medie stimate) → libro sotto le 160 pagine con ~42.000 parole | Misurare nel pilota S4 le parole per pagina reali con figure, box e codice; se restano sopra ~300, alzare il budget di parole (fino a ~50.000) o la densità di figure ed esempi, oppure passare il corpo a 11 pt / interlinea 1,25 (decisione da prendere in S4 con l'utente) |
 | Glifo ✻ non supportato dai font | Copertina come immagine; nel testo, run con Segoe UI Symbol e fallback DejaVu Sans; verifica con fontTools in S0 e controllo visivo sul PDF |
 | Resa del DOCX diversa tra Word e LibreOffice | Font Office con equivalenti metrici; controllo campione anche in Word; niente funzioni esotiche (caselle di testo flottanti → tabelle) |
 | TOC o indice analitico non aggiornati in modalità headless | Macro UNO dedicata; in alternativa TOC statico generato dalle pagine del PDF (due passaggi) |
@@ -500,7 +502,7 @@ Ogni sessione si chiude con un commit git (regole in CLAUDE.md, sezione "Git"). 
 |---|---|---|---|---|---|---|
 | S0 | Fondamenta (CLAUDE.md, cartelle, strumenti) | — | — | ✅ 2026-11-04 | — | Installati: pacchetti Python, LibreOffice 26.8, Graphviz 16.1, Playwright+Chromium. Test DOCX→PDF 17×24 ok, ✻ incorporato (Segoe UI Symbol). Consolas/Cambria senza ✻: vedi research/note/font.md |
 | S1 | Ricerca (FATTI.md, CREDITI.md, spinner) | — | — | ✅ 2026-11-04 | — | FATTI.md: 129 voci (9 non verificate, escluse). Spinner e colore verificati sul binario 2.1.318 e sul pacchetto 0.2.9. 7 immagini Wikimedia in assets/cap01 (4 + 3 di riserva), licenze ricontrollate via API. Da leggere a mano prima del cap. 2: "The Making of Claude Code" (F-106) |
-| S2 | Toolchain di build | — | — | ☐ | | |
+| S2 | Toolchain di build | — | — | ✅ 2026-11-05 | 27 (prova) | build_book, update_indexes (impaginazione a più passaggi), check_book, render_pages, grafo.py, render.mjs. Libro di prova con tutti gli elementi: Word e LibreOffice danno le stesse 27 pagine. **Calibrazione**: pagina di solo testo ≈ 390 parole (non 260): da verificare nel pilota S4, rischio di libro sotto le 160 pagine |
 | S3 | Copertina e pagine preliminari | 4 | 300 | ☐ | | |
 | — | Indice + Prefazione | 8 | 900 | ☐ | | |
 | 1 | Da dove vengo | 8 | 1.900 | ☐ | | |

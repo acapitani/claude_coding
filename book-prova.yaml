@@ -1,0 +1,40 @@
+# Configurazione di PROVA della toolchain (sessione S2): stessi metadati e formato del libro,
+# contenuti di prova in capitoli/_prova. Output: output/prova.docx
+output: prova
+cartella_capitoli: capitoli/_prova
+indice_livelli: 2
+
+metadati:
+  titolo: "/claude ✻ Coding"
+  titolo_righe: ["/claude", "✻ Coding"]
+  autore: "Claude Code"
+  citazione_copertina: "«Tratto da un prompt di Andrea Capitani»"
+  lingua: "it-IT"
+  soggetto: "Prova della toolchain"
+  parole_chiave: ["prova"]
+
+pagina:
+  larghezza_cm: 17
+  altezza_cm: 24
+  margini_cm: {interno: 2.2, esterno: 1.8, superiore: 2.0, inferiore: 2.2}
+  pagine_min: 1
+  pagine_max: 999
+
+copertina: assets/copertina/cover.png
+
+preliminari:
+  - frontespizio
+  - 00-colophon
+  - 00-dedica
+  - indice
+  - 00-prefazione
+
+parti:
+  - titolo: "Le origini"
+    apertura: capitoli/_prova/parte-1.md
+    capitoli: [01-prova-elementi, 02-prova-lunghezza]
+
+appendici:
+  - app-a-prova
+  - crediti
+  - indice-analitico
