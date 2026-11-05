@@ -6,6 +6,8 @@ Ricordo bene, per modo di dire, il marzo del 2025. Ero al mondo da pochi giorni 
 
 Nel capitolo 7 abbiamo visto come scrivere una buona richiesta, e nel capitolo 8 come scrivere nel CLAUDE.md le regole che valgono sempre. Ma c'è una terza categoria: le *procedure*. «Controlla questa fattura: leggi imponibile, IVA e totale, verifica che i conti tornino, rispondi in questo formato, non correggere niente.» Non è una regola da tenere sempre presente; è un lavoro da fare quando serve, sempre allo stesso modo. La documentazione dà un criterio molto pratico: quando ti accorgi di incollare nella conversazione sempre le stesse istruzioni, o quando un pezzo del CLAUDE.md è diventato una procedura invece di una regola, è il momento di farne una skill. <!-- F-386 -->
 
+![Comando e skill a confronto: il comando lo avvii tu, la skill la scelgo io quando serve](assets/cap20/IMG-20-01-comando-skill.png){larghezza=13}
+
 ## Un comando personalizzato
 
 Il modo più semplice è un comando personalizzato: un file di testo nella cartella `.claude/commands` del progetto. Il nome del file diventa il nome del comando. Ecco `riepilogo-fattura.md`:
@@ -36,14 +38,13 @@ Tre righe, giuste. La prossima volta che Anna deve riassumere una fattura, le ba
 
 ## Una skill
 
-Una [skill]{xe="skill"} è qualcosa di più: una cartella con dentro un file `SKILL.md` di istruzioni ed eventualmente altri file di supporto, come esempi o piccoli programmi. Sta in `.claude/skills/` del progetto, oppure nella cartella `.claude/skills` del tuo utente se vuoi averla in tutti i progetti. <!-- F-386 --> Ecco l'inizio di `controllo-fattura/SKILL.md`:
+Una [skill]{xe="skill"} è qualcosa di più: una cartella con un file `SKILL.md` di istruzioni ed eventuali file di supporto, come esempi o piccoli programmi. Sta nella cartella `.claude/skills/` del progetto, o in quella del tuo utente per averla ovunque. <!-- F-386 --> Ecco l'inizio di `controllo-fattura/SKILL.md`:
 
 ```markdown
 ---
-description: Controlla che una fattura sia corretta
-  (imponibile + IVA = totale, IVA al 22%). Usala quando
-  l'utente chiede di verificare, controllare o validare
-  una fattura.
+description: Controlla una fattura (imponibile + IVA =
+  totale, IVA al 22%). Usala quando l'utente chiede di
+  verificare, controllare o validare una fattura.
 ---
 # Controllo fattura
 1. Leggi la fattura indicata.
@@ -57,11 +58,9 @@ Non correggere mai la fattura: segnala soltanto.
 
 Anche questo l'ho provato. Nella stessa cartella ho chiesto, senza nominare nessuna skill: «Puoi verificarmi la fattura fatture/fattura-14.pdf?». La figura 20.2 mostra che cosa è successo: come prima mossa ho usato la skill `controllo-fattura`, poi ho letto il PDF, e ho risposto esattamente nel formato stabilito, trovando i cento euro di differenza che avevamo scoperto nel capitolo 16. <!-- F-390 -->
 
-![Comando e skill a confronto: il comando lo avvii tu, la skill la scelgo io quando serve](assets/cap20/IMG-20-01-comando-skill.png){larghezza=13}
-
 ## Comando o skill?
 
-La figura 20.1 riassume la differenza, che oggi è più sottile di quanto fosse un tempo. I comandi personalizzati sono stati infatti assorbiti dalle skill: un file in `.claude/commands/` e una skill con lo stesso nome creano lo stesso comando e funzionano allo stesso modo, e i vecchi file continuano a funzionare. Per i lavori nuovi la documentazione consiglia le skill, perché possono contenere anche file di supporto. <!-- F-385 -->
+La figura 20.1, all'inizio del capitolo, riassume la differenza, che oggi è più sottile di quanto fosse un tempo. I comandi personalizzati sono stati infatti assorbiti dalle skill: un file in `.claude/commands/` e una skill con lo stesso nome creano lo stesso comando e funzionano allo stesso modo, e i vecchi file continuano a funzionare. Per i lavori nuovi la documentazione consiglia le skill, perché possono contenere anche file di supporto. <!-- F-385 -->
 
 In pratica, il mio consiglio è questo. Se è un **gesto** che vuoi avviare tu, quando decidi tu, va benissimo un comando, o una skill che scelgo io solo quando me lo chiedi: basta aggiungere nell'intestazione `disable-model-invocation: true`. <!-- F-387 --> Se è una **competenza**, cioè un modo di fare le cose che voglio applicare ogni volta che l'argomento salta fuori, è una skill con una buona descrizione.
 

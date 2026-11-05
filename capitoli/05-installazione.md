@@ -14,7 +14,7 @@ Prima di cominciare controlla tre cose.
 
 ## Installare su Windows
 
-Apri PowerShell: premi il tasto Windows, scrivi «PowerShell» e premi Invio. Poi copia questa riga e premi Invio:
+Apri [PowerShell]{xe="PowerShell"}: premi il tasto Windows, scrivi «PowerShell» e premi Invio. Poi copia questa riga e premi Invio:
 
 ```terminale
 PS C:\Users\anna> irm https://claude.ai/install.ps1 | iex
@@ -32,7 +32,7 @@ C:\> install.cmd
 C:\> del install.cmd
 ```
 
-Chi usa WinGet, il gestore di programmi di Windows, può scrivere invece `winget install Anthropic.ClaudeCode`. <!-- F-342 --> Non serve installare altro: Git for Windows è facoltativo, e senza di lui uso PowerShell per eseguire i comandi. Se usi già WSL, il Linux integrato in Windows, puoi installarmi anche lì, con il comando per Linux. <!-- F-341 -->
+Chi usa [WinGet]{xe="WinGet"}, il gestore di programmi di Windows, può scrivere invece `winget install Anthropic.ClaudeCode`. <!-- F-342 --> Non serve installare altro: Git for Windows è facoltativo, e senza di lui uso PowerShell per eseguire i comandi. Se usi già WSL, il Linux integrato in Windows, puoi installarmi anche lì, con il comando per Linux. <!-- F-341 -->
 
 ::: attenzione Solo dal sito ufficiale
 Il comando d'installazione scarica un programma da internet e lo esegue subito. È normale, ed è il metodo raccomandato, ma solo se l'indirizzo è esattamente `https://claude.ai/…`. Diffida di guide, video o messaggi che ti propongono indirizzi diversi o «versioni speciali». Nel dubbio, copia i comandi dalla documentazione ufficiale.
@@ -51,7 +51,7 @@ Su macOS, chi usa Homebrew può scrivere `brew install --cask claude-code`; su L
 ## Il primo avvio
 
 ::: consiglio Prepara una cartella di prova
-Prima di avviarmi per la prima volta, crea una cartella apposta, per esempio `Documenti\prove`, e copiaci dentro qualche file su cui fare esperimenti: un foglio Excel, due o tre documenti, qualche foto. Nel prossimo capitolo la useremo per la prima sessione. Lavorare su copie, all'inizio, toglie ogni ansia: se qualcosa va storto, si ricomincia da capo.
+Prima di avviarmi per la prima volta, crea una cartella apposta, per esempio `Documenti\prove`, e copiaci dentro qualche file su cui fare esperimenti: un foglio [Excel]{xe="Excel"}, due o tre documenti, qualche foto. Nel prossimo capitolo la useremo per la prima sessione. Lavorare su copie, all'inizio, toglie ogni ansia: se qualcosa va storto, si ricomincia da capo.
 :::
 
 Entra nella cartella in cui vuoi lavorare, come vedremo meglio nel prossimo capitolo, e scrivi `claude`. La prima volta si apre il browser e ti chiedo di accedere con il tuo account; poi torni al terminale e sei pronto. <!-- F-345 --> Se in futuro dovrai cambiare account, durante una sessione scrivi `/login`. Con un account Console, al primo accesso viene creato uno spazio di lavoro chiamato «Claude Code» per tenere traccia dei costi. <!-- F-345 -->
@@ -92,15 +92,15 @@ PS> [Environment]::SetEnvironmentVariable('PATH', $p, 'User')
 
 Su macOS la riga equivalente è `echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc`. Le tre righe per PowerShell, tradotte: la prima legge l'elenco attuale, la seconda ci aggiunge in fondo la cartella in cui mi sono installato, la terza lo salva. Niente viene cancellato. Poi, di nuovo, chiudi e riapri il terminale. E se qualcosa continua a non funzionare, ricordati di `claude doctor`.
 
-::: nota Disinstallarmi
-Spero che non succeda, ma è giusto saperlo. Con WinGet basta `winget uninstall Anthropic.ClaudeCode`. Con l'installazione standard si cancellano due elementi nella cartella del tuo utente: il file `.local\bin\claude.exe` e la cartella `.local\share\claude` (su macOS e Linux: `~/.local/bin/claude` e `~/.local/share/claude`). Le impostazioni restano nella cartella `.claude` e nel file `.claude.json`: cancellali solo se vuoi dimenticarmi del tutto. <!-- F-350 -->
-:::
-
 ## Non solo terminale
 
 Il terminale è casa mia, e questo libro parte da lì. Ma non è l'unico posto in cui puoi trovarmi. Esisto come app desktop per Windows, macOS e Linux, dentro gli editor di codice VS Code e JetBrains, sul web all'indirizzo claude.ai/code, in Slack e nelle procedure automatiche di GitHub e GitLab. <!-- F-351 --> Le idee di questo libro ti serviranno anche lì, anche se i pulsanti saranno diversi. Un'avvertenza per chi ha installato solo l'estensione di VS Code: si porta dietro una sua copia di me, ad uso del suo pannello, e non rende disponibile il comando `claude` nel terminale. Per seguire il libro serve l'installazione descritta in questo capitolo. <!-- F-351 -->
 
-![Dove posso usarmi: il terminale è il punto di partenza di questo libro](assets/cap05/IMG-05-02-dove.png){larghezza=11}
+![Dove posso usarmi: il terminale è il punto di partenza di questo libro](assets/cap05/IMG-05-02-dove.png){larghezza=10}
+
+::: nota Disinstallarmi
+Spero che non succeda, ma è giusto saperlo. Con WinGet basta `winget uninstall Anthropic.ClaudeCode`. Con l'installazione standard si cancellano due elementi nella cartella del tuo utente: il file `.local\bin\claude.exe` e la cartella `.local\share\claude` (su macOS e Linux: `~/.local/bin/claude` e `~/.local/share/claude`). Le impostazioni restano nella cartella `.claude` e nel file `.claude.json`: cancellali solo se vuoi dimenticarmi del tutto. <!-- F-350 -->
+:::
 
 ## In breve
 

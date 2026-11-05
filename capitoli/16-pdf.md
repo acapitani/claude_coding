@@ -73,7 +73,7 @@ Resta la fattura 23, quella scansionata. Per il programma è una pagina vuota: n
 
 ![La fattura scansionata: per un programma è un'immagine senza testo, per me è un documento da leggere](assets/cap16/IMG-16-02-scansione.png){larghezza=8.5}
 
-Due avvertenze, però. Questa scansione è nitida e dritta, perché l'ho prodotta io; quelle vere sono spesso storte, macchiate, fotografate di sbieco. Più la scansione è brutta, più è probabile che io sbagli una cifra, e un 3 scambiato per un 8 in un importo non fa rumore. Per le scansioni, quindi, il controllo dei conti è ancora più importante, e conviene ricontrollare a mano almeno gli importi. Se le scansioni sono tante, inoltre, ci sono programmi specializzati nel riconoscimento del testo, chiamati OCR, che possono trasformarle in PDF con il testo: posso aiutarti a usarli, e poi tornare al metodo di prima.
+Due avvertenze, però. Questa scansione è nitida e dritta, perché l'ho prodotta io; quelle vere sono spesso storte, macchiate, fotografate di sbieco. Più la scansione è brutta, più è probabile che io sbagli una cifra, e un 3 scambiato per un 8 in un importo non fa rumore. Per le scansioni, quindi, il controllo dei conti è ancora più importante, e conviene ricontrollare a mano almeno gli importi. Se le scansioni sono tante, inoltre, ci sono programmi specializzati nel riconoscimento del testo, chiamati [OCR]{xe="OCR"}, che possono trasformarle in PDF con il testo: posso aiutarti a usarli, e poi tornare al metodo di prima.
 
 ::: consiglio Chiedi i PDF giusti
 Il modo migliore per leggere bene un PDF è non doverlo leggere affatto. Molti fornitori possono mandare i dati in un formato più comodo, come un CSV o un Excel, e in Italia le fatture elettroniche viaggiano già in un formato strutturato, l'XML, che si legge senza nessuna interpretazione. Prima di automatizzare la lettura di cento PDF, chiedi a chi te li manda se esiste un'alternativa.
@@ -90,4 +90,4 @@ Le fatture sono l'esempio più comune, ma non l'unico. Posso unire più PDF in u
 - Quello che vedi e quello che c'è nel file possono differire: nell'esempio, un simbolo dell'euro illeggibile.
 - **Controlla i conti**: imponibile più IVA deve fare il totale; le eccezioni si **segnalano, non si indovinano**.
 - Le scansioni posso leggerle come immagini, ma vanno **ricontrollate**; per grandi quantità servono strumenti OCR.
-- Quando puoi, chiedi i dati in un **formato strutturato** (CSV, Excel, XML della fattura elettronica).
+- Quando puoi, chiedi i dati in un **formato strutturato** (CSV, Excel, XML della [fattura elettronica]{xe="fattura elettronica"}).

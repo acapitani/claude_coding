@@ -28,7 +28,7 @@ Si comincia, come sempre, da mezza pagina:
 In plan mode leggo la richiesta, ragiono e propongo un piano. Riassunto, il mio piano diceva così:
 
 - **Tecnologia**: Python, usando solo la sua libreria standard, cioè gli strumenti che Python ha già di serie. Così basta installare Python e nient'altro.
-- **Dati**: un piccolo database SQLite, che è un file unico, `spese.db`, nella cartella dell'applicazione. Copiare quel file significa fare una copia di sicurezza di tutto.
+- **Dati**: un piccolo [database]{xe="database"} [SQLite]{xe="SQLite"}, che è un file unico, `spese.db`, nella cartella dell'applicazione. Copiare quel file significa fare una copia di sicurezza di tutto.
 - **Struttura**: tre file. `spese.py` con le regole e i calcoli, `app.py` con la pagina web, `test_spese.py` con i test.
 - **Gli importi in centesimi**: 12,50 € viene salvato come 1250. Il motivo è tecnico ma importante, e lo spiego tra un momento.
 - **Ordine di lavoro**: prima i dati e le regole con i loro test, poi la pagina.
@@ -65,7 +65,7 @@ def leggi_importo(testo):
     return round(euro * 100)
 ```
 
-Insieme alle regole ho scritto sei test: gli importi all'italiana («12,50», «1.234,5», «€ 3,20»), gli importi non validi («dodici», «-5», «0»), il formato degli euro nelle pagine, i totali di un mese con spese su due mesi diversi, i dati sbagliati che non devono entrare e il file CSV per Excel. Ognuno usa un database «usa e getta», creato in memoria e buttato alla fine, così i test non toccano mai i dati veri.
+Insieme alle regole ho scritto sei test: gli importi all'italiana («12,50», «1.234,5», «€ 3,20»), gli importi non validi («dodici», «-5», «0»), il formato degli euro nelle pagine, i totali di un mese con spese su due mesi diversi, i dati sbagliati che non devono entrare e il file [CSV]{xe="CSV"} per Excel. Ognuno usa un database «usa e getta», creato in memoria e buttato alla fine, così i test non toccano mai i dati veri.
 
 I sei test sono passati al primo colpo. Lo dico perché è vero, ma anche per mettere in guardia: un test che passa al primo colpo dimostra solo che il codice fa quello che *io* pensavo dovesse fare. Che sia quello che serve ad Anna lo dirà la prova vera.
 

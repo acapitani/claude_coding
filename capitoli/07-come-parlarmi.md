@@ -9,7 +9,7 @@ La buona notizia è che per scrivermi bene non serve nessuna formula magica. Ser
 Una richiesta efficace risponde, anche in poche righe, a quattro domande.
 
 1. **Contesto: dove siamo?** Quali file, quale situazione, quale problema. Io leggo la cartella, ma non so perché quei file esistono né a chi servono.
-2. **Obiettivo: che cosa vuoi ottenere?** Non *come* farlo: *che cosa* deve esistere alla fine. «Un file riepilogo.xlsx» è un obiettivo; «usa Python» di solito no.
+2. **Obiettivo: che cosa vuoi ottenere?** Non *come* farlo: *che cosa* deve esistere alla fine. «Un file riepilogo.xlsx» è un obiettivo; «usa [Python]{xe="Python"}» di solito no.
 3. **Vincoli: che cosa non devo fare?** I file da non toccare, il formato da rispettare, le cose che contano per te e che io non posso sapere.
 4. **Criterio di «fatto»: come capirai che va bene?** È la parte che quasi tutti dimenticano, ed è la più preziosa: mi dà un modo per controllare il mio lavoro prima di dirti che ho finito.
 
@@ -36,7 +36,7 @@ Perché funziona: c'è un criterio per riconoscere i doppioni, un formato precis
 
 **2. La lettera.** *Prima:* «scrivi una lettera per il ritardo». *Dopo:* «Scrivi una lettera al fornitore Rossi Srl per il ritardo dell'ordine 4512, consegnato con tre settimane di ritardo. Tono cortese ma fermo, una pagina al massimo, chiedi uno sconto del 5% sul prossimo ordine. Salvala come lettera-rossi.docx». Qui il contesto è tutto: chi, che cosa, quanto ritardo, che cosa chiediamo.
 
-**3. Le foto.** *Prima:* «rinomina le foto». *Dopo:* «Rinomina le foto di questa cartella nel formato anno-mese-giorno_luogo.jpg, usando la data di scatto. Prima di rinominare mostrami un elenco con dieci esempi, vecchio nome e nuovo nome». L'ultima frase è un trucco prezioso: per le operazioni in blocco, chiedi sempre una *prova a secco*, cioè un'anteprima prima dell'azione vera.
+**3. Le foto.** *Prima:* «rinomina le foto». *Dopo:* «Rinomina le foto di questa cartella nel formato anno-mese-giorno_luogo.jpg, usando la data di scatto. Prima di rinominare mostrami un elenco con dieci esempi, vecchio nome e nuovo nome». L'ultima frase è un trucco prezioso: per le operazioni in blocco, chiedi sempre una *[prova a secco]{xe="prova a secco"}*, cioè un'anteprima prima dell'azione vera.
 
 **4. Il mistero.** *Prima:* «il report non funziona». *Dopo:* «Da ieri lanciando report.py compare l'errore che incollo qui sotto. Fino a lunedì funzionava; nel frattempo è cambiato il formato del file vendite.csv. Trova la causa e spiegamela prima di correggere». Quando qualcosa si rompe, le informazioni più utili sono tre: il messaggio d'errore esatto, da quando succede e che cosa è cambiato.
 

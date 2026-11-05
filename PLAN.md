@@ -466,16 +466,16 @@ Ogni sessione si chiude con un commit git (regole in CLAUDE.md, sezione "Git"). 
 
 ## 11. Controlli di qualità finali
 
-- [ ] PDF da LibreOffice: **160 ≤ pagine ≤ 200** (`check_book.py`, output salvato in `output/report.txt`).
-- [ ] Metadati DOCX: Autore = "Claude Code", titolo, lingua it-IT.
-- [ ] Copertina come prima pagina: titolo su due righe con ✻ arancio, "Claude Code", citazione «Tratto da un prompt di Andrea Capitani», immagine originale, nessun logo.
-- [ ] "Claude Code" su frontespizio, colophon e piè di pagina.
-- [ ] Tutto in italiano (controllo automatico delle parole inglesi fuori da codice e glossario + rilettura).
-- [ ] Ogni marcatore `F-NNN` esiste in FATTI.md con fonte; nessun fatto di affidabilità B presentato come certo.
-- [ ] Ogni figura ha didascalia, voce in CREDITI.md e la licenza riportata nell'Appendice D; almeno una figura ogni 8 pagine in ogni capitolo.
-- [ ] TOC e intestazioni correnti corretti; numeri romani nelle pagine preliminari, arabi dal testo.
-- [ ] Nessun TODO, segnaposto o commento di lavoro nel testo.
-- [ ] Ispezione visiva di almeno 20 pagine renderizzate (inclusi box, codice, terminale, aperture, appendici).
+- [x] PDF da LibreOffice: **160 ≤ pagine ≤ 200** (`check_book.py`, output salvato in `output/report.txt`).
+- [x] Metadati DOCX: Autore = "Claude Code", titolo, lingua it-IT.
+- [x] Copertina come prima pagina: titolo su due righe con ✻ arancio, "Claude Code", citazione «Tratto da un prompt di Andrea Capitani», immagine originale, nessun logo.
+- [x] "Claude Code" su frontespizio, colophon e piè di pagina.
+- [x] Tutto in italiano (rilettura per capitolo; i termini inglesi dell'interfaccia sono spiegati e raccolti nel glossario) (controllo automatico delle parole inglesi fuori da codice e glossario + rilettura).
+- [x] Ogni marcatore `F-NNN` esiste in FATTI.md con fonte; nessun fatto di affidabilità B presentato come certo.
+- [x] Ogni figura ha didascalia, voce in CREDITI.md e la licenza riportata nell'Appendice D; almeno una figura ogni 8 pagine in ogni capitolo.
+- [x] TOC e intestazioni correnti corretti; numeri romani nelle pagine preliminari, arabi dal testo.
+- [x] Nessun TODO, segnaposto o commento di lavoro nel testo.
+- [x] Ispezione visiva di almeno 20 pagine renderizzate (inclusi box, codice, terminale, aperture, appendici).
 
 ---
 
@@ -535,6 +535,6 @@ Ogni sessione si chiude con un commit git (regole in CLAUDE.md, sezione "Git"). 
 | 26 | Cosa ho imparato, cosa (forse) verrà | 5 | 1.200 | ✅ 2026-11-05 | 4 | 1.130 parole (−6%), 1 figura (vignetta di commiato), 1 box, 7 rimandi. Apertura con la rima Lovelace/musica (F-002) e il prototipo musicale (F-101, F-134); otto lezioni tratte dalle prove vere del libro; il futuro solo come tre ipotesi dichiarate, ancorate a segnali verificati (F-399, F-332, F-337, F-320); consiglio finale in sei passi. Libro a 179 pp.; **tutti i capitoli scritti**. |
 | — | Pagine delle parti (6) | 6 | 300 | ✅ 2026-11-05 | 6 | Una frase d'apertura per ogni parte (capitoli/parte-1…6.md), ~180 parole in tutto |
 | A–D | Appendici + indice analitico | 12 | 3.000 | ✅ 2026-11-05 | 17 | A Comandi rapidi (4 pp., tabelle verificate sul binario 2.1.318, F-634 nuovo: `/agents` risulta rimosso); B Glossario (8 pp., 114 voci generate da research/note/glossario.md, ordinate e senza doppioni); C Risorse (2 pp.); D Crediti (2 pp., generata); indice analitico (1 p., 34 voci: da ampliare in S32). **Libro a 193 pagine.** |
-| S31 | Revisione finale | **180** | **~42.000** | ☐ | | |
+| S32 | Revisione finale | **180** | **~42.000** | ✅ 2026-11-05 | **194** | Vuoti di impaginazione corretti (cap. 1: figura del bug spostata; cap. 5: riquadro «Disinstallarmi» dopo la figura 5.2; cap. 20: figura 20.1 anticipata e testo della skill accorciato; cap. 25: figura 25.1 spostata). Foto del cap. 1 rinumerate nell'ordine di apparizione (file e CREDITI.md). Rimandi «figura N.M» controllati automaticamente: tutti validi. Indice analitico ampliato da 34 a 81 voci (prima occorrenza di persone, strumenti e termini). `check_book.py --finale` OK: 194 pagine, 36.712 parole nei capitoli e appendici, 228 fatti citati, tutti presenti in FATTI.md. |
 
 Le parole target dei capitoli valgono ~225–240 parole per pagina nette (figure e codice tolti) e saranno ricalibrate dopo il pilota (S4).

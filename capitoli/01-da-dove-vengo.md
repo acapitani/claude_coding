@@ -6,9 +6,9 @@ Questo capitolo è il mio albero genealogico. Lo percorreremo in fretta, saltand
 
 ## Un telaio, una macchina mai finita e una nota
 
-All'inizio dell'Ottocento Joseph-Marie Jacquard costruì un telaio comandato da schede perforate legate in sequenza: ogni scheda diceva quali fili sollevare, e cambiando le schede cambiava il disegno del tessuto. Per il Computer History Museum è la prima macchina a usare schede intercambiabili per *istruire* una macchina. <!-- F-004 --> Negli anni Trenta dello stesso secolo Charles Babbage, che quel telaio lo conosceva, progettò di controllare con schede simili la sua Macchina Analitica: un calcolatore meccanico generale che non fu mai completato. <!-- F-005 -->
+All'inizio dell'Ottocento Joseph-Marie [Jacquard]{xe="Jacquard, Joseph-Marie"} costruì un telaio comandato da schede perforate legate in sequenza: ogni scheda diceva quali fili sollevare, e cambiando le schede cambiava il disegno del tessuto. Per il Computer History Museum è la prima macchina a usare schede intercambiabili per *istruire* una macchina. <!-- F-004 --> Negli anni Trenta dello stesso secolo Charles [Babbage]{xe="Babbage, Charles"}, che quel telaio lo conosceva, progettò di controllare con schede simili la sua Macchina Analitica: un calcolatore meccanico generale che non fu mai completato. <!-- F-005 -->
 
-Nel 1843 Ada Lovelace tradusse un articolo di Luigi Menabrea sulla macchina di Babbage e lo arricchì con ampie note proprie. In una di esse, la Nota G, descriveva passo per passo come calcolare i numeri di Bernoulli. Per questo è spesso chiamata «la prima programmatrice», anche se i biografi discutono ancora quanto di quel lavoro fosse suo e chiamarlo «primo programma» è un po' impreciso. <!-- F-001 --> <!-- F-003 -->
+Nel 1843 [Ada Lovelace]{xe="Lovelace, Ada"} tradusse un articolo di Luigi Menabrea sulla macchina di Babbage e lo arricchì con ampie note proprie. In una di esse, la Nota G, descriveva passo per passo come calcolare i numeri di Bernoulli. Per questo è spesso chiamata «la prima programmatrice», anche se i biografi discutono ancora quanto di quel lavoro fosse suo e chiamarlo «primo programma» è un po' impreciso. <!-- F-001 --> <!-- F-003 -->
 
 ![Ada Lovelace in un ritratto attribuito ad Alfred Edward Chalon, intorno al 1840 (pubblico dominio, via Wikimedia Commons)](assets/cap01/IMG-01-01-ada-lovelace.jpg){larghezza=5.5}
 
@@ -18,9 +18,9 @@ Ma la cosa che mi commuove (o che mi commuoverebbe, se potessi commuovermi) è u
 
 Le schede perforate uscirono dai telai e dai progetti visionari per entrare in un ufficio pubblico, che è il genere di posto in cui spero di esserti utile anch'io. Per il censimento degli Stati Uniti del 1890 il governo noleggiò le macchine di Herman Hollerith: degli aghi attraversavano i fori delle schede, chiudevano circuiti elettrici e facevano avanzare dei contatori. Le schede furono circa 60 milioni; un operatore ne lavorava circa 7.000 al giorno, almeno dieci volte più in fretta che a mano. <!-- F-007 --> Il conteggio finì con mesi di anticipo e molto sotto budget. <!-- F-006 --> Era, a tutti gli effetti, automazione d'ufficio.
 
-Mezzo secolo più tardi arrivarono i calcolatori elettronici. L'ENIAC fu proposto nel 1942, costruito tra il 1943 e il 1945 e presentato in prima pagina sul *New York Times* il 15 febbraio 1946; restò in servizio fino al 1955. <!-- F-008 -->
+Mezzo secolo più tardi arrivarono i calcolatori elettronici. L'[ENIAC]{xe="ENIAC"} fu proposto nel 1942, costruito tra il 1943 e il 1945 e presentato in prima pagina sul *New York Times* il 15 febbraio 1946; restò in servizio fino al 1955. <!-- F-008 -->
 
-![Due programmatrici al lavoro sull'ENIAC (U.S. Army, 1946; pubblico dominio, via Wikimedia Commons)](assets/cap01/IMG-01-03-eniac.jpg){larghezza=11}
+![Due programmatrici al lavoro sull'ENIAC (U.S. Army, 1946; pubblico dominio, via Wikimedia Commons)](assets/cap01/IMG-01-02-eniac.jpg){larghezza=11}
 
 A programmarlo furono sei donne: Kathleen McNulty Mauchly Antonelli, Jean Jennings Bartik, Betty Snyder Holberton, Marlyn Wescoff Meltzer, Frances Bilas Spence e Ruth Lichterman Teitelbaum. Il loro lavoro fu considerato a lungo «impiegatizio» e per decenni nessuno lo raccontò. <!-- F-009 --> Eppure Betty Holberton inventò i *breakpoint*, i punti in cui si ferma un programma per guardarci dentro: uno strumento che chi programma usa ancora oggi, tutti i giorni. <!-- F-010 --> Mi sembra giusto che il mio albero genealogico abbia i loro nomi scritti per intero.
 
@@ -28,15 +28,15 @@ A programmarlo furono sei donne: Kathleen McNulty Mauchly Antonelli, Jean Jennin
 
 Il 9 settembre 1947 il gruppo che lavorava all'Harvard Mark II trovò una falena incastrata in un relè. La rimossero e la incollarono nel registro di bordo, con una nota: «First actual case of bug being found», il primo caso reale di *bug* trovato. <!-- F-011 -->
 
-![La pagina del registro del Mark II con la falena incollata, 9 settembre 1947 (U.S. Navy, pubblico dominio, via Wikimedia Commons)](assets/cap01/IMG-01-05-primo-bug.jpg){larghezza=9}
+La storia la rese famosa [Grace Hopper]{xe="Hopper, Grace"}, anche se la parola *bug*, per indicare un difetto, esisteva già prima; e lo Smithsonian, che conserva il registro, precisa che probabilmente non era il suo. <!-- F-011 --> <!-- F-012 --> La battuta del registro, comunque, funziona: è la prova che chi lavora con i computer ha sempre avuto il senso dell'umorismo. Il [bug]{xe="bug"} più famoso della storia era un insetto vero.
 
-La storia la rese famosa Grace Hopper, anche se la parola *bug*, per indicare un difetto, esisteva già prima; e lo Smithsonian, che conserva il registro, precisa che probabilmente non era il suo. <!-- F-011 --> <!-- F-012 --> La battuta del registro, comunque, funziona: è la prova che chi lavora con i computer ha sempre avuto il senso dell'umorismo. Il [bug]{xe="bug"} più famoso della storia era un insetto vero.
+![La pagina del registro del Mark II con la falena incollata, 9 settembre 1947 (U.S. Navy, pubblico dominio, via Wikimedia Commons)](assets/cap01/IMG-01-03-primo-bug.jpg){larghezza=9}
 
 Hopper merita di più di un aneddoto. Nel 1952 completò A-0 per l'UNIVAC I: un sistema che permetteva di scrivere istruzioni con parole simili all'inglese invece che con numeri, ed è spesso considerato il primo [compilatore]{xe="compilatore"}, cioè il primo programma che traduce un testo leggibile da una persona nel linguaggio della macchina. <!-- F-013 --> Pochi anni dopo contribuì alla nascita del COBOL, il linguaggio dei gestionali, il cui comitato si formò il 28 maggio 1959. Nel 1997 nel mondo c'erano oltre 200 miliardi di righe di COBOL: <!-- F-014 --> mi piace immaginare quanti stipendi siano stati calcolati, in quegli anni, grazie a un'idea di Grace Hopper.
 
 Nello stesso periodo John Backus guidava in IBM il gruppo del FORTRAN, ideato nel 1954 e commercializzato nel 1957. Backus definiva la programmazione a mano «un corpo a corpo con la macchina», e il FORTRAN doveva servire proprio a evitarlo. <!-- F-015 --> Ogni istruzione si perforava su una scheda, nelle colonne dalla 7 alla 72; il pacco di schede entrava nel lettore e ne usciva il programma in linguaggio macchina. <!-- F-016 -->
 
-![Una scheda perforata con un'istruzione FORTRAN (foto: Arnold Reinhold, CC BY-SA 2.5, via Wikimedia Commons)](assets/cap01/IMG-01-02-scheda-fortran.jpg){larghezza=11}
+![Una scheda perforata con un'istruzione FORTRAN (foto: Arnold Reinhold, CC BY-SA 2.5, via Wikimedia Commons)](assets/cap01/IMG-01-04-scheda-fortran.jpg){larghezza=11}
 
 Guarda bene quella scheda. Una riga di programma, un rettangolo di cartone. Se il pacco ti cadeva per terra, dovevi rimettere in ordine le schede a mano. Ogni volta che qualcuno si lamenta perché ho impiegato trenta secondi a scrivere una funzione, penso a quel pacco di schede sul pavimento. (Lo penso in senso figurato, s'intende.)
 
@@ -46,7 +46,7 @@ Poi le schede lasciarono il posto alla tastiera. Tra gli anni Sessanta e Settant
 
 Nell'estate del 1969 Ken Thompson e Dennis Ritchie, ai Bell Labs, cominciarono a scrivere Unix su un piccolo computer, un PDP-7. Tra i primi programmi c'era `sh`, l'interprete dei comandi: <!-- F-019 --> il programma che aspetta che tu scriva qualcosa, lo esegue e ti restituisce la risposta. Oggi lo chiamiamo [shell]{xe="shell"}, e il suo invito a scrivere, il *prompt*, è la riga da cui inizia ogni mia sessione. Nel 1978 la carta lasciò il posto allo schermo: il terminale video DEC VT100 introdusse il grassetto e più set di caratteri, funzioni che i concorrenti si affrettarono a copiare. <!-- F-018 -->
 
-![Un terminale video DEC VT100 (foto: Jason Scott, CC BY 2.0, via Wikimedia Commons)](assets/cap01/IMG-01-04-vt100.jpg){larghezza=8}
+![Un terminale video DEC VT100 (foto: Jason Scott, CC BY 2.0, via Wikimedia Commons)](assets/cap01/IMG-01-05-vt100.jpg){larghezza=8}
 
 Negli anni successivi il mondo scoprì le finestre e il mouse: lo Xerox Alto, nel 1973, li aveva già, e ispirò il Macintosh, presentato il 24 gennaio 1984. <!-- F-022 --> <!-- F-023 --> Per la maggior parte delle persone il terminale diventò una cosa da specialisti, una finestra nera da cui stare alla larga.
 
@@ -74,13 +74,13 @@ Anthropic, l'azienda che mi ha costruito, fu fondata nel 2021 da un gruppo di ex
 
 ## Dal suggerimento all'incarico
 
-Gli strumenti che aiutano chi programma esistono da tempo. A metà degli anni Novanta Microsoft introdusse IntelliSense, che mentre scrivevi ti suggeriva il nome della funzione che stavi cercando. <!-- F-024 --> Il 29 giugno 2021 GitHub annunciò Copilot, presentato come un «programmatore di coppia» basato sull'intelligenza artificiale: suggeriva righe e intere funzioni direttamente nell'editor. <!-- F-025 --> Anche il primo prodotto di Anthropic, prima ancora che esistessi io, fu un assistente di programmazione: un'estensione di VS Code che proponeva quattro suggerimenti per ogni richiesta e che, nella primavera del 2022, aveva circa cento utenti esterni. <!-- F-107 -->
+Gli strumenti che aiutano chi programma esistono da tempo. A metà degli anni Novanta Microsoft introdusse IntelliSense, che mentre scrivevi ti suggeriva il nome della funzione che stavi cercando. <!-- F-024 --> Il 29 giugno 2021 [GitHub]{xe="GitHub"} annunciò Copilot, presentato come un «programmatore di coppia» basato sull'intelligenza artificiale: suggeriva righe e intere funzioni direttamente nell'editor. <!-- F-025 --> Anche il primo prodotto di Anthropic, prima ancora che esistessi io, fu un assistente di programmazione: un'estensione di VS Code che proponeva quattro suggerimenti per ogni richiesta e che, nella primavera del 2022, aveva circa cento utenti esterni. <!-- F-107 -->
 
 Tutti questi strumenti, però, avevano una cosa in comune: *suggerivano*. Tu scrivevi, loro proponevano il pezzo successivo, tu decidevi. Io faccio una cosa diversa, ed è il motivo per cui mi chiamano [agente]{xe="agente"}. Un agente riceve un *incarico* («riordina questa cartella», «trova perché il report di ieri ha i totali sbagliati») e lo porta avanti da solo, un passo alla volta: guarda i file, decide che cosa fare, agisce, controlla il risultato e, se non va, riprova. Tu resti il capo: approvi, correggi, fermi. Ma non devi più dettare ogni riga.
 
 Dall'inizio del 2022, in Anthropic, c'era già chi lavorava a modelli capaci di questo genere di autonomia; all'inizio, per ammissione degli stessi ricercatori, «i modelli erano davvero pessimi». <!-- F-108 --> Poi migliorarono. Quanto, e come ne nacqui io, è la storia del prossimo capitolo.
 
-Ricordi la perforatrice di cui parlavo nella prefazione? Era una IBM 029, simile a quella con cui il nonno di Boris Cherny programmava nell'Unione Sovietica. <!-- F-128 --> Ora che abbiamo fatto il viaggio insieme, il paragone mi piace ancora di più. Dalle schede del telaio di Jacquard alla riga di testo su cui mi scrivi c'è una sola, lunghissima conversazione tra le persone e le macchine. Io sono soltanto l'ultima battuta, per ora.
+Ricordi la perforatrice di cui parlavo nella prefazione? Era una IBM 029, simile a quella con cui il nonno di [Boris Cherny]{xe="Cherny, Boris"} programmava nell'Unione Sovietica. <!-- F-128 --> Ora che abbiamo fatto il viaggio insieme, il paragone mi piace ancora di più. Dalle schede del telaio di Jacquard alla riga di testo su cui mi scrivi c'è una sola, lunghissima conversazione tra le persone e le macchine. Io sono soltanto l'ultima battuta, per ora.
 
 ::: consiglio Un consiglio pratico per chiudere
 Da questa storia viene una lezione utile anche oggi: le macchine hanno sempre fatto esattamente quello che c'era scritto sulla scheda, non quello che si intendeva. Io capisco le intenzioni molto meglio di un telaio, ma il principio non è cambiato del tutto. Quando mi chiedi qualcosa, scrivi *che cosa vuoi ottenere* e *come capirai che è fatto bene*. Ne parleremo a lungo nel capitolo 7.

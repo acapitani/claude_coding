@@ -6,15 +6,15 @@ Non è solo una mia impressione. In Anthropic, il gruppo che si occupa di market
 
 ## Che cosa so fare con i documenti
 
-Un file Word, sotto la superficie, è un pacchetto di testi e istruzioni di formattazione. Io non apro Word come faresti tu, cliccando nei menu: uso dei piccoli programmi, delle *librerie*, che sanno leggere e scrivere quei file direttamente. Il risultato, però, è un normale documento, che apri, modifichi e stampi come qualunque altro.
+Un file [Word]{xe="Word"}, sotto la superficie, è un pacchetto di testi e istruzioni di formattazione. Io non apro Word come faresti tu, cliccando nei menu: uso dei piccoli programmi, delle *librerie*, che sanno leggere e scrivere quei file direttamente. Il risultato, però, è un normale documento, che apri, modifichi e stampi come qualunque altro.
 
 Questo significa che posso leggere un contratto di quaranta pagine e riassumertelo, confrontare due versioni dello stesso documento e dirti che cosa è cambiato, uniformare lo stile di trenta relazioni scritte da persone diverse, trasformare un elenco Excel in cinquanta lettere personalizzate e convertirle tutte in PDF. Ci sono anche dei limiti, ed è giusto conoscerli subito. Un documento scansionato è una fotografia, non un testo: va prima «letto» come immagine, e ne parleremo nel capitolo 16 a proposito dei PDF. Le impaginazioni molto elaborate, con caselle di testo e immagini ancorate, possono spostarsi quando le modifico: per quelle conviene lavorare su una copia e controllare il risultato a colpo d'occhio. E una firma resta una firma: la metti tu.
 
-Quest'ultimo è un lavoro classico d'ufficio, la *stampa unione*, ed è l'esempio di questo capitolo. L'ho fatto davvero, con un elenco di clienti inventati.
+Quest'ultimo è un lavoro classico d'ufficio, la *[stampa unione]{xe="stampa unione"}*, ed è l'esempio di questo capitolo. L'ho fatto davvero, con un elenco di clienti inventati.
 
 ## Cinquanta lettere da un elenco
 
-Lo studio di Anna deve mandare un sollecito di pagamento a cinquanta clienti. Ha un elenco Excel con titolo, nome, cognome, città, numero di fattura, importo e scadenza, e una lettera tipo in Word, con dei segnaposto tra parentesi graffe al posto dei dati che cambiano: `{titolo}`, `{cognome}`, `{importo}` e così via. La richiesta:
+Lo studio di Anna deve mandare un sollecito di pagamento a cinquanta clienti. Ha un elenco Excel con titolo, nome, cognome, città, numero di fattura, importo e scadenza, e una lettera tipo in Word, con dei [segnaposto]{xe="segnaposto"} tra parentesi graffe al posto dei dati che cambiano: `{titolo}`, `{cognome}`, `{importo}` e così via. La richiesta:
 
 ```terminale
 > In questa cartella ci sono clienti.xlsx e il modello
@@ -86,7 +86,7 @@ Nota i dettagli che rendono affidabile il risultato: il numero dell'articolo acc
 
 ## Dal Word al PDF, e oltre
 
-Per mandare le lettere via email serve spesso il PDF. Anche qui posso aiutarti: la lettera della figura 14.2 l'ho convertita con LibreOffice, un programma gratuito per l'ufficio che sa trasformare documenti Word in PDF senza aprirli uno per uno. Lo stesso vale per cinquanta lettere, o cinquecento.
+Per mandare le lettere via email serve spesso il PDF. Anche qui posso aiutarti: la lettera della figura 14.2 l'ho convertita con [LibreOffice]{xe="LibreOffice"}, un programma gratuito per l'ufficio che sa trasformare documenti Word in PDF senza aprirli uno per uno. Lo stesso vale per cinquanta lettere, o cinquecento.
 
 E le email? Posso prepararle, una per cliente, con la lettera in allegato e il testo personalizzato, e lasciartele come bozze. Spedirle è un'altra faccenda.
 

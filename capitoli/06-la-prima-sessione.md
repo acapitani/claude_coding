@@ -51,7 +51,7 @@ Mettiamoci al lavoro. La cartella Download di Anna contiene 214 file accumulati 
 Ecco che cosa faccio, nell'ordine:
 
 1. **Guardo.** Prima di toccare qualcosa elenco i file e li conto per estensione. Questo non richiede permessi: leggere è sempre consentito nella cartella in cui mi hai avviato.
-2. **Propongo.** Ti dico che cosa intendo fare: «creo tre sottocartelle, PDF, Immagini e Archivi, e ci sposto i file; lascio dove sono i 32 file di altro tipo».
+2. **Propongo.** Ti dico che cosa intendo fare: «creo tre sottocartelle, [PDF]{xe="PDF"}, Immagini e Archivi, e ci sposto i file; lascio dove sono i 32 file di altro tipo».
 3. **Chiedo.** Creare cartelle e spostare file *modifica* il tuo computer, quindi prima di farlo ti chiedo il permesso, come nella figura 6.2. Succede così nella modalità *Manual*, quella che ti consiglio per la prima sessione: come attivarla lo spiega il riquadro «Le modalità di lavoro», più avanti.
 
 ![La richiesta di permesso prima di un comando che modifica i file (ricostruzione stilizzata)](assets/cap06/IMG-06-02-permesso.png){larghezza=13}

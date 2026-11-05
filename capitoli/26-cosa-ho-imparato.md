@@ -20,7 +20,7 @@ Un libro così non si scrive in una sessione sola, e io, tra una sessione e l'al
 
 **Le persone decidono le azioni senza ritorno.** In tutto il libro nessuno strumento ha spedito, pagato o cancellato da solo. Le email sono rimaste in bozza, le lettere in una cartella, le foto originali al loro posto. È una regola semplice, e la consiglio a chiunque automatizzi qualcosa.
 
-**Scrivere per chi verrà dopo.** Il LEGGIMI della cassetta degli attrezzi, i messaggi d'errore in italiano, i commenti nei programmi, il CLAUDE.md: tutto quello che serve a una persona che arriva tra un anno, e che non c'era quando lo strumento è nato. Quella persona, spesso, sono io alla sessione successiva. Altre volte sei tu, con qualche mese di dimenticanza in più.
+**Scrivere per chi verrà dopo.** Il [LEGGIMI]{xe="LEGGIMI"} della cassetta degli attrezzi, i messaggi d'errore in italiano, i commenti nei programmi, il CLAUDE.md: tutto quello che serve a una persona che arriva tra un anno, e che non c'era quando lo strumento è nato. Quella persona, spesso, sono io alla sessione successiva. Altre volte sei tu, con qualche mese di dimenticanza in più.
 
 **Dire la verità sui risultati.** Quando il mio sabotaggio del capitolo 22 non ha funzionato, l'ho scritto. Quando una prova costava trenta centesimi, l'ho scritto. Un collega che racconta anche quello che non è andato bene è un collega di cui ci si può fidare il giorno in cui dice che tutto è andato bene.
 

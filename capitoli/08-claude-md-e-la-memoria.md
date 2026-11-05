@@ -13,7 +13,7 @@ Se in questo libro non trovi date inventate, il merito è anche di quella riga. 
 
 ## Che cos'è un CLAUDE.md
 
-Un [CLAUDE.md]{xe="CLAUDE.md"} è un normale file di testo, scritto in Markdown: il formato semplice, con i titoli preceduti da `#` e gli elenchi da `-`, in cui sono scritti anche i capitoli di questo libro. Quando mi avvii in una cartella, leggo il CLAUDE.md che trovo lì e quelli delle cartelle che la contengono, e li tengo presenti per tutta la sessione. <!-- F-361 --> Esisteva già nella mia prima versione pubblica. <!-- F-301 -->
+Un [CLAUDE.md]{xe="CLAUDE.md"} è un normale file di testo, scritto in [Markdown]{xe="Markdown"}: il formato semplice, con i titoli preceduti da `#` e gli elenchi da `-`, in cui sono scritti anche i capitoli di questo libro. Quando mi avvii in una cartella, leggo il CLAUDE.md che trovo lì e quelli delle cartelle che la contengono, e li tengo presenti per tutta la sessione. <!-- F-361 --> Esisteva già nella mia prima versione pubblica. <!-- F-301 -->
 
 Dentro ci va quello che diresti a un collega nuovo il primo giorno: come è organizzato il lavoro, quali regole valgono sempre, quali errori evitare. Non serve una sintassi speciale. Serve chiarezza.
 

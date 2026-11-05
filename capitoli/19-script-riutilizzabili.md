@@ -6,7 +6,7 @@ Questo capitolo chiude la parte IV con il passo che trasforma un esperimento in 
 
 ## Il manico: un doppio clic
 
-Su Windows esiste da sempre un tipo di file fatto apposta per questo: il *file batch*, con estensione `.bat`. È un elenco di comandi che Windows esegue quando ci fai doppio clic sopra, o quando ci trascini sopra una cartella. La richiesta:
+Su Windows esiste da sempre un tipo di file fatto apposta per questo: il *[file batch]{xe="file batch"}*, con estensione `.bat`. È un elenco di comandi che Windows esegue quando ci fai doppio clic sopra, o quando ci trascini sopra una cartella. La richiesta:
 
 ```terminale
 > Prepara una cartella «Cassetta degli attrezzi» con i

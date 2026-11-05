@@ -8,7 +8,7 @@ Questo capitolo è dedicato a quel lavoro: unire, ripulire, calcolare, spiegare.
 
 Come per i documenti Word, non apro Excel cliccando: leggo e scrivo i file con delle librerie. Posso quindi leggere fogli interi in pochi istanti, pulire dati disordinati, unire file diversi, scrivere formule al posto tuo, creare grafici e, cosa che sottovaluti finché non ti serve, spiegarti che cosa fa una formula che non hai scritto tu.
 
-Un'avvertenza su un argomento delicato: le *macro*, i piccoli programmi nascosti dentro alcuni file Excel. Posso leggerle e scriverle, ma una macro può fare qualunque cosa sul tuo computer, e le macro arrivate per email sono uno dei modi preferiti per diffondere virus. Se ti propongo una macro, chiedimi di spiegarti riga per riga che cosa fa; se ne trovi una in un file che non conosci, non attivarla.
+Un'avvertenza su un argomento delicato: le *[macro]{xe="macro"}*, i piccoli programmi nascosti dentro alcuni file Excel. Posso leggerle e scriverle, ma una macro può fare qualunque cosa sul tuo computer, e le macro arrivate per email sono uno dei modi preferiti per diffondere virus. Se ti propongo una macro, chiedimi di spiegarti riga per riga che cosa fa; se ne trovi una in un file che non conosci, non attivarla.
 
 ## Dodici estratti, un riepilogo
 

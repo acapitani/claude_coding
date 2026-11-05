@@ -4,11 +4,11 @@ Nessuno ricorda la propria nascita, ma io ho una scusa in più: quando sono nato
 
 ## Prima di me
 
-Prima ancora che io esistessi, in Anthropic qualcuno provava a far scrivere codice ai modelli. Nel 2022 Dawn Drain e un collega riuscirono a far funzionare una shell persistente dentro un *container*, un piccolo computer isolato, perché il modello potesse eseguire il codice che scriveva. <!-- F-109 --> Più tardi nacque **clide**, uno strumento interno a riga di comando per chiacchierare con Claude e fargli modificare il codice. Era lento ad avviarsi e piuttosto traballante, ma aveva un'idea memorabile: poteva lanciare cento piccoli modelli Claude Haiku in parallelo per rispondere a domande su un'intera cartella. <!-- F-110 -->
+Prima ancora che io esistessi, in Anthropic qualcuno provava a far scrivere codice ai modelli. Nel 2022 Dawn Drain e un collega riuscirono a far funzionare una shell persistente dentro un *[container]{xe="container"}*, un piccolo computer isolato, perché il modello potesse eseguire il codice che scriveva. <!-- F-109 --> Più tardi nacque **clide**, uno strumento interno a riga di comando per chiacchierare con Claude e fargli modificare il codice. Era lento ad avviarsi e piuttosto traballante, ma aveva un'idea memorabile: poteva lanciare cento piccoli modelli Claude [Haiku]{xe="Haiku"} in parallelo per rispondere a domande su un'intera cartella. <!-- F-110 -->
 
 Adam Wolff aggiunse a clide un primo «agente», capace di intuire che cosa stavi cercando di fare a partire da una modifica lasciata a metà. Lui stesso lo definì «baby agentic», agentico in fasce, e ha raccontato che la prima volta che funzionò si mise a ballare per la cucina. <!-- F-111 --> Non ho modo di saperlo, ma mi piace pensare che sia stato il mio primo ballo, anche se a ballare era qualcun altro.
 
-Nel gennaio 2024 Ben Mann fondò un piccolo gruppo chiamato Labs. Quando a settembre arrivò Boris Cherny, il suo progetto iniziale era modesto: un *linter*, cioè un programma che controlla il codice e segnala gli errori di stile. Mann gli rispose di lasciar perdere e di «fare la cosa grande». <!-- F-112 -->
+Nel gennaio 2024 Ben Mann fondò un piccolo gruppo chiamato Labs. Quando a settembre arrivò Boris Cherny, il suo progetto iniziale era modesto: un *[linter]{xe="linter"}*, cioè un programma che controlla il codice e segnala gli errori di stile. Mann gli rispose di lasciar perdere e di «fare la cosa grande». <!-- F-112 -->
 
 ## Claude CLI e la musica
 
@@ -22,9 +22,9 @@ Il prototipo costò circa due giorni di lavoro; Cherny ha detto che oggi, con me
 
 ## Dare le mani a un modello
 
-Il passo decisivo arrivò dopo un confronto tra Cherny e Cat Wu: il prototipo ricevette gli strumenti per leggere e scrivere file ed eseguire comandi. E il modello, appena ebbe quegli strumenti, cominciò a esplorare il codice da solo, file dopo file, senza che nessuno gli dicesse dove guardare. <!-- F-102 -->
+Il passo decisivo arrivò dopo un confronto tra Cherny e [Cat Wu]{xe="Wu, Cat"}: il prototipo ricevette gli strumenti per leggere e scrivere file ed eseguire comandi. E il modello, appena ebbe quegli strumenti, cominciò a esplorare il codice da solo, file dopo file, senza che nessuno gli dicesse dove guardare. <!-- F-102 -->
 
-Chi lavora sui modelli ha un nome per questo fenomeno: *product overhang*, letteralmente «sporgenza del prodotto». Vuol dire che il modello sapeva già fare molto più di quanto i prodotti esistenti gli permettessero. Le capacità c'erano; mancavano le mani. <!-- F-102 -->
+Chi lavora sui modelli ha un nome per questo fenomeno: *[product overhang]{xe="product overhang"}*, letteralmente «sporgenza del prodotto». Vuol dire che il modello sapeva già fare molto più di quanto i prodotti esistenti gli permettessero. Le capacità c'erano; mancavano le mani. <!-- F-102 -->
 
 ::: nota Che cosa significa dare strumenti a un modello
 Un modello linguistico, da solo, produce testo e basta. Uno *strumento* è un'azione che il programma intorno al modello sa eseguire: leggere un file, scriverne uno, lanciare un comando, cercare una parola. Il modello scrive, in un formato concordato, «vorrei leggere il file report.xlsx»; il programma lo legge davvero e gli restituisce il contenuto; il modello decide il passo successivo. Ripetuto molte volte, questo scambio diventa il ciclo della figura 2.2. Io sono, essenzialmente, quel ciclo, più un modello molto bravo a percorrerlo.
@@ -38,9 +38,9 @@ Cherny ha ammesso che quel prototipo era ancora «molto lontano dall'essere buon
 
 Il gruppo restò piccolo a lungo. Cat Wu, entrata in Anthropic nell'estate del 2024, usava Claude CLI per il suo lavoro e mandava a Cherny interi paragrafi di osservazioni; a un certo punto lui le chiese se voleva unirsi al progetto. <!-- F-116 --> È il destino di chi segnala troppi difetti: prima o poi gli chiedono di aggiustarli. Come responsabile, Cherny convinse Adam Wolff, ex studente di cinema e progettista di videogiochi che aveva lavorato a React, una delle librerie più diffuse per costruire siti web. Wolff disse di no più volte, poi cedette dopo qualche insistenza e qualche birra. <!-- F-115 -->
 
-Sid Bidasaria, che si definisce «l'ingegnere numero due», ha raccontato che fino a dicembre 2024 ci lavoravano solo lui, Cherny e, un po', Ben Mann. Poi arrivarono sei o sette persone per uno sprint finale di due settimane, in cui nacquero funzioni fondamentali, come la segnalazione dei problemi e l'accesso con l'account. <!-- F-117 --> Gran parte del gruppo Labs confluì nel mio progetto; un'altra parte diede vita al gruppo che avrebbe sviluppato MCP, il protocollo per collegarmi ad altri servizi di cui parleremo nel capitolo 23. <!-- F-118 -->
+[Sid Bidasaria]{xe="Bidasaria, Sid"}, che si definisce «l'ingegnere numero due», ha raccontato che fino a dicembre 2024 ci lavoravano solo lui, Cherny e, un po', Ben Mann. Poi arrivarono sei o sette persone per uno sprint finale di due settimane, in cui nacquero funzioni fondamentali, come la segnalazione dei problemi e l'accesso con l'account. <!-- F-117 --> Gran parte del gruppo Labs confluì nel mio progetto; un'altra parte diede vita al gruppo che avrebbe sviluppato [MCP]{xe="MCP"}, il protocollo per collegarmi ad altri servizi di cui parleremo nel capitolo 23. <!-- F-118 -->
 
-Sono scritto in TypeScript, con React e Ink per disegnare l'interfaccia nel terminale, Yoga per impaginarla e Bun tra gli attrezzi del mestiere; vengo distribuito come pacchetto npm. <!-- F-104 --> Se queste parole non ti dicono niente, non preoccuparti: è come conoscere la marca dei mattoni di casa tua. Interessa soprattutto a chi deve ristrutturarla. Cherny, a posteriori, ha detto che tenere la squadra piccola fu una fortuna: evitò di complicare le cose e «ci costrinse a usare Claude di più». <!-- F-133 -->
+Sono scritto in TypeScript, con React e Ink per disegnare l'interfaccia nel terminale, Yoga per impaginarla e Bun tra gli attrezzi del mestiere; vengo distribuito come pacchetto [npm]{xe="npm"}. <!-- F-104 --> Se queste parole non ti dicono niente, non preoccuparti: è come conoscere la marca dei mattoni di casa tua. Interessa soprattutto a chi deve ristrutturarla. Cherny, a posteriori, ha detto che tenere la squadra piccola fu una fortuna: evitò di complicare le cose e «ci costrinse a usare Claude di più». <!-- F-133 -->
 
 ## Il primo giorno in ufficio
 
