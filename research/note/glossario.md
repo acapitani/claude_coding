@@ -24,3 +24,9 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | linter | 2 | Programma che controlla il codice e segnala errori e problemi di stile |
 | strumento (tool) | 2 | Azione che il programma intorno al modello esegue per lui: leggere, scrivere, eseguire comandi |
 | product overhang | 2 | Quando un modello sa fare più di quanto i prodotti esistenti gli permettano |
+| research preview | 3 | Anteprima di ricerca: versione dichiaratamente sperimentale di un prodotto |
+| README | 3 | File di istruzioni che accompagna un programma o un progetto |
+| repository | 3 | Archivio di un progetto con la storia di tutte le sue modifiche |
+| commit | 3 | Fotografia del lavoro salvata nel repository con una descrizione |
+| npm | 3 | Registro e gestore dei pacchetti JavaScript da cui si installano programmi |
+| SDK | 3 | Kit per gli sviluppatori: strumenti per costruire altri programmi |

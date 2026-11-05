@@ -15,6 +15,8 @@ Licenze ammesse: pubblico dominio, CC0, CC BY, CC BY-SA, unDraw.
 | IMG-01-R3 | assets/cap01/IMG-01-R3-asr33.jpg | https://commons.wikimedia.org/wiki/File:ASR-33_at_CHM.agr.jpg | Arnold Reinhold | CC BY-SA 3.0 (attribuzione; non modificare, solo ridimensionare) | Riserva — Cap. 1 (telescrivente) |
 | IMG-02-01 | assets/cap02/IMG-02-01-musica.png | Originale: build/figure/cap02.py (terminale.py + Playwright) | Claude Code | Originale | Cap. 2, fig. 2.1 — il prototipo e la musica (ricostruzione di fantasia) |
 | IMG-02-02 | assets/cap02/IMG-02-02-ciclo-agente.png | Originale: build/figure/cap02.py (Graphviz) | Claude Code | Originale | Cap. 2, fig. 2.2 — il ciclo dell'agente |
+| IMG-03-01 | assets/cap03/IMG-03-01-linea-tempo.png | Originale: build/figure/cap03.py (HTML + Playwright) | Claude Code | Originale | Cap. 3, fig. 3.1 — linea del tempo set 2024 – mag 2025 |
+| IMG-03-02 | assets/cap03/IMG-03-02-allora-oggi.png | Originale: build/figure/cap03.py (terminale.py + Playwright) | Claude Code | Originale | Cap. 3, fig. 3.2 — installazione del 2025 e versione del 2026 (ricostruzione stilizzata) |
 | IMG-06-01 | assets/cap06/IMG-06-01-anatomia.png | Originale: build/figure/cap06.py (terminale.py + Playwright) | Claude Code | Originale | Cap. 6 — anatomia dello schermo (ricostruzione stilizzata) |
 | IMG-06-02 | assets/cap06/IMG-06-02-permesso.png | Originale: build/figure/cap06.py (terminale.py + Playwright) | Claude Code | Originale | Cap. 6 — richiesta di permesso (ricostruzione stilizzata) |
 
