@@ -11,3 +11,4 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | checkpoint | 6 | Punto della conversazione a cui si può tornare con `/rewind` |
 | contesto | 6 | Tutto ciò che Claude Code ha «davanti» mentre lavora: conversazione, file letti, istruzioni |
 | permesso | 6 | Conferma richiesta prima di un'azione che modifica file o esegue comandi |
+| prompt | Pref. | La richiesta scritta che si dà a un modello o a Claude Code |
