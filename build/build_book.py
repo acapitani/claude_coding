@@ -217,8 +217,8 @@ class Costruttore:
         inserisci(sp, pn)
         for vecchio in sp.findall(qn("w:vAlign")):
             sp.remove(vecchio)
-        if centra:
-            inserisci(sp, elemento("w:vAlign", **{"w:val": "center"}))
+        # `centra` non imposta più la centratura verticale: LibreOffice la ignora, Word la applica,
+        # e le due impaginazioni divergerebbero. Le pagine "centrate" usano uno spazio fisso sopra.
         for vecchio in sp.findall(qn("w:cols")):
             sp.remove(vecchio)
         inserisci(sp, elemento("w:cols", **{"w:num": colonne, "w:space": int(0.8 * TWIP_CM)}))
@@ -631,8 +631,16 @@ class Costruttore:
     def frontespizio(self):
         righe = self.meta.get("titolo_righe", [self.meta["titolo"]])
         self.nuova_sezione(piede=None, formato="lowerRoman", centra=True, firma=(righe[0], 30), recto=True)
+        # Come nella console e in copertina: "/claude" centrata, la riga "✻ Coding" sporge di due
+        # caratteri a sinistra così "Coding" si allinea sotto "/claude" (font a spaziatura fissa).
+        stile_fr = self.doc.styles["Libro Frontespizio Titolo"]
+        car_cm = 0.602 * stile_fr.font.size.pt / 72 * 2.54      # larghezza di un carattere DejaVu Sans Mono
+        rientro = (stili.LARGHEZZA_TESTO_CM - len(righe[0]) * car_cm) / 2
         for k, riga in enumerate(righe):
-            p = self.doc.add_paragraph(style="Libro Frontespizio Titolo")
+            p = self.doc.add_paragraph(style=stile_fr)
+            p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+            sporge = 2 if riga[:1] in stili.GLIFI_SPECIALI and riga[1:2] == " " else 0
+            p.paragraph_format.left_indent = Cm(max(0, rientro - sporge * car_cm))
             if k == 0:
                 p.paragraph_format.space_before = Cm(6)  # LibreOffice ignora la centratura verticale
             for pezzo, speciale in segmenta(riga):
@@ -647,7 +655,7 @@ class Costruttore:
             p.paragraph_format.space_before = Pt(30)
             self.testo(p, self.meta["citazione_copertina"])
 
-    def pagina_semplice(self, percorso, stile, inizio=WD_SECTION.ODD_PAGE, centra=False):
+    def pagina_semplice(self, percorso, stile, inizio=WD_SECTION.ODD_PAGE, centra=False, spazio_sopra=None):
         """Colophon, dedica: nessuna testatina, nessun numero, nessuna voce d'indice."""
         tokens = self.md.parse(percorso.read_text(encoding="utf-8"))
         # niente titolo visibile
@@ -661,8 +669,8 @@ class Costruttore:
         self.a_capo = True
         self.blocchi(tokens, self.doc, stile)
         self.a_capo = False
-        if centra and len(self.doc.paragraphs) > n_prima:
-            self.doc.paragraphs[n_prima].paragraph_format.space_before = Cm(5)
+        if (centra or spazio_sopra) and len(self.doc.paragraphs) > n_prima:
+            self.doc.paragraphs[n_prima].paragraph_format.space_before = Cm(spazio_sopra or 5)
 
     def indice_generale(self):
         self.nuova_sezione(piede="centrato", formato="lowerRoman", firma=("Indice", 24), recto=True)
@@ -869,8 +877,8 @@ class Costruttore:
                 if not f:
                     continue
                 if "colophon" in f.stem:
-                    self.pagina_semplice(f, "Libro Colophon", inizio=WD_SECTION.NEW_PAGE)
-                    # colophon in fondo alla pagina pari: si allinea in basso con spazio sopra
+                    # colophon sul retro del frontespizio, in basso
+                    self.pagina_semplice(f, "Libro Colophon", inizio=WD_SECTION.NEW_PAGE, spazio_sopra=11.5)
                 elif "dedica" in f.stem:
                     self.pagina_semplice(f, "Libro Dedica", centra=True)
                 else:

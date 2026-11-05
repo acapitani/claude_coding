@@ -503,7 +503,7 @@ Ogni sessione si chiude con un commit git (regole in CLAUDE.md, sezione "Git"). 
 | S0 | Fondamenta (CLAUDE.md, cartelle, strumenti) | — | — | ✅ 2026-11-04 | — | Installati: pacchetti Python, LibreOffice 26.8, Graphviz 16.1, Playwright+Chromium. Test DOCX→PDF 17×24 ok, ✻ incorporato (Segoe UI Symbol). Consolas/Cambria senza ✻: vedi research/note/font.md |
 | S1 | Ricerca (FATTI.md, CREDITI.md, spinner) | — | — | ✅ 2026-11-04 | — | FATTI.md: 129 voci (9 non verificate, escluse). Spinner e colore verificati sul binario 2.1.318 e sul pacchetto 0.2.9. 7 immagini Wikimedia in assets/cap01 (4 + 3 di riserva), licenze ricontrollate via API. Da leggere a mano prima del cap. 2: "The Making of Claude Code" (F-106) |
 | S2 | Toolchain di build | — | — | ✅ 2026-11-05 | 27 (prova) | build_book, update_indexes (impaginazione a più passaggi), check_book, render_pages, grafo.py, render.mjs. Libro di prova con tutti gli elementi: Word e LibreOffice danno le stesse 27 pagine. **Calibrazione**: pagina di solo testo ≈ 390 parole (non 260): da verificare nel pilota S4, rischio di libro sotto le 160 pagine |
-| S3 | Copertina e pagine preliminari | 4 | 300 | ☐ | | |
+| S3 | Copertina e pagine preliminari | 4 | 300 | ✅ 2026-11-05 | 6 (con bianche) | Copertina concept A in `assets/copertina/cover.html` → `cover.png` 2009×2834 px a 300 dpi, titolo allineato come nella specifica (✻ sporgente, «Coding» sotto «/claude»). Frontespizio dai metadati, colophon (in basso sul retro), dedica. Word e LibreOffice identici. Tolta la centratura verticale (Word e LibreOffice la trattano diversamente) |
 | — | Indice + Prefazione | 8 | 900 | ☐ | | |
 | 1 | Da dove vengo | 8 | 1.900 | ☐ | | |
 | 2 | La nascita | 6 | 1.400 | ☐ | | |

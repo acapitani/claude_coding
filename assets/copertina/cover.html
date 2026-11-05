@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>/claude ✻ Coding — copertina</title>
+<!--
+  Copertina del libro, concept A "Terminale" (PLAN.md §4).
+  Render: node build/figure/render.mjs assets/copertina/cover.html assets/copertina/cover.png
+          --larghezza-cm 17 --altezza-cm 24 --dpi 300        → 2008 × 2835 px
+  Tutto originale: nessun logo o marchio. Font locali: DejaVu Sans Mono (ha ✻), Cambria, Calibri.
+-->
+<style>
+  :root {
+    --fondo: #1F1E1D;
+    --fondo2: #2A2826;
+    --crema: #F0EEE6;
+    --crema-tenue: #B8B2A7;
+    --arancio: #D77757;      /* colore "claude" del tema della console */
+    --alone: #EB9F7F;        /* claudeShimmer */
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 17cm; height: 24cm; }
+  body {
+    background:
+      radial-gradient(ellipse 14cm 10cm at 30% 30%, #2B2927 0%, var(--fondo) 70%),
+      var(--fondo);
+    color: var(--crema);
+    font-family: "DejaVu Sans Mono", Consolas, monospace;
+    position: relative;
+    overflow: hidden;
+  }
+  /* trama leggerissima di righe, come un vecchio monitor */
+  body::before {
+    content: ""; position: absolute; inset: 0;
+    background: repeating-linear-gradient(0deg, rgba(255,255,255,0.018) 0 1px, transparent 1px 4px);
+  }
+  .fascia {
+    position: absolute; top: 1.3cm; left: 1.6cm; right: 1.6cm;
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: Calibri, "Segoe UI", sans-serif; font-size: 8.5pt; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--crema-tenue);
+    border-bottom: 0.6pt solid #4A4643; padding-bottom: 0.25cm;
+  }
+  .fascia .g { color: var(--arancio); font-family: "DejaVu Sans Mono"; letter-spacing: 0; }
+
+  /* come nella specifica: "✻ " sporge a sinistra e "Coding" si allinea sotto "/claude" */
+  .titolo {
+    position: absolute; top: 3.6cm; left: 4.3cm;
+    font-weight: bold; line-height: 1.02; letter-spacing: -0.02em;
+  }
+  .titolo .r1 { font-size: 64pt; color: var(--crema); display: block; }
+  .titolo .r1 .slash { color: var(--crema-tenue); }
+  .titolo .r2 { font-size: 64pt; display: block; margin-left: -2ch; white-space: pre; }
+  .titolo .stella {
+    color: var(--arancio);
+    text-shadow: 0 0 0.25cm rgba(235,159,127,0.55), 0 0 0.9cm rgba(215,119,87,0.35);
+  }
+  .sottotitolo {
+    position: absolute; top: 9.0cm; left: 1.65cm; width: 12cm;
+    font-family: Calibri, "Segoe UI", sans-serif; font-size: 13pt; line-height: 1.35;
+    color: var(--crema-tenue);
+  }
+  .sottotitolo b { color: var(--crema); font-weight: normal; }
+
+  .citazione {
+    position: absolute; top: 11.45cm; left: 1.6cm; right: 1.6cm;
+    font-family: Cambria, Georgia, serif; font-style: italic; font-size: 13pt;
+    color: var(--crema);
+  }
+
+  /* finestra di terminale stilizzata */
+  .term {
+    position: absolute; left: 1.6cm; right: 1.6cm; top: 12.6cm; height: 8.1cm;
+    background: #141312; border: 0.7pt solid #4A4643; border-radius: 0.28cm;
+    box-shadow: 0 0.35cm 0.9cm rgba(0,0,0,0.45);
+    overflow: hidden;
+  }
+  .term .barra {
+    height: 0.7cm; background: #2A2826; border-bottom: 0.6pt solid #3A3735;
+    display: flex; align-items: center; gap: 0.18cm; padding-left: 0.35cm;
+  }
+  .term .barra i { width: 0.22cm; height: 0.22cm; border-radius: 50%; background: #4A4643; display: block; }
+  .term .barra span {
+    margin-left: auto; margin-right: auto; transform: translateX(-0.5cm);
+    font-size: 7pt; color: #8C867D; font-family: "DejaVu Sans Mono";
+  }
+  .term .corpo { padding: 0.5cm 0.6cm; font-size: 10.5pt; line-height: 1.55; }
+  .p { color: var(--arancio); font-weight: bold; }
+  .tenue { color: #8C867D; }
+  .cursore { display: inline-block; width: 0.5em; height: 1.05em; background: var(--crema); vertical-align: -0.18em; }
+
+  /* la sequenza dello spinner come "linea del tempo" del glifo */
+  .sequenza {
+    position: absolute; left: 0.6cm; right: 0.6cm; bottom: 0.75cm;
+    display: flex; align-items: flex-end; justify-content: space-between;
+  }
+  .sequenza div { text-align: center; }
+  .sequenza .g { display: block; line-height: 1; font-weight: bold; }
+  .sequenza .n { display: block; font-size: 6.5pt; color: #6E6962; margin-top: 0.2cm; letter-spacing: 0.05em; }
+  .f1 .g { font-size: 16pt; color: #5E5A55; }
+  .f2 .g { font-size: 22pt; color: #7A6A62; }
+  .f3 .g { font-size: 28pt; color: #9A7564; }
+  .f4 .g { font-size: 36pt; color: #B97A61; }
+  .f5 .g { font-size: 62pt; color: var(--arancio);
+           text-shadow: 0 0 0.3cm rgba(235,159,127,0.6), 0 0 1.1cm rgba(215,119,87,0.4); }
+  .f6 .g { font-size: 36pt; color: #B97A61; }
+  .f5 .n { color: var(--arancio); }
+
+  .autore {
+    position: absolute; right: 1.6cm; bottom: 1.25cm;
+    font-family: Calibri, "Segoe UI", sans-serif; font-size: 17pt; letter-spacing: 0.04em;
+    color: var(--crema);
+  }
+  .autore small { display: block; text-align: right; font-size: 7.5pt; letter-spacing: 0.2em;
+                  text-transform: uppercase; color: var(--crema-tenue); margin-bottom: 0.08cm; }
+</style>
+</head>
+<body>
+  <div class="fascia"><span>Autobiografia <span class="g">✻</span> Guida pratica</span><span>Prima edizione · 2026</span></div>
+
+  <div class="titolo">
+    <span class="r1"><span class="slash">/</span>claude</span>
+    <span class="r2"><span class="stella">✻</span> Coding</span>
+  </div>
+
+  <div class="sottotitolo">
+    La mia storia, dal primo prototipo a oggi.<br>
+    E come usarmi per <b>scrivere applicazioni</b> e <b>automatizzare l'ufficio</b>.
+  </div>
+
+  <div class="citazione">«Tratto da un prompt di Andrea Capitani»</div>
+
+  <div class="term">
+    <div class="barra"><i></i><i></i><i></i><span>~/libro — claude</span></div>
+    <div class="corpo">
+      <div><span class="p">$</span> claude</div>
+      <div><span class="p">&gt;</span> raccontami chi sei, e insegnami a usarti</div>
+      <div class="tenue">  leggo, penso, scrivo…</div>
+      <div><span class="cursore"></span></div>
+    </div>
+    <div class="sequenza">
+      <div class="f1"><span class="g">·</span><span class="n">1</span></div>
+      <div class="f2"><span class="g">✢</span><span class="n">2</span></div>
+      <div class="f3"><span class="g">*</span><span class="n">3</span></div>
+      <div class="f4"><span class="g">✶</span><span class="n">4</span></div>
+      <div class="f5"><span class="g">✻</span><span class="n">5</span></div>
+      <div class="f6"><span class="g">✽</span><span class="n">6</span></div>
+    </div>
+  </div>
+
+  <div class="autore"><small>di</small>Claude Code</div>
+</body>
+</html>

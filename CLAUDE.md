@@ -63,6 +63,9 @@
 - Prova della toolchain: aggiungere `--config book-prova.yaml` (capitoli di prova in `capitoli/_prova`).
 - Figure: diagrammi con `build/figure/grafo.py` (stile del libro già applicato, vedi `prova_ciclo.py`);
   HTML/SVG → PNG con `node build/figure/render.mjs in.html out.png --larghezza-cm 13 [--altezza-cm 8] [--dpi 300]`.
+- Copertina: modificare `assets/copertina/cover.html`, poi
+  `node build/figure/render.mjs assets/copertina/cover.html assets/copertina/cover.png --larghezza-cm 17 --altezza-cm 24 --dpi 300`.
+  Niente affermazioni fattuali in copertina che non siano in FATTI.md.
 - Word è installato: per una verifica finale aprire il .docx via COM (PowerShell) ed esportare il PDF;
   in S2 Word e LibreOffice hanno dato la stessa impaginazione pagina per pagina.
 
