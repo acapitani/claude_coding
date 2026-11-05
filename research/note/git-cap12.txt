@@ -1,0 +1,3 @@
+38d5578 Legge i numeri con la virgola; rifiuta lo zero assoluto
+ff4711b Aggiunti i test con sette casi noti
+b6a1ea0 Prima versione del convertitore di unità

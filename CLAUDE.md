@@ -41,6 +41,7 @@
 - Ogni immagine sta in `assets/CREDITI.md` (id, file, fonte/URL, autore, licenza, uso) **prima** di essere inserita.
 - Licenze ammesse: pubblico dominio, CC0, CC BY, CC BY-SA, unDraw. Licenza incerta = esclusa.
 - Le figure generate hanno lo script sorgente in `assets/src/` o `build/figure/`.
+- Numerare le figure (IMG-NN-MM e «figura N.M» nel testo) **nell'ordine in cui compaiono nel capitolo**: la build numera per posizione, quindi i rimandi vanno ricontrollati se si sposta una figura.
 - Formato: PNG 300 dpi (le foto possono restare JPEG, ma con intestazione JFIF: python-docx non legge i JPEG senza; in caso di errore `UnrecognizedImageError` risalvarle con Pillow), larghezza massima 13 cm, didascalia obbligatoria "Figura N.M – …".
 
 ## Cartelle e nomi

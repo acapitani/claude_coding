@@ -33,6 +33,8 @@ Licenze ammesse: pubblico dominio, CC0, CC BY, CC BY-SA, unDraw.
 | IMG-10-02 | assets/cap10/IMG-10-02-app.png | Originale: schermata di esempi/cap10/convertitore.html con Playwright (build/figure/cap10_app.mjs) | Claude Code | Originale | Cap. 10, fig. 10.2 — la mini-app |
 | IMG-11-01 | assets/cap11/IMG-11-01-test-falliti.png | Originale: build/figure/cap11.py (terminale.py), uscita reale di esempi/cap11/prova-convertitore.mjs | Claude Code | Originale | Cap. 11, fig. 11.1 — i test che falliscono |
 | IMG-11-02 | assets/cap11/IMG-11-02-rosso-verde.png | Originale: build/figure/cap11.py (Graphviz) | Claude Code | Originale | Cap. 11, fig. 11.2 — il ciclo rosso-verde |
+| IMG-12-01 | assets/cap12/IMG-12-01-log-diff.png | Originale: build/figure/cap12.py (terminale.py), uscita reale di git sul repository di prova | Claude Code | Originale | Cap. 12, fig. 12.1 — la storia e una modifica |
+| IMG-12-02 | assets/cap12/IMG-12-02-metro.png | Originale: build/figure/cap12.py (SVG + Playwright) | Claude Code | Originale | Cap. 12, fig. 12.2 — commit e branch come una linea della metropolitana |
 
 Licenze verificate il 2026-11-04 tramite API di Wikimedia Commons (campo LicenseShortName) e pagina del file.
 Le immagini ridimensionate (lato lungo ≤ 2400 px, salvo l'ENIAC a 3840 px) non sono state altrimenti alterate.

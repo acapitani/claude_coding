@@ -68,3 +68,10 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | debug | 11 | Caccia all'errore: riprodurre, isolare, capire, correggere, verificare |
 | rosso-verde | 11 | Metodo: prima un test che fallisce, poi la correzione che lo fa passare |
 | messaggio d'errore (traceback) | 11 | Resoconto di un errore; si legge dal basso |
+| Git | 12 | Sistema che registra la storia delle versioni di un progetto |
+| branch | 12 | Linea di lavoro parallela che si può unire o abbandonare |
+| merge | 12 | Unione di un branch nella linea principale |
+| .gitignore | 12 | Elenco dei file che Git deve ignorare |
+| revisione del codice | 12 | Rilettura delle modifiche da parte di un'altra persona (o di Claude) prima di accettarle |
+| pull request | 12 | Proposta di unire un branch, da rivedere e approvare (su GitHub) |
+| GitHub | 12 | Servizio online che ospita repository e il lavoro di gruppo |
