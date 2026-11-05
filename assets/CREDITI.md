@@ -35,6 +35,9 @@ Licenze ammesse: pubblico dominio, CC0, CC BY, CC BY-SA, unDraw.
 | IMG-11-02 | assets/cap11/IMG-11-02-rosso-verde.png | Originale: build/figure/cap11.py (Graphviz) | Claude Code | Originale | Cap. 11, fig. 11.2 — il ciclo rosso-verde |
 | IMG-12-01 | assets/cap12/IMG-12-01-log-diff.png | Originale: build/figure/cap12.py (terminale.py), uscita reale di git sul repository di prova | Claude Code | Originale | Cap. 12, fig. 12.1 — la storia e una modifica |
 | IMG-12-02 | assets/cap12/IMG-12-02-metro.png | Originale: build/figure/cap12.py (SVG + Playwright) | Claude Code | Originale | Cap. 12, fig. 12.2 — commit e branch come una linea della metropolitana |
+| IMG-13-01 | assets/cap13/IMG-13-01-architettura.png | Originale: build/figure/cap13.py (Graphviz) | Claude Code | Originale | Cap. 13, fig. 13.1 — com'è fatta «Spese di casa» |
+| IMG-13-02 | assets/cap13/IMG-13-02-app.png | Originale: schermata di esempi/cap13/spese/app.py con dati di esempio (build/figure/cap13_app.mjs), ritagliata | Claude Code | Originale | Cap. 13, fig. 13.2 — l'applicazione in funzione |
+| IMG-13-03 | assets/cap13/IMG-13-03-percorso.png | Originale: build/figure/cap13.py (Graphviz) | Claude Code | Originale | Cap. 13, fig. 13.3 — il progetto passo per passo |
 
 Licenze verificate il 2026-11-04 tramite API di Wikimedia Commons (campo LicenseShortName) e pagina del file.
 Le immagini ridimensionate (lato lungo ≤ 2400 px, salvo l'ENIAC a 3840 px) non sono state altrimenti alterate.

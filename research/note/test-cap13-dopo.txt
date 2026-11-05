@@ -1,0 +1,12 @@
+test_csv_per_excel (test_spese.TestSpese.test_csv_per_excel) ... ok
+test_dati_sbagliati_non_entrano (test_spese.TestSpese.test_dati_sbagliati_non_entrano) ... ok
+test_formato_euro (test_spese.TestSpese.test_formato_euro) ... ok
+test_importi_all_italiana (test_spese.TestSpese.test_importi_all_italiana) ... ok
+test_importi_non_validi (test_spese.TestSpese.test_importi_non_validi) ... ok
+test_messaggio_in_italiano (test_spese.TestSpese.test_messaggio_in_italiano) ... ok
+test_totali_del_mese (test_spese.TestSpese.test_totali_del_mese) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.004s
+
+OK

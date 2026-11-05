@@ -25,3 +25,6 @@ desktop.ini
 .DS_Store
 .vscode/
 .idea/
+
+# database generati dagli esempi
+esempi/**/*.db

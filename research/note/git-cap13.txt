@@ -1,0 +1,4 @@
+fd8ea04 README: come si avvia e come si usa
+ebe9d91 Dati di esempio per provare l'applicazione
+83c1571 La pagina web: inserimento, elenco del mese, grafico, CSV
+e1760ff Dati e regole: spese.py con i test (importi all'italiana)
