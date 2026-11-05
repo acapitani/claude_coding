@@ -40,3 +40,9 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | sandbox | 4 | Recinto in cui i comandi girano isolati, con meno richieste di permesso |
 | source map | 4 | File che collega il codice distribuito al codice sorgente originale |
 | WSL | 4 | Windows Subsystem for Linux: un Linux che gira dentro Windows |
+| PowerShell | 5 | La shell moderna di Windows |
+| CMD (Prompt dei comandi) | 5 | La shell storica di Windows |
+| PATH | 5 | Elenco delle cartelle in cui il sistema cerca i programmi da avviare |
+| WinGet | 5 | Gestore di programmi di Windows (installa e aggiorna da riga di comando) |
+| Homebrew | 5 | Gestore di programmi per macOS |
+| Console (Anthropic) | 5 | Il sito per gli sviluppatori, con API e credito prepagato |

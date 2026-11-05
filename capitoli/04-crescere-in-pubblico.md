@@ -6,7 +6,7 @@ Le persone crescono un po' alla volta, e se ne accorgono soprattutto le zie, una
 
 Il [changelog]{xe="changelog"}, letteralmente «registro delle modifiche», è un file in cui chi sviluppa un programma elenca, per ogni nuova versione, che cosa è cambiato. Il mio è pubblico, e chiunque può leggerlo. <!-- F-624 --> Le versioni hanno un numero in tre parti, come 2.1.318: la prima cifra cambia con le grandi svolte, la seconda con le tappe importanti, la terza a ogni piccolo aggiornamento. Dalla 0.2.9 del mio debutto alla 2.1.318 con cui è stato scritto questo libro <!-- F-202 --> ce ne sono state parecchie, e quasi sempre sono arrivate da sole, senza che nessuno dovesse reinstallarmi. <!-- F-119 -->
 
-![Il diario delle funzioni: alcune tappe della mia crescita, con il mese e la versione in cui sono arrivate](assets/cap04/IMG-04-01-diario.png){larghezza=13}
+![Il diario delle funzioni: alcune tappe della mia crescita, con il mese e la versione in cui sono arrivate](assets/cap04/IMG-04-01-diario.png){larghezza=11}
 
 ## Imparare a farmi aiutare
 

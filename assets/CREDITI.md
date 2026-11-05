@@ -20,6 +20,8 @@ Licenze ammesse: pubblico dominio, CC0, CC BY, CC BY-SA, unDraw.
 | IMG-04-01 | assets/cap04/IMG-04-01-diario.png | Originale: build/figure/cap04.py (HTML + Playwright) | Claude Code | Originale | Cap. 4, fig. 4.1 — il diario delle funzioni 2025–2026 |
 | IMG-04-02 | assets/cap04/IMG-04-02-spinner.png | Originale: build/figure/cap04.py (HTML + Playwright) | Claude Code | Originale | Cap. 4, fig. 4.2 — la sequenza dello spinner |
 | IMG-04-03 | assets/cap04/IMG-04-03-verbi.png | Originale: build/figure/cap04.py (HTML + Playwright) | Claude Code | Originale | Cap. 4, fig. 4.3 — un campione dei verbi dello spinner |
+| IMG-05-01 | assets/cap05/IMG-05-01-windows.png | Originale: build/figure/cap05.py (terminale.py + Playwright) | Claude Code | Originale | Cap. 5, fig. 5.1 — installazione su Windows (ricostruzione stilizzata) |
+| IMG-05-02 | assets/cap05/IMG-05-02-dove.png | Originale: build/figure/cap05.py (HTML + Playwright) | Claude Code | Originale | Cap. 5, fig. 5.2 — dove posso usarmi |
 | IMG-06-01 | assets/cap06/IMG-06-01-anatomia.png | Originale: build/figure/cap06.py (terminale.py + Playwright) | Claude Code | Originale | Cap. 6 — anatomia dello schermo (ricostruzione stilizzata) |
 | IMG-06-02 | assets/cap06/IMG-06-02-permesso.png | Originale: build/figure/cap06.py (terminale.py + Playwright) | Claude Code | Originale | Cap. 6 — richiesta di permesso (ricostruzione stilizzata) |
 
