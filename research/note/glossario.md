@@ -89,3 +89,7 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | formula | 15 | Istruzione di calcolo in una cella di un foglio, es. =SOMMA(B2:B13) |
 | SOMMA.PIÙ.SE (SUMIFS) | 15 | Funzione che somma solo le righe che rispettano più condizioni |
 | totale di controllo | 15 | Totale calcolato in modo indipendente per verificare un risultato |
+| PDF con testo / scansionato | 16 | Il primo contiene il testo vero; il secondo è solo un'immagine della pagina |
+| OCR | 16 | Riconoscimento ottico dei caratteri: trasforma l'immagine di un testo in testo vero |
+| XML (fattura elettronica) | 16 | Formato strutturato con cui viaggiano le fatture elettroniche in Italia |
+| espressione regolare | 16 | Schema di ricerca nel testo (es. «un importo dopo la parola Totale») |

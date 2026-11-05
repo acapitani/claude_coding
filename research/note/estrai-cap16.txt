@@ -1,0 +1,4 @@
+Fatture lette: 29 su 30  ->  fatture.xlsx
+Totale delle fatture lette: 54.382,42 €
+  - fattura-23.pdf: è una scansione (nessun testo): da leggere come immagine
+  - fattura-14.pdf: imponibile + IVA = 231.04, ma il totale è 331.04

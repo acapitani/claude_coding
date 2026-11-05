@@ -1,0 +1,43 @@
+"""Figure del capitolo 16 «PDF».
+IMG-16-02: la fattura scansionata di esempi/cap16 (fattura-23.pdf), resa come immagine."""
+import subprocess
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+import comune  # noqa: E402
+
+html = """<!doctype html><html lang="it"><meta charset="utf-8"><style>
+* { box-sizing:border-box; margin:0; padding:0 }
+body { background:#fff; font-family:Calibri,sans-serif; color:#1F1E1D; padding:0.1cm }
+.riga { display:flex; align-items:center; gap:0.25cm }
+.pdf { width:4.3cm; border:0.8pt solid #B8B2A7; border-radius:0.1cm; padding:0.2cm; font:7pt Helvetica,Arial,sans-serif; line-height:1.45; background:#fff; box-shadow:0.05cm 0.05cm 0 #E8E3DA }
+.pdf b { font-size:8.5pt }
+mark { background:#FBE3D9; border-radius:0.05cm; padding:0 0.05cm }
+.freccia { font-size:16pt; color:#8C867D; text-align:center }
+.regole { width:3.6cm; font-size:7.5pt; line-height:1.35 }
+.regole div { margin:0.08cm 0 } .regole code { font:7pt Consolas,monospace; color:#D77757 }
+table { border-collapse:collapse; font-size:7.5pt; margin-top:0.35cm; width:100% }
+td { border:0.6pt solid #B8B2A7; padding:0.05cm 0.1cm } tr:first-child td { background:#F4F1EA; font-weight:bold }
+td.n { text-align:right }
+.ok { color:#6B9B57; font-weight:bold }
+</style>
+<div class="riga">
+ <div class="pdf"><b>Pulizie Lampo di G. Neri</b><br>P. IVA 05555550123<br><br><b><mark>Fatt. 102/2026</mark></b><br>
+ Bologna, <mark>29 luglio 2026</mark><br><br>Imponibile <mark>2.571,16</mark><br>IVA 22% <mark>565,66</mark><br><b>Totale fattura € <mark>3.136,82</mark></b></div>
+ <div class="freccia">→</div>
+ <div class="regole"><div>il numero dopo <code>Fatt.</code></div><div>la data, anche scritta in lettere</div>
+ <div>gli importi dopo <code>Imponibile</code>, <code>IVA</code>, <code>Totale</code></div>
+ <div class="ok">controllo: 2.571,16 + 565,66 = 3.136,82 ✓</div></div>
+</div>
+<table><tr><td>Fornitore</td><td>Numero</td><td>Data</td><td>Imponibile</td><td>IVA</td><td>Totale</td></tr>
+<tr><td>Pulizie Lampo di G. Neri</td><td>102/2026</td><td>29/07/2026</td><td class="n">2.571,16 €</td><td class="n">565,66 €</td><td class="n">3.136,82 €</td></tr></table>
+</html>"""
+src = comune.RADICE / "assets/src/cap16/IMG-16-01-da-pdf-a-riga.html"
+src.parent.mkdir(parents=True, exist_ok=True)
+src.write_text(html, encoding="utf-8")
+r = subprocess.run(["node", str(Path(__file__).parent / "render.mjs"), str(src),
+                    str(comune.RADICE / "assets/cap16/IMG-16-01-da-pdf-a-riga.png"),
+                    "--larghezza-cm", "12", "--dpi", "300"], capture_output=True, text=True)
+assert r.returncode == 0, r.stderr
+print("ok")
