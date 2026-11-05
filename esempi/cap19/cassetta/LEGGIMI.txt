@@ -1,0 +1,32 @@
+CASSETTA DEGLI ATTREZZI DELL'UFFICIO
+=====================================
+
+Come si usa: si TRASCINA la cartella con i dati sopra l'icona dello strumento.
+Si apre una finestra nera che dice che cosa ha fatto. Premi un tasto per chiuderla.
+I file originali non vengono mai modificati: i risultati sono file nuovi.
+
+1 - Lettere da elenco
+    Cartella con clienti.xlsx e modello-sollecito.docx.
+    Risultato: una lettera Word per cliente nella sottocartella «lettere».
+
+2 - Unisci estratti
+    Cartella che contiene la sottocartella «estratti» (un file Excel per mese).
+    Risultato: riepilogo.xlsx con tutti i movimenti, i totali per mese e il grafico.
+
+3 - Fatture PDF in Excel
+    Cartella che contiene la sottocartella «fatture» (PDF).
+    Risultato: fatture.xlsx. Le scansioni e le fatture con i conti sbagliati
+    vengono elencate a parte: vanno controllate a mano.
+
+4 - Rinomina foto (prova)
+    Cartella che contiene la sottocartella «foto».
+    Solo PROVA: crea piano.csv con i nomi nuovi, non rinomina niente.
+    Per rinominare davvero chiedi a chi gestisce la cassetta.
+
+5 - Report settimanale
+    Cartella che contiene vendite.csv.
+    Risultato: report Word della settimana scorsa e una bozza di email
+    nella sottocartella «report». L'email NON viene spedita.
+
+Serve Python installato. Se la finestra dice «Manca Python», chiedi all'ufficio
+informatico. Per problemi o idee: Anna, interno 214.

@@ -1,0 +1,19 @@
+=== 2 - Unisci estratti.bat  <-  cap15
+Movimenti uniti: 229 da 12 file
+Controllo: entrate 269.698,24  uscite 114.698,08  saldo 155.000,16
+Sistemazioni fatte:
+=== 3 - Fatture PDF in Excel.bat  <-  cap16
+Fatture lette: 29 su 30  ->  fatture.xlsx
+Totale delle fatture lette: 54.382,42 €
+  - fattura-23.pdf: è una scansione (nessun testo): da leggere come immagine
+=== 1 - Lettere da elenco.bat  <-  cap14
+Lettere create: 49 (cartella 'lettere')
+Da controllare a mano:
+  - riga 18: manca Importo
+=== 4 - Rinomina foto (prova).bat  <-  cap17
+PROVA A SECCO: 380 foto da rinominare (vedi piano.csv). Nessun file toccato.
+  IMG_4141.jpg  ->  2026-08-17_122100_firenze.jpg
+  IMG_4142.jpg  ->  2026-08-16_143200_firenze.jpg
+=== 2 - Unisci estratti.bat  <-  (niente)
+Trascina sull'icona di questo file la cartella che contiene la sottocartella estratti. 
+Press any key to continue . . .

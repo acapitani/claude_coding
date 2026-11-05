@@ -100,3 +100,5 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | Routines | 18 | Attività pianificate che girano sui server di Anthropic (/schedule) |
 | Utilità di pianificazione | 18 | Lo strumento di Windows che avvia programmi a orari stabiliti |
 | soglia di segnalazione | 18 | Variazione oltre la quale un report segnala qualcosa |
+| file batch (.bat) | 19 | File di comandi che Windows esegue con un doppio clic o trascinandoci sopra una cartella |
+| LEGGIMI | 19 | Foglio di istruzioni che accompagna uno strumento |
