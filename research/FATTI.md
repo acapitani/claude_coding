@@ -278,6 +278,9 @@ Numerazione: F-0xx storia dell'informatica · F-1xx origini · F-2xx lancio e ta
 | F-626 | Uscita dal plan mode: riquadro «Ready to code?» con «Here is Claude's plan:»; tra le risposte «Yes, auto-accept edits», «Yes, manually approve edits», «No, keep planning» e la possibilità di dire a Claude che cosa cambiare | binario 2.1.318 (stringhe dell'interfaccia), accesso 2026-11-05 | A | 7 |
 | F-627 | `/plan` «Enable plan mode or view the current session plan» (argomento facoltativo: una descrizione); in plan mode Claude non deve fare modifiche né eseguire strumenti che non siano di sola lettura («you MUST NOT make any edits») | binario 2.1.318 (stringhe dell'interfaccia), accesso 2026-11-05 | A | 7 |
 | F-628 | Maiusc+Invio va a capo nella casella di input senza inviare (supportato nativamente in alcuni terminali; altrimenti si installa la scorciatoia con `/terminal-setup`) | binario 2.1.318 (stringhe dell'interfaccia), accesso 2026-11-05 | A | 7 |
+| F-629 | `/loop` «Run a prompt or slash command on a recurring interval (e.g. /loop 5m /foo). Omit the interval to let the model self-pace» | binario 2.1.318 (stringhe; `claude --help`), accesso 2026-11-05 | A | 18, 24 |
+| F-630 | `/schedule` (alias `routines`) «Create and manage scheduled remote Claude Code agents» | binario 2.1.318 (stringhe; `claude --help`), accesso 2026-11-05 | A | 18, 24 |
+| F-631 | `claude -p` / `--print` «Print response and exit (useful for pipes)»; `--allowedTools` / `--disallowedTools` elencano gli strumenti permessi o vietati; `--output-format` vale solo con `--print` | binario 2.1.318 (stringhe; `claude --help`), accesso 2026-11-05 | A | 18, 24 |
 
 ## F-7xx — Uso reale, anche fuori dalla programmazione (Parte IV, cap. 4)
 

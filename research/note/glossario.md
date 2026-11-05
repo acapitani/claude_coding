@@ -96,3 +96,7 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | EXIF | 17 | Dati nascosti in una foto: fotocamera, impostazioni, data e ora di scatto |
 | impronta (hash) | 17 | Codice calcolato dal contenuto di un file, uguale solo per file identici |
 | file per annullare | 17 | Elenco delle modifiche fatte, che permette di tornare indietro |
+| /loop | 18 | Ripete una richiesta a intervalli, finché la sessione è aperta |
+| Routines | 18 | Attività pianificate che girano sui server di Anthropic (/schedule) |
+| Utilità di pianificazione | 18 | Lo strumento di Windows che avvia programmi a orari stabiliti |
+| soglia di segnalazione | 18 | Variazione oltre la quale un report segnala qualcosa |

@@ -45,6 +45,8 @@ Licenze ammesse: pubblico dominio, CC0, CC BY, CC BY-SA, unDraw.
 | IMG-16-01 | assets/cap16/IMG-16-01-da-pdf-a-riga.png | Originale: build/figure/cap16.py (HTML + Playwright) | Claude Code | Originale | Cap. 16, fig. 16.1 — da fattura PDF a riga di tabella |
 | IMG-16-02 | assets/cap16/IMG-16-02-scansione.png | Originale: la fattura scansionata di esempi/cap16 (fattura-23.pdf) resa come immagine | Claude Code | Originale | Cap. 16, fig. 16.2 — una fattura scansionata |
 | IMG-17-01 | assets/cap17/IMG-17-01-prima-dopo.png | Originale: build/figure/cap17.py (terminale.py), nomi reali da esempi/cap17/piano.csv | Claude Code | Originale | Cap. 17, fig. 17.1 — la cartella prima e dopo |
+| IMG-18-01 | assets/cap18/IMG-18-01-catena.png | Originale: build/figure/cap18.py (Graphviz) | Claude Code | Originale | Cap. 18, fig. 18.1 — la catena del report |
+| IMG-18-02 | assets/cap18/IMG-18-02-report.png | Originale: report generato da esempi/cap18/report.py (matplotlib, python-docx), convertito con LibreOffice e ritagliato | Claude Code | Originale | Cap. 18, fig. 18.2 — il report della settimana |
 
 Licenze verificate il 2026-11-04 tramite API di Wikimedia Commons (campo LicenseShortName) e pagina del file.
 Le immagini ridimensionate (lato lungo ≤ 2400 px, salvo l'ENIAC a 3840 px) non sono state altrimenti alterate.
