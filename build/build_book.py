@@ -688,7 +688,10 @@ class Costruttore:
         che altrimenti lascerebbero spazi doppi nel testo giustificato."""
         testo = percorso.read_text(encoding="utf-8")
         self._marcatori(testo)
-        return re.sub(r"[ \t]*<!--\s*(F-\d{3}[\s,;]*)+-->", "", testo)
+        testo = re.sub(r"[ \t]*<!--\s*(F-\d{3}[\s,;]*)+-->", "", testo)
+        # {larghezza=5.5}: il plugin attrs scarta i valori con il punto se non sono tra virgolette
+        return re.sub(r"\b(larghezza|altezza_max)=(\d+[.,]\d+)",
+                      lambda m: f'{m[1]}="{m[2].replace(",", ".")}"', testo)
 
     def capitolo(self, percorso, tipo, numero=None, preliminare=False):
         testo = self.leggi_md(percorso)

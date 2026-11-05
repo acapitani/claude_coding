@@ -41,7 +41,7 @@
 - Ogni immagine sta in `assets/CREDITI.md` (id, file, fonte/URL, autore, licenza, uso) **prima** di essere inserita.
 - Licenze ammesse: pubblico dominio, CC0, CC BY, CC BY-SA, unDraw. Licenza incerta = esclusa.
 - Le figure generate hanno lo script sorgente in `assets/src/` o `build/figure/`.
-- Formato: PNG 300 dpi, larghezza massima 13 cm, didascalia obbligatoria "Figura N.M – …".
+- Formato: PNG 300 dpi (le foto possono restare JPEG, ma con intestazione JFIF: python-docx non legge i JPEG senza; in caso di errore `UnrecognizedImageError` risalvarle con Pillow), larghezza massima 13 cm, didascalia obbligatoria "Figura N.M – …".
 
 ## Cartelle e nomi
 - `capitoli/NN-slug.md`, `assets/capNN/IMG-NN-MM-slug.png`, `research/FATTI.md` (F-NNN),
@@ -82,7 +82,7 @@
   `PS …> ` hanno il prompt arancio; `#` = commento; i glifi dello spinner diventano arancio).
   Massimo **68 caratteri** per riga di codice.
 - Figura (paragrafo da sola): `![Didascalia senza "Figura N.M"](assets/capNN/IMG-NN-MM-slug.png){larghezza=10}`
-  (`larghezza` in cm, max 13; `altezza_max` in cm, predefinita 11). Numero e "Figura" li mette la build.
+  (`larghezza` in cm, anche decimale, max 13; `altezza_max` in cm, predefinita 11). Numero e "Figura" li mette la build.
 - Indice analitico: `[testo]{xe="voce"}`. Tasti: `[Ctrl+C]{.tasto}`. Fatti: `<!-- F-NNN -->`.
 - `---` = separatore ✻. `> citazione` = stile citazione. Le virgolette "dritte" diventano «caporali».
 - Pagine semplici (colophon, dedica): gli a capo del sorgente restano a capo.

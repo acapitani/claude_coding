@@ -12,3 +12,10 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | contesto | 6 | Tutto ciò che Claude Code ha «davanti» mentre lavora: conversazione, file letti, istruzioni |
 | permesso | 6 | Conferma richiesta prima di un'azione che modifica file o esegue comandi |
 | prompt | Pref. | La richiesta scritta che si dà a un modello o a Claude Code |
+| breakpoint | 1 | Punto in cui si ferma un programma per esaminarne lo stato durante il debug |
+| bug | 1 | Difetto di un programma |
+| compilatore | 1 | Programma che traduce un testo leggibile da una persona nel linguaggio della macchina |
+| shell | 1 | Interprete dei comandi: aspetta un comando, lo esegue, mostra il risultato |
+| modello linguistico | 1 | Programma che ha imparato da molto testo a prevedere come continua una frase |
+| Transformer | 1 | Architettura dei modelli linguistici moderni (2017) |
+| agente | 1 | Programma che porta avanti un incarico da solo, a passi: guarda, decide, agisce, verifica |

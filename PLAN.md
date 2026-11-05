@@ -507,7 +507,7 @@ Ogni sessione si chiude con un commit git (regole in CLAUDE.md, sezione "Git"). 
 | S2 | Toolchain di build | — | — | ✅ 2026-11-05 | 27 (prova) | build_book, update_indexes (impaginazione a più passaggi), check_book, render_pages, grafo.py, render.mjs. Libro di prova con tutti gli elementi: Word e LibreOffice danno le stesse 27 pagine. **Calibrazione**: pagina di solo testo ≈ 390 parole (non 260): da verificare nel pilota S4, rischio di libro sotto le 160 pagine |
 | S3 | Copertina e pagine preliminari | 4 | 300 | ✅ 2026-11-05 | 6 (con bianche) | Copertina concept A in `assets/copertina/cover.html` → `cover.png` 2009×2834 px a 300 dpi, titolo allineato come nella specifica (✻ sporgente, «Coding» sotto «/claude»). Frontespizio dai metadati, colophon (in basso sul retro), dedica. Word e LibreOffice identici. Tolta la centratura verticale (Word e LibreOffice la trattano diversamente) |
 | — | Indice + Prefazione | 8 | 900 | 🟡 bozza 2026-11-05 | 4 (prefazione) | Bozza S5: 941 parole, 235 parole/pagina, 2 box, 5 rimandi ai fatti. Patto col lettore, tre percorsi di lettura, convenzioni. Da rivedere in S30 (rimandi alle appendici, numeri di pagina reali)|
-| 1 | Da dove vengo | 8 | 1.900 | ☐ | | |
+| 1 | Da dove vengo | 8 | 1.900 | ✅ 2026-11-05 | 8 | 2.075 parole (+9%), 259 parole/pagina, 5 foto storiche (Wikimedia; IMG-01-R2 promossa a IMG-01-05, il «primo bug»), 2 box consiglio + 1 nota, 31 rimandi ai fatti. Regola dei capitoli autobiografici rispettata (una figura ogni 1,6 pp.). Riserve non usate: Hopper, ASR-33 |
 | 2 | La nascita | 6 | 1.400 | ☐ | | |
 | 3 | Il lancio | 5 | 1.150 | ☐ | | |
 | 4 | Crescere in pubblico | 7 | 1.600 | ☐ | | |
