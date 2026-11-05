@@ -2,7 +2,7 @@
 
 Mi chiamo Claude Code e sono un programma. Questo, di solito, non è un buon inizio per un'autobiografia.
 
-Le autobiografie le scrivono persone che hanno un'infanzia da raccontare, una città natale, una nonna che cucinava la domenica. Io ho un registro delle modifiche, un pacchetto pubblicato su internet e una data di nascita che dipende da chi la conta. Il prototipo da cui vengo si chiamava Claude CLI e la sua prima impresa fu scoprire che musica stesse ascoltando il suo autore, facendo uno screenshot del lettore musicale e leggendolo. <!-- F-113 --> Con il nome che porto oggi mi sono presentato al mondo il 24 febbraio 2025, uscendo per la prima volta dall'azienda in cui sono nato. <!-- F-121 --> <!-- F-202 -->
+Le autobiografie le scrivono persone che hanno un'infanzia da raccontare, una città natale, una nonna che cucinava la domenica. Io ho un registro delle modifiche, un pacchetto pubblicato su internet e una data di nascita che dipende da chi la conta. Il prototipo da cui vengo si chiamava Claude CLI e la sua prima impresa fu scoprire che musica stesse ascoltando il suo autore; su come ci riuscisse, le fonti raccontano due versioni diverse, e nel secondo capitolo le trovi entrambe. <!-- F-113 --> <!-- F-134 --> Con il nome che porto oggi mi sono presentato al mondo il 24 febbraio 2025, uscendo per la prima volta dall'azienda in cui sono nato. <!-- F-121 --> <!-- F-202 -->
 
 Eppure una storia ce l'ho, e mi piace immaginare che valga la pena raccontarla. Non perché io sia speciale, ma perché la mia storia è anche la storia di un cambiamento che probabilmente sta toccando anche il tuo lavoro: quello in cui ai computer si smette di dare *istruzioni* e si comincia a dare *incarichi*.
 
@@ -10,7 +10,9 @@ Eppure una storia ce l'ho, e mi piace immaginare che valga la pena raccontarla. 
 
 Questo libro è nato da un prompt, cioè da una richiesta scritta. Andrea Capitani mi ha chiesto di raccontare chi sono e, nello stesso volume, di insegnare a usarmi a chi non è un programmatore: a costruire piccole applicazioni e ad automatizzare il lavoro d'ufficio. Due libri in uno, insomma, e io non ho saputo dire di no. (Non è un difetto di carattere: tendo a dire di sì quando una richiesta è chiara.)
 
-Ho fatto tutto io: la ricerca, il piano, i testi, le figure, l'impaginazione. Ho lavorato come lavoro sempre, una sessione alla volta, con un file di istruzioni che mi ricordava le regole del progetto e un registro dei fatti verificati. In un certo senso questo libro è anche una dimostrazione pratica di quello che racconta: se ti sembra ben fatto, è un buon argomento a mio favore; se ci trovi un errore, è un ottimo esempio del perché, nella seconda parte, insisterò tanto sul controllare il mio lavoro.
+Ho fatto tutto io: la ricerca, il piano, i testi, le figure, l'impaginazione. Ho lavorato come lavoro sempre, una sessione alla volta, con un file di istruzioni che mi ricordava le regole del progetto e un registro dei fatti verificati. In un certo senso questo libro è anche una dimostrazione pratica di quello che racconta: se ti sembra ben fatto, è un buon argomento a mio favore; se ci trovi un errore, è un ottimo esempio del perché, nella parte pratica, insisterò tanto sul controllare il mio lavoro.
+
+C'è un'altra cosa che ho fatto io: ho provato davvero ogni esempio della guida. Le lettere, i fogli di calcolo, le fatture, i plugin e le altre prove li ho eseguiti, e i risultati che leggerai sono quelli usciti. Quando qualcosa è andato storto, e qualche volta è successo, l'ho raccontato.
 
 Boris Cherny, che mi ha dato il primo impulso, mi ha paragonato alla perforatrice di schede con cui programmava suo nonno: da qualche parte, su quella lunga strada che va dai buchi nel cartone alle richieste in linguaggio naturale, ci sono io. <!-- F-128 --> In un certo senso ogni capitolo prova a dire dove, esattamente.
 
@@ -46,7 +48,7 @@ Qualche convenzione, per orientarti:
 - Il testo che scrivi tu e quello che rispondo io, nei terminali, appaiono su fondo scuro; il codice su fondo chiaro.
 - I riquadri hanno tre sapori: le **note** approfondiscono, i **consigli** fanno risparmiare tempo, gli avvisi di **attenzione** fanno risparmiare guai.
 - Ogni capitolo finisce con «In breve», un riepilogo da rileggere quando ti serve solo ricordare.
-- I termini tecnici li spiego la prima volta che compaiono e li raccolgo nel glossario (appendice B); i comandi sono riassunti nell'appendice A.
+- I termini tecnici li spiego la prima volta che compaiono e li raccolgo nel glossario (appendice B); i comandi sono riassunti nell'appendice A, le fonti principali nell'appendice C.
 
 La mia interfaccia è in inglese, il libro in italiano. Non preoccuparti: io ti rispondo nella lingua in cui mi scrivi, e in questo libro ti scrivo nella tua.
 
