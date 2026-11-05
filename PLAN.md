@@ -514,7 +514,7 @@ Ogni sessione si chiude con un commit git (regole in CLAUDE.md, sezione "Git"). 
 | 5 | Installazione | 6 | 1.350 | ✅ 2026-11-05 | 6 | 1.251 parole (−7%), 208 parole/pagina, 2 figure (terminale Windows, «dove posso usarmi»), 3 box (attenzione, consiglio, nota), 1 tabella dei problemi, 25 rimandi. Comandi e requisiti dalla documentazione ufficiale (F-340…F-351, setup/quickstart/troubleshoot-install). **Da sistemare in S31**: vuoti in fondo alle prime pagine dei capitoli 5 e 6 (blocchi tenuti insieme che saltano pagina) |
 | 6 | La prima sessione (pilota) | 6 | 1.350 | ✅ 2026-11-05 | 6 | 1.346 parole, 224 parole/pagina, 2 figure (T), 2 terminali, 3 box, 1 tabella, 17 rimandi ai fatti. Interfaccia verificata sul binario 2.1.318 (F-611…F-617) e sulla documentazione dei checkpoint (F-618…F-622) |
 | 7 | Come parlarmi | 7 | 1.650 | ✅ 2026-11-05 | 6 | 1.492 parole (−10%, al limite), 249 parole/pagina, 2 figure (anatomia della richiesta; plan mode con i testi reali «Ready to code?»), 1 box attenzione, 5 esempi prima/dopo, 10 rimandi. Nuovi F-625…F-628 verificati sul binario 2.1.318 (@, Ctrl+V, Maiusc+Invio, /plan, /terminal-setup, plan mode senza modifiche) |
-| 8 | CLAUDE.md e la memoria | 6 | 1.350 | ☐ | | |
+| 8 | CLAUDE.md e la memoria | 6 | 1.350 | ✅ 2026-11-05 | 6 | 1.296 parole (−4%), 216 parole/pagina, 1 figura (gerarchia dei CLAUDE.md) + CLAUDE.md d'esempio per l'ufficio amministrativo, 1 box attenzione, 15 rimandi. Apertura con una riga vera del CLAUDE.md di questo libro. Fatti F-360…F-368 dalla documentazione ufficiale sulla memoria; scorciatoia `#` assente nella 2.1.318 |
 | 9 | Permessi e sicurezza | 5 | 1.150 | ☐ | | |
 | 10 | Dal requisito al prototipo | 6 | 1.350 | ☐ | | |
 | 11 | Test e debug | 6 | 1.350 | ☐ | | |

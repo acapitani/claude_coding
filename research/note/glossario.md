@@ -49,3 +49,7 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | plan mode | 7 | Modalità in cui Claude Code legge e ragiona senza modificare nulla, poi presenta un piano da approvare |
 | prova a secco | 7 | Anteprima di un'operazione (per esempio una rinomina in blocco) prima di eseguirla davvero |
 | criterio di «fatto» | 7 | Il modo in cui si verifica che un lavoro è finito e corretto; funziona da test |
+| CLAUDE.md | 8 | File di istruzioni che Claude Code legge all'inizio di ogni sessione |
+| Markdown | 8 | Formato di testo semplice: # per i titoli, - per gli elenchi |
+| import (in CLAUDE.md) | 8 | Riga @percorso che fa leggere anche un altro file |
+| memoria automatica | 8 | Note che Claude Code prende da solo tra una sessione e l'altra |

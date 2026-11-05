@@ -26,6 +26,7 @@ Licenze ammesse: pubblico dominio, CC0, CC BY, CC BY-SA, unDraw.
 | IMG-06-02 | assets/cap06/IMG-06-02-permesso.png | Originale: build/figure/cap06.py (terminale.py + Playwright) | Claude Code | Originale | Cap. 6 — richiesta di permesso (ricostruzione stilizzata) |
 | IMG-07-01 | assets/cap07/IMG-07-01-anatomia-richiesta.png | Originale: build/figure/cap07.py (HTML + Playwright) | Claude Code | Originale | Cap. 7, fig. 7.1 — anatomia di una buona richiesta |
 | IMG-07-02 | assets/cap07/IMG-07-02-plan-mode.png | Originale: build/figure/cap07.py (terminale.py + Playwright) | Claude Code | Originale | Cap. 7, fig. 7.2 — il piano in plan mode (ricostruzione stilizzata) |
+| IMG-08-01 | assets/cap08/IMG-08-01-gerarchia.png | Originale: build/figure/cap08.py (HTML + Playwright) | Claude Code | Originale | Cap. 8, fig. 8.1 — la gerarchia dei CLAUDE.md |
 
 Licenze verificate il 2026-11-04 tramite API di Wikimedia Commons (campo LicenseShortName) e pagina del file.
 Le immagini ridimensionate (lato lungo ≤ 2400 px, salvo l'ENIAC a 3840 px) non sono state altrimenti alterate.
