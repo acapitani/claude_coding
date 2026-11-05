@@ -250,6 +250,10 @@ Numerazione: F-0xx storia dell'informatica · F-1xx origini · F-2xx lancio e ta
 | F-622 | Al primo utilizzo Claude Code chiede di accedere (login) | https://code.claude.com/docs/en/quickstart | A | 5, 6 |
 | F-623 | `/release-notes` («View release notes») mostra le note di rilascio; l'impostazione `autoUpdatesChannel` sceglie il canale degli aggiornamenti automatici, `latest` o `stable` | binario 2.1.318 (stringhe), accesso 2026-11-05 | A | 4, 5 |
 | F-624 | Il file CHANGELOG.md del repository anthropics/claude-code elenca le novità di ogni versione | https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md (accesso 2026-11-05) | A | 4 |
+| F-625 | Suggerimenti dell'interfaccia: «/ for commands», «@ for file paths» (con @ si indica un file); le immagini si incollano con Ctrl+V («Paste images into Claude Code using control+v (not cmd+v!)») o si trascinano nel terminale | binario 2.1.318 (stringhe dell'interfaccia), accesso 2026-11-05 | A | 7 |
+| F-626 | Uscita dal plan mode: riquadro «Ready to code?» con «Here is Claude's plan:»; tra le risposte «Yes, auto-accept edits», «Yes, manually approve edits», «No, keep planning» e la possibilità di dire a Claude che cosa cambiare | binario 2.1.318 (stringhe dell'interfaccia), accesso 2026-11-05 | A | 7 |
+| F-627 | `/plan` «Enable plan mode or view the current session plan» (argomento facoltativo: una descrizione); in plan mode Claude non deve fare modifiche né eseguire strumenti che non siano di sola lettura («you MUST NOT make any edits») | binario 2.1.318 (stringhe dell'interfaccia), accesso 2026-11-05 | A | 7 |
+| F-628 | Maiusc+Invio va a capo nella casella di input senza inviare (supportato nativamente in alcuni terminali; altrimenti si installa la scorciatoia con `/terminal-setup`) | binario 2.1.318 (stringhe dell'interfaccia), accesso 2026-11-05 | A | 7 |
 
 ## F-7xx — Uso reale, anche fuori dalla programmazione (Parte IV, cap. 4)
 

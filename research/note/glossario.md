@@ -46,3 +46,6 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | WinGet | 5 | Gestore di programmi di Windows (installa e aggiorna da riga di comando) |
 | Homebrew | 5 | Gestore di programmi per macOS |
 | Console (Anthropic) | 5 | Il sito per gli sviluppatori, con API e credito prepagato |
+| plan mode | 7 | Modalità in cui Claude Code legge e ragiona senza modificare nulla, poi presenta un piano da approvare |
+| prova a secco | 7 | Anteprima di un'operazione (per esempio una rinomina in blocco) prima di eseguirla davvero |
+| criterio di «fatto» | 7 | Il modo in cui si verifica che un lavoro è finito e corretto; funziona da test |
