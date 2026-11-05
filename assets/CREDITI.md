@@ -48,6 +48,8 @@ Licenze ammesse: pubblico dominio, CC0, CC BY, CC BY-SA, unDraw.
 | IMG-18-01 | assets/cap18/IMG-18-01-catena.png | Originale: build/figure/cap18.py (Graphviz) | Claude Code | Originale | Cap. 18, fig. 18.1 — la catena del report |
 | IMG-18-02 | assets/cap18/IMG-18-02-report.png | Originale: report generato da esempi/cap18/report.py (matplotlib, python-docx), convertito con LibreOffice e ritagliato | Claude Code | Originale | Cap. 18, fig. 18.2 — il report della settimana |
 | IMG-19-01 | assets/cap19/IMG-19-01-cassetta.png | Originale: build/figure/cap19.py (HTML + Playwright) | Claude Code | Originale | Cap. 19, fig. 19.1 — la cassetta degli attrezzi (ricostruzione stilizzata) |
+| IMG-20-01 | assets/cap20/IMG-20-01-comando-skill.png | Originale: build/figure/cap20.py (HTML + Playwright) | Claude Code | Originale | Cap. 20, fig. 20.1 — comando e skill a confronto |
+| IMG-20-02 | assets/cap20/IMG-20-02-skill-in-azione.png | Originale: build/figure/cap20.py (terminale.py), dalla prova reale con claude -p (testo accorciato) | Claude Code | Originale | Cap. 20, fig. 20.2 — la skill scelta da sola (ricostruzione stilizzata) |
 
 Licenze verificate il 2026-11-04 tramite API di Wikimedia Commons (campo LicenseShortName) e pagina del file.
 Le immagini ridimensionate (lato lungo ≤ 2400 px, salvo l'ENIAC a 3840 px) non sono state altrimenti alterate.

@@ -102,3 +102,6 @@ Raccolti capitolo per capitolo; la definizione finale si scrive nella sessione d
 | soglia di segnalazione | 18 | Variazione oltre la quale un report segnala qualcosa |
 | file batch (.bat) | 19 | File di comandi che Windows esegue con un doppio clic o trascinandoci sopra una cartella |
 | LEGGIMI | 19 | Foglio di istruzioni che accompagna uno strumento |
+| comando personalizzato | 20 | File in .claude/commands/ richiamato con /nome |
+| $ARGUMENTS | 20 | Segnaposto che riceve ciò che si scrive dopo il nome del comando |
+| description (skill) | 20 | Descrizione con cui Claude Code decide quando usare una skill |

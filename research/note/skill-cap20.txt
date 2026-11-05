@@ -1,0 +1,11 @@
+**FATTURA DA CONTROLLARE**
+
+Fattura TS-113 del 24.10.2026, emessa da TecnoService S.p.A.
+
+| Voce | In fattura | Calcolato |
+|---|---|---|
+| Imponibile | 189,38 € | — |
+| IVA 22% | 41,66 € | 41,66 € (189,38 × 0,22 = 41,6636) ✅ |
+| Totale | **331,04 €** | **231,04 €** (189,38 + 41,66) ❌ |
+
+**Differenza: 100,00 € in più.** L'IVA è giusta, ma il totale è più alto di 100,00 € rispetto alla somma di imponibile e IVA. Il totale corretto sarebbe 231,04 €. Potrebbe essere un errore di battitura (il 2 scritto come 3), ma va chiarito con il fornitore prima di pagare.
