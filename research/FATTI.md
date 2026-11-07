@@ -330,6 +330,14 @@ Fonte per tutta la sezione: "How Anthropic teams use Claude Code" (24/07/2025), 
 | F-706 | Inference: un'ora di ricerche ridotta a 10–20 minuti (−80%) | 4 |
 | F-707 | Data Infrastructure: 20 minuti risparmiati in un'interruzione di servizio dovuta all'esaurimento di indirizzi IP su Kubernetes | 11 |
 
+## F-8xx — Questo libro (copertina di stampa, retro)
+
+| Id | Affermazione | Fonte | Aff. | Cap. |
+|---|---|---|---|---|
+| F-801 | Il libro nasce da un prompt di Andrea Capitani: chiede a Claude Code di scrivere la propria autobiografia, dalla nascita ai giorni nostri, e una guida facile all'uso di Claude Code per scrivere applicazioni e automatizzare compiti d'ufficio | `initial-prompt.txt` e `PROMPT.md` di questo repository, accesso 2026-11-07 | A | retro |
+| F-802 | Il lettore previsto è un professionista curioso, non necessariamente programmatore (scelta confermata da Andrea Capitani nella fase delle domande) | `PROMPT.md` (Fase 0, domanda 4); `PLAN.md` §2, accesso 2026-11-07 | A | retro |
+| F-803 | Gli esempi dei capitoli-guida sono stati costruiti ed eseguiti davvero (`esempi/capNN/`); gli errori trovati provando sono raccontati nel testo | `PLAN.md` §13 e cartella `esempi/` di questo repository, accesso 2026-11-07 | A | retro |
+
 ## F-9xx — NON VERIFICATO (non usare come fatto)
 
 | Id | Questione | Stato |
