@@ -186,6 +186,44 @@ Non è stato provato, ma i punti da toccare sono pochi:
 - installa i font DejaVu. Cambria, Calibri e Consolas non sono liberi: LibreOffice li sostituisce con
   Caladea, Carlito e un monospazio, quindi **l'impaginazione e il numero di pagine possono cambiare**.
 
+### Edizione a stampa (Pixartprinting)
+
+Oltre al `.docx` e al `.pdf`, la build produce l'esecutivo per stampare il libro con
+[Pixartprinting](https://www.pixartprinting.it/), nella configurazione del preventivo: libro con copertina
+flessibile, brossura fresata, formato **A5**, interno a colori, 196 pagine.
+
+Il libro resta impaginato a 17 × 24 cm. Per la stampa la pagina viene ridotta in A5 (all'87%, in modo
+vettoriale: i font restano testo), così l'impaginazione verificata non cambia. Si usa una variante del
+`.docx` con il nero puro, una testatina un po' più grande e filetti più spessi, così il corpo minimo
+(6 pt) e il tratto minimo (0,25 pt) restano rispettati anche dopo la riduzione.
+
+Servono due strumenti in più:
+
+| Strumento | Dove si trova | A cosa serve |
+|---|---|---|
+| Ghostscript 10.08 | [release ufficiali di Artifex](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases) (non è su winget) | conversione in CMYK e PDF/X-4 |
+| Profilo colore Fogra 39 | `Coated_Fogra39L_VIGC_300.icc` dal [registro ICC](https://www.color.org/registry/Coated_Fogra39L_VIGC_300.xalter), da salvare in `build/icc/` (non versionato) | spazio colore richiesto dallo stampatore |
+
+Il percorso di Ghostscript è in `build/comune.py` (`GS`). Poi:
+
+```powershell
+py build/build_stampa.py            # impagina la variante, genera interno e copertina, fa il preflight
+```
+
+Risultato in `output/stampa/`:
+
+- **`claude-coding-stampa.pdf`**: il file da caricare. È un PDF unico nell'ordine del template:
+  copertina esterna (retro, dorso e fronte distesi), copertina interna (bianca) e 196 pagine interne;
+- `copertina.pdf` e `interno.pdf`: la stessa cosa in due file, perché l'area upload accetta anche così;
+- `preflight.txt`: misure, dorso, font, colore, dpi, corpi, tratti e area sicura;
+- `anteprime/`: copertina con le guide (rifilo, abbondanza, area sicura, pieghe), alcune pagine
+  interne e le tre versioni del retro.
+
+Il dorso si calcola dal numero di pagine (pagine/2 × spessore del foglio, calibrato sul template).
+Se il libro cambia lunghezza, rifai il preventivo, scarica il nuovo template in `print-template/` e
+aggiorna `pagine_preventivo` e `dorso_template_mm` in `book.yaml`. Il preflight confronta pagina per
+pagina il risultato con il template, se lo trova.
+
 ---
 
 ## Ripetere l'esperienza
@@ -233,7 +271,8 @@ figure, voci d'indice, rimandi ai fatti) è descritta in `CLAUDE.md`, sezione «
 │   ├── FATTI.md           registro dei fatti verificati (F-NNN)
 │   └── note/              note di verifica e uscite reali delle prove
 ├── esempi/capNN/          programmi d'esempio costruiti e provati per i capitoli-guida
-├── build/                 toolchain: build_book, update_indexes, check_book, render_pages
+├── build/                 toolchain: build_book, update_indexes, check_book, render_pages,
+│                          build_stampa e check_stampa (edizione a stampa)
 │   └── figure/            uno script di figure per capitolo, render.mjs, terminale.py, grafo.py
 ├── _specs/                specifiche dei lavori successivi
 ├── _plans/                piani dettagliati approvati
@@ -253,10 +292,11 @@ testo di «The Making of Claude Code», in `research/fonti/`) resta l'URL origin
 ## Stato del progetto
 
 - ✅ **Libro completo**: 194 pagine, `check_book.py --finale` superato (sessione S32, novembre 2026).
-- 🚧 **Edizione a stampa**: in preparazione. Interno e copertina distesa (fronte, dorso, retro) per la
-  stampa con Pixartprinting, con il calcolo automatico del dorso. Specifica in
-  `_specs/spec-print.md`. Le istruzioni e i template di Pixartprinting non sono pubblicati: si
-  scaricano dal sito dello stampatore per il formato scelto e si mettono in `print-template/`.
+- ✅ **Edizione a stampa**: esecutivo A5 per Pixartprinting con copertina distesa e logo dell'editore
+  _kap, preflight senza errori (vedi «Edizione a stampa»). Specifica in `_specs/spec-print.md`, piano
+  in `_plans/pixartprinting.md`. Manca l'ISBN, e quindi anche il codice a barre: il retro non ha uno spazio
+  riservato. Le istruzioni e i template di Pixartprinting non sono pubblicati: si scaricano dal sito
+  dello stampatore per il formato scelto e si mettono in `print-template/`.
 
 ---
 
@@ -282,8 +322,8 @@ Il repository ha due licenze, a seconda di che cosa si riusa.
 | Che cosa | Licenza |
 |---|---|
 | **Testo del libro e documentazione**: `capitoli/`, `research/FATTI.md` e `research/note/`, `PROMPT.md`, `PLAN.md`, `CLAUDE.md`, `initial-prompt.txt`, `spec-template.md`, `_specs/`, questo README | [CC BY 4.0](LICENSE-CC-BY-4.0.txt) |
-| **Figure originali e copertina**: le immagini di `assets/` indicate come «Originale» in `assets/CREDITI.md`, `assets/copertina/cover.png`, `docs/img/` | [CC BY 4.0](LICENSE-CC-BY-4.0.txt) |
-| **Codice**: `build/`, `esempi/`, `assets/src/`, `assets/copertina/cover.html` | [MIT](LICENSE) |
+| **Figure originali e copertina**: le immagini di `assets/` indicate come «Originale» in `assets/CREDITI.md`, `assets/copertina/cover.png`, `docs/img/`; i testi del retro (`assets/copertina/retro.json`) | [CC BY 4.0](LICENSE-CC-BY-4.0.txt) |
+| **Codice**: `build/`, `esempi/`, `assets/src/`, `assets/copertina/cover.html` e `cover-stampa.html` | [MIT](LICENSE) |
 
 Per l'attribuzione CC BY 4.0 basta una riga come questa, con il link a questo repository:
 

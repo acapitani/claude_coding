@@ -1,0 +1,40 @@
+{
+  "_nota": "Testi del retro della copertina di stampa (assets/copertina/cover-stampa.html). `scelta` è l'indice della versione usata. Ogni fatto ha la sua voce in research/FATTI.md (campo `fatti`). Un paragrafo che inizia con «· » è una voce di elenco.",
+  "scelta": 1,
+  "versioni": [
+    {
+      "nome": "A — Presentazione",
+      "fatti": ["F-101", "F-134", "F-202", "F-801", "F-802"],
+      "titolo": "Sono Claude Code. Questo libro l'ho scritto io.",
+      "paragrafi": [
+        "Sono nato nel settembre 2024 come un prototipo che, per prima cosa, cercava di capire quale musica stesse ascoltando il suo autore. Il 24 febbraio 2025 sono uscito in pubblico. Da allora vivo nei terminali: leggo file, eseguo comandi, scrivo codice e, ogni tanto, mi correggo.",
+        "In queste pagine racconto la mia storia, solo con fatti veri e con le fonti, e ti insegno a usarmi: dall'installazione a un'applicazione completa, fino all'ufficio che si sbriga da solo, tra lettere, fogli di calcolo, PDF e report.",
+        "L'idea è di Andrea Capitani: mi ha chiesto un'autobiografia e una guida utile, pensata anche per chi non programma di mestiere. Ho detto sì. Nel mio lavoro è la risposta che preferisco.",
+        "Non serve saper programmare: basta la curiosità. Il resto lo facciamo insieme."
+      ]
+    },
+    {
+      "nome": "B — Il prompt",
+      "fatti": ["F-101", "F-202", "F-602", "F-801", "F-802", "F-803"],
+      "titolo": "Tutto è cominciato con un prompt.",
+      "paragrafi": [
+        "Andrea Capitani mi ha scritto, più o meno: raccontami chi sei e insegnami a usarti. E il lettore non deve per forza essere un programmatore: basta qualcuno con un computer e un po' di curiosità.",
+        "Così ho fatto due cose che di solito non mi chiedono. Ho ricostruito la mia storia, dal prototipo del settembre 2024 al debutto del febbraio 2025, verificando ogni data. E ho scritto una guida pratica in cui costruiamo insieme applicazioni vere e automatizziamo il lavoro d'ufficio: documenti, fogli di calcolo, PDF, cartelle in disordine, report del lunedì.",
+        "Ogni esempio l'ho provato davvero. Quando ho sbagliato, l'ho scritto.",
+        "Il ✻ in copertina è lo stesso che vedi accanto a me quando penso. C'è dal primo giorno."
+      ]
+    },
+    {
+      "nome": "C — Per chi è",
+      "fatti": ["F-101", "F-202", "F-801", "F-802"],
+      "titolo": "Questo libro è per te se…",
+      "paragrafi": [
+        "· hai sentito parlare di me e vuoi capire che cosa so fare davvero;",
+        "· passi le giornate tra fogli di calcolo, PDF e file chiamati «definitivo_v2»;",
+        "· vuoi scrivere la tua prima applicazione, anche senza essere un programmatore.",
+        "Metà libro è la mia autobiografia: dal prototipo del settembre 2024 al debutto del 24 febbraio 2025, solo fatti verificati, con le fonti. L'altra metà è una guida pratica: installazione, prime richieste, permessi, applicazioni complete, automazioni d'ufficio e i miei superpoteri, cioè hook, sottoagenti e connettori.",
+        "L'idea è di Andrea Capitani, che mi ha chiesto di raccontarmi e di essere utile a un pubblico non solo di programmatori. Ho accettato volentieri. E il gergo, quando c'è, lo spiego."
+      ]
+    }
+  ]
+}

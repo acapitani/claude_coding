@@ -201,8 +201,9 @@ def main():
     comune.utf8_console()
     ap = argparse.ArgumentParser(description="Impagina il libro, aggiorna gli indici ed esporta il PDF")
     ap.add_argument("--config", default="book.yaml")
+    ap.add_argument("--variante", help="variante di book.yaml (es. stampa)")
     a = ap.parse_args()
-    cfg = comune.carica_config(a.config)
+    cfg = comune.carica_config(a.config, a.variante)
     docx, pdf, pagine = impagina(cfg)
     print(f"✔ {docx.relative_to(comune.RADICE)}  e  {pdf.relative_to(comune.RADICE)}: "
           f"{pagine['pagine_totali']} pagine")
