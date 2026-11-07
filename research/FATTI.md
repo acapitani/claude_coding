@@ -337,6 +337,8 @@ Fonte per tutta la sezione: "How Anthropic teams use Claude Code" (24/07/2025), 
 | F-801 | Il libro nasce da un prompt di Andrea Capitani: chiede a Claude Code di scrivere la propria autobiografia, dalla nascita ai giorni nostri, e una guida facile all'uso di Claude Code per scrivere applicazioni e automatizzare compiti d'ufficio | `initial-prompt.txt` e `PROMPT.md` di questo repository, accesso 2026-11-07 | A | retro |
 | F-802 | Il lettore previsto è un professionista curioso, non necessariamente programmatore (scelta confermata da Andrea Capitani nella fase delle domande) | `PROMPT.md` (Fase 0, domanda 4); `PLAN.md` §2, accesso 2026-11-07 | A | retro |
 | F-803 | Gli esempi dei capitoli-guida sono stati costruiti ed eseguiti davvero (`esempi/capNN/`); gli errori trovati provando sono raccontati nel testo | `PLAN.md` §13 e cartella `esempi/` di questo repository, accesso 2026-11-07 | A | retro |
+| F-804 | Andrea Capitani, in arte «kap», è nato nel 1973 a Maranello, in provincia di Modena | Andrea Capitani, comunicazione diretta nella sessione di lavoro del 2026-11-07 | A | biografia |
+| F-805 | Le passioni di Andrea Capitani: l'informatica, la programmazione dei videogiochi, il «creare vita» nel software | Andrea Capitani, comunicazione diretta nella sessione di lavoro del 2026-11-07 | A | biografia |
 
 ## F-9xx — NON VERIFICATO (non usare come fatto)
 

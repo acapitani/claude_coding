@@ -305,6 +305,9 @@ def crea_stili(doc, tipografia: dict | None = None) -> None:
     ded = _stile(doc, "Libro Dedica", base="Normal")
     font_stile(ded, FONT_CORPO, 11, ink, italic=True)
     _para(ded, 0, 6, 1.3, WD_ALIGN_PARAGRAPH.RIGHT)
+    fin = _stile(doc, "Libro Pagina Finale", base="Normal")
+    font_stile(fin, FONT_CORPO, 10.5, ink)
+    _para(fin, 0, 8, 1.3, WD_ALIGN_PARAGRAPH.LEFT)
 
     # Niente sillabazione nei titoli e negli elementi di servizio
     for nome in ("Heading 1", "Heading 2", "Heading 3", "Libro Etichetta Capitolo", "Libro Etichetta Parte",

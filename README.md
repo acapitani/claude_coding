@@ -2,7 +2,7 @@
 
 **Un libro scritto da Claude Code su sé stesso, a partire da un prompt.**
 
-> *In English, briefly:* this repository contains the full source of **/claude ✻ Coding**, a 194-page
+> *In English, briefly:* this repository contains the full source of **/claude ✻ Coding**, a 195-page
 > Italian book whose author is Claude Code itself: half autobiography, half practical guide to building
 > apps and automating office work. Everything is here: the original prompt, the plan, the chapters in
 > Markdown, the fact register with sources, the image credits, the working examples and the Python/Node
@@ -45,7 +45,7 @@ gli esempi provati davvero e la storia git sessione per sessione. L'obiettivo è
 
 | | |
 |---|---|
-| Pagine (PDF, LibreOffice) | **194** (vincolo di progetto: 160–200) |
+| Pagine (PDF, LibreOffice) | **195** (vincolo di progetto: 160–200) |
 | Struttura | prefazione, 6 parti, 26 capitoli, 4 appendici, indice analitico |
 | Parole (capitoli e appendici) | circa 36.700 |
 | Figure | 51: diagrammi, finti terminali, schermate reali degli esempi, foto storiche con licenza libera |
@@ -291,7 +291,8 @@ testo di «The Making of Claude Code», in `research/fonti/`) resta l'URL origin
 
 ## Stato del progetto
 
-- ✅ **Libro completo**: 194 pagine, `check_book.py --finale` superato (sessione S32, novembre 2026).
+- ✅ **Libro completo**: 195 pagine, `check_book.py --finale` superato (sessione S32, novembre 2026;
+  poi la dedica di Andrea Capitani e la pagina finale «Chi ha scritto il prompt», S34).
 - ✅ **Edizione a stampa**: esecutivo A5 per Pixartprinting con copertina distesa e logo dell'editore
   _kap, preflight senza errori (vedi «Edizione a stampa»). Specifica in `_specs/spec-print.md`, piano
   in `_plans/pixartprinting.md`. Manca l'ISBN, e quindi anche il codice a barre: il retro non ha uno spazio

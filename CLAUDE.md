@@ -111,7 +111,9 @@
   (`larghezza` in cm, anche decimale, max 13; `altezza_max` in cm, predefinita 11). Numero e "Figura" li mette la build.
 - Indice analitico: `[testo]{xe="voce"}`. Tasti: `[Ctrl+C]{.tasto}`. Fatti: `<!-- F-NNN -->`.
 - `---` = separatore ✻. `> citazione` = stile citazione. Le virgolette "dritte" diventano «caporali».
-- Pagine semplici (colophon, dedica): gli a capo del sorgente restano a capo.
+- Pagine semplici (colophon, dedica, pagine finali): gli a capo del sorgente restano a capo.
+- Pagine finali senza numero dopo le appendici: `book.yaml` → `finali` (oggi `autore-del-prompt.md`, biografia di
+  Andrea Capitani, fatti F-804/F-805). Nella dedica, la seconda strofa dopo `---` è la dedica di Andrea, firmata.
 
 ## Impaginazione (decisioni della S2)
 - Ogni sezione inizia su pagina nuova; le **pagine bianche** per mandare a destra capitoli, parti e
