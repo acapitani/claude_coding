@@ -115,7 +115,10 @@
   A fine sessione: checklist completa e aggiornamento di §13.
 
 ## Git
-- Il progetto è un repository git locale (branch `master`, nessun remote). `output/` e `build/node_modules/`
+- Il progetto è un repository git (branch `master`) con un remote privato personale dell'autore del prompt,
+  usato per il lavoro. Il sorgente pubblico andrà su GitHub come repository nuovo, con la storia azzerata:
+  non serve preoccuparsi della storia di questo repository, ma il materiale di terzi resta fuori da git.
+  Push solo su richiesta esplicita. `output/` e `build/node_modules/`
   sono esclusi dal `.gitignore`: tutto ciò che è generato si ricrea con la build.
 - **Un commit a fine di ogni sessione**, dopo la checklist e l'aggiornamento di PLAN.md §13.
   Commit intermedi ammessi per lavori lunghi (es. capitolo 13 su due sessioni).
