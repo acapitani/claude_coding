@@ -49,6 +49,10 @@
 - `capitoli/NN-slug.md`, `assets/capNN/IMG-NN-MM-slug.png`, `research/FATTI.md` (F-NNN),
   `build/` (script), `output/` (generati, mai modificati a mano).
 - Minuscole e trattini, niente accenti nei nomi dei file.
+- `research/fonti/` e `print-template/`: copie locali di materiale di terzi, escluse da git (il repository è
+  pubblico); per le fonti, in FATTI.md resta l'URL.
+- Licenze: testo e figure originali CC BY 4.0 (`LICENSE-CC-BY-4.0.txt`), codice MIT (`LICENSE`); dettagli nel README.
+- Anteprime del README (`docs/img/`): `py build/immagini_readme.py` dopo `update_indexes.py`.
 
 ## Comandi
 - Python si invoca con `py` (non `python`). Negli script: `sys.stdout.reconfigure(encoding="utf-8")`

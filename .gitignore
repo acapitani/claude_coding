@@ -35,3 +35,7 @@ esempi/cap17/foto/
 esempi/cap17/piano.csv
 esempi/cap17/annulla.csv
 esempi/cap18/report/
+
+# --- Materiale di terzi: copie locali (fonti della ricerca, template di stampa), non pubblicabili ---
+research/fonti/
+print-template/
