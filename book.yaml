@@ -60,6 +60,9 @@ appendici:
   - crediti             # Appendice D, generata da assets/CREDITI.md
   - indice-analitico
 
+finali:                 # pagine senza numero dopo le appendici
+  - autore-del-prompt   # chi ha scritto il prompt (biografia)
+
 # --- Stampa (Pixartprinting) ------------------------------------------------------------------
 # Valori misurati sul template scaricato con il preventivo (print-template/, locale e non versionato):
 # libro con copertina flessibile, brossura fresata, A5. L'interno è il PDF 17 × 24 ridotto in A5.

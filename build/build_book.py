@@ -417,6 +417,8 @@ class Costruttore:
                 i = j + 1
             elif ty == "hr":
                 p = target.add_paragraph(style="Libro Separatore")
+                if stile == "Libro Dedica":
+                    p.alignment = WD_ALIGN_PARAGRAPH.RIGHT   # in linea con i versi della dedica
                 self.testo(p, "✻")
                 i += 1
             elif ty == "html_block":
@@ -668,8 +670,8 @@ class Costruttore:
             self.testo(p, self.meta["citazione_copertina"])
 
     def pagina_semplice(self, percorso, stile, inizio=WD_SECTION.ODD_PAGE, centra=False, spazio_sopra=None):
-        """Colophon, dedica: nessuna testatina, nessun numero, nessuna voce d'indice."""
-        tokens = self.md.parse(percorso.read_text(encoding="utf-8"))
+        """Colophon, dedica, biografia finale: nessuna testatina, nessun numero, nessuna voce d'indice."""
+        tokens = self.md.parse(self.leggi_md(percorso))
         # niente titolo visibile
         if tokens and tokens[0].type == "heading_open":
             tokens = tokens[3:]
@@ -925,6 +927,11 @@ class Costruttore:
                 if f:
                     self.capitolo(f, "appendice", "ABCDEFGHIJ"[lettera])
                 lettera += 1
+        for voce in cfg.get("finali", []):
+            # pagine finali senza numero (biografia di chi ha scritto il prompt), su pagina di destra
+            f = self.file_capitolo(voce)
+            if f:
+                self.pagina_semplice(f, "Libro Pagina Finale", centra=True)
         self._riempi_indice()
         self._riempi_analitico()
         self._metadati()
