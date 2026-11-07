@@ -142,6 +142,6 @@ Passi 1–8 completati sul branch `pixartprinting`. Preflight: 0 errori, 1 avvis
   rasterizzate da Chromium a 45 dpi.
 
 ### Punti aperti
-- Scelta definitiva del retro: campo `scelta` in `assets/copertina/retro.json` (ora la versione A).
+- Retro: scelta la versione B «Il prompt» (campo `scelta` = 1 in `assets/copertina/retro.json`).
 - ISBN e codice a barre: non previsti.
 - Merge su `master` al checkpoint 2.

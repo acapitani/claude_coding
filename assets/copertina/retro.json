@@ -1,6 +1,6 @@
 {
   "_nota": "Testi del retro della copertina di stampa (assets/copertina/cover-stampa.html). `scelta` è l'indice della versione usata. Ogni fatto ha la sua voce in research/FATTI.md (campo `fatti`). Un paragrafo che inizia con «· » è una voce di elenco.",
-  "scelta": 0,
+  "scelta": 1,
   "versioni": [
     {
       "nome": "A — Presentazione",
