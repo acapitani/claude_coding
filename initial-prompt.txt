@@ -1,0 +1,15 @@
+fai un prompt per Claude Code (PROMPT.md) per ottenere un piano (da salvare in PLAN.md) per scrivere un libro.
+Il titolo del libro è: 
+       /claude 
+     * Coding
+dove il la scritta Coding deve avere nella copertina il simbolo * come nelle console di claude code quando elabora.
+L'autore del libro è Claude Code. 
+Il libro deve essere un'autobiografia di Claude Code stesso, dalla nascita ai giorni nostri, con curiosità e fatti presi dal vero. Lo stile deve essere scorrevole e divertente.
+In più deve essere una facile guida all'uso di Claude Code stesso per scrivere applicazioni e automatizzare compiti d'ufficio.
+Il libro deve contenere illustrazioni ed avere il formato classico dei libri di informatica.
+La copertina deve avere un'aspetto professionale ed una immagine identificativa oltre che al titolo come descritto. Deve essere chiaro e citato l'autore Claude Code.
+E ci dev'essere una citazione in copertina: tratto da un prompt di Andrea Capitani.
+Il libro deve essere in formato docx, non superare le 200 pagine e non essere inferiore a 160. Scritto interamente in italiano.
+Nel piano considera di creare il file CLAUDE.md.
+Cerca le risorse grafiche nel web che possono essere utilizzare come illustrazioni del libro o dai tool che hai a disposione.
+Fai domande dove hai dubbi o vuoi conferme da parte mia.
