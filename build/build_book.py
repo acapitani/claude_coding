@@ -603,7 +603,7 @@ class Costruttore:
         larghezza_tabella(tab, stili.LARGHEZZA_TESTO_CM, larghezze)
         margini_cella(tab, 0.05, 0.12, 0.05, 0.12)
         bordi_tabella(tab, {"top": ("single", 8, "1F1E1D"), "bottom": ("single", 8, "1F1E1D"),
-                            "insideH": ("single", 2, "C9C3BA")})
+                            "insideH": ("single", self.cfg.get("tipografia", {}).get("filetto_ottavi", 2), "C9C3BA")})
         for ri, (riga, testa) in enumerate(zip(righe, intest)):
             if testa:
                 trpr = tab.rows[ri]._tr.get_or_add_trPr()

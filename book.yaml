@@ -90,5 +90,6 @@ varianti:
     tipografia:
       inchiostro: "#000000"        # nero puro → solo K dopo la conversione in CMYK
       testatina_pt: 9              # maiuscoletto ≥ 6 pt anche dopo la riduzione in A5 (× 0,8706)
+      filetto_ottavi: 3            # filetti delle tabelle 0,375 pt → 0,33 pt in A5 (minimo 0,25)
     pagina:
       margini_cm: {testatina: 1.2} # testatina a 10,4 mm dal taglio dopo la riduzione
