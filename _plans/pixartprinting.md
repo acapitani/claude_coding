@@ -123,3 +123,25 @@ Al checkpoint 2: merge `--no-ff` su `master`, nuova build e nuove verifiche. Nes
 | Il numero di pagine cambia in futuro | Il dorso si ricalcola; avviso di rifare il preventivo e scaricare il nuovo template |
 | Loghi trasparenti in ritardo | La copertina si sviluppa con i PNG attuali; consegna bloccata finché non arrivano |
 | Testatina spostata a 1,2 cm | Sta nel margine superiore di 2,0 cm e non cambia il corpo; lo verifico con lo stesso numero di pagine e le stesse etichette |
+
+## Stato (2026-11-07)
+
+Passi 1–8 completati sul branch `pixartprinting`. Preflight: 0 errori, 1 avviso.
+
+### Scostamenti dal piano
+- **Profilo colore:** il download ECI (*ISOcoated_v2*) non è più raggiungibile; si usa
+  `Coated_Fogra39L_VIGC_300.icc` dal registro ICC (color.org): caratterizzazione FOGRA39, TAC 300%.
+- **Ghostscript** non è su winget: installato dalle release firmate di Artifex (10.08.0).
+- **Nero solo K:** `-dBlackText` di Ghostscript porta a nero *tutto* il testo (anche quello chiaro della
+  copertina), quindi non si usa. Prima della conversione, nero e grigi neutri RGB dell'interno vengono
+  riscritti come DeviceGray, che resta sulla sola lastra del nero.
+- **Filetti delle tabelle:** 0,25 pt diventavano 0,218 pt dopo la riduzione; nella variante sono 0,375 pt.
+- **cover.html:** con la modalità `?stampa=1` niente trama a righe (Chromium la rasterizzava a 22 dpi) e
+  numeri dello spinner a 7 pt. Senza parametro la resa è identica pixel per pixel.
+- **Avviso residuo:** le due sfumature di fondo della copertina, lisce e quasi impercettibili, sono
+  rasterizzate da Chromium a 45 dpi.
+
+### Punti aperti
+- Scelta definitiva del retro: campo `scelta` in `assets/copertina/retro.json` (ora la versione A).
+- ISBN e codice a barre: non previsti.
+- Merge su `master` al checkpoint 2.

@@ -80,6 +80,26 @@
 - Word è installato: per una verifica finale aprire il .docx via COM (PowerShell) ed esportare il PDF;
   in S2 Word e LibreOffice hanno dato la stessa impaginazione pagina per pagina.
 
+## Stampa (Pixartprinting)
+- Prodotto del preventivo: libro con copertina flessibile, **brossura fresata, A5 (14,8 × 21 cm)**, interno a colori,
+  196 pagine. Parametri in `book.yaml` → `stampa`; template e istruzioni in `print-template/` (locale, non versionato).
+- Il libro resta impaginato a 17 × 24: l'interno di stampa è il PDF della **variante `stampa`** ridotto in A5
+  (× 0,8706, vettoriale). La variante (`book.yaml` → `varianti.stampa`) cambia solo nero puro, testatina 9 pt a 1,2 cm
+  e filetti 0,375 pt: stesse pagine e stesso testo del digitale.
+- Vincoli: 3 mm di abbondanza; area sicura 5 mm dal taglio; testi a ≥ 15 mm dal lato interno e ≥ 10 mm dagli altri;
+  CMYK Fogra 39; 300 dpi; corpo ≥ 6 pt e tratti ≥ 0,25 pt **dopo** la riduzione; font incorporati; niente crocini.
+- Dorso = pagine/2 × 0,11429 mm (calibrato sul template: 11,2 mm per 196 pp.). Se cambia il numero di pagine:
+  rifare il preventivo, riscaricare il template e aggiornare `pagine_preventivo` e `dorso_template_mm`.
+- Copertina distesa: `assets/copertina/cover-stampa.html` (il fronte è `cover.html?stampa=1` ridotta); retro in
+  `assets/copertina/retro.json` (campo `scelta`, fatti in FATTI.md). Testo del dorso dall'alto verso il basso.
+- Loghi _kap (`_kaplogo/`, fondo trasparente): mai deformati, ricolorati o ricostruiti; su fondo scuro
+  «Wordmark — scuro» (fronte e retro) e monogramma (dorso). Il logo va solo sulla copertina di stampa.
+- Prerequisiti locali: Ghostscript 10.08 (`comune.GS`) e il profilo `build/icc/Coated_Fogra39L_VIGC_300.icc`
+  (registro ICC, color.org; non versionato).
+- Comando: `py build/build_stampa.py` (`--salta-impaginazione` per riusare la variante, `--retro N` per provare
+  un altro retro) → `output/stampa/claude-coding-stampa.pdf` (da caricare: copertina esterna, interna bianca,
+  interno), `copertina.pdf`/`interno.pdf`, `preflight.txt`, `anteprime/`. Solo preflight: `py build/check_stampa.py`.
+
 ## Markdown dei capitoli
 - Il primo `# Titolo` è il titolo del capitolo (numero ed etichetta li aggiunge la build).
   `##` entra nell'indice generale, `###` no.

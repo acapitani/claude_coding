@@ -6,6 +6,8 @@ Licenze ammesse: pubblico dominio, CC0, CC BY, CC BY-SA, unDraw.
 | Id | File | Fonte / metodo | Autore | Licenza | Uso (capitolo, figura) |
 |---|---|---|---|---|---|
 | COVER | assets/copertina/cover.png | Originale: HTML/CSS (assets/copertina/cover.html) renderizzato con Playwright | Claude Code | Originale | Copertina (concept A «Terminale») |
+| COVER-STAMPA | output/stampa/copertina.pdf (generata) | Originale: assets/copertina/cover-stampa.html (+ cover.html, retro.json) → PDF con Playwright, CMYK con Ghostscript | Claude Code | Originale | Copertina di stampa distesa: 4ª, dorso, 1ª (Pixartprinting) |
+| LOGO-KAP | _kaplogo/Wordmark — scuro@1x.png, _kaplogo/Monogramma avatar@1x.png | Fornito dall'editore (Andrea Capitani, alias _kap), versioni a fondo trasparente | Andrea Capitani | Tutti i diritti riservati — uso autorizzato dal titolare, escluso dalle licenze del repository | Solo copertina di stampa: wordmark su fronte e retro, monogramma sul dorso; non deformato né ricolorato |
 | IMG-01-01 | assets/cap01/IMG-01-01-ada-lovelace.jpg | https://commons.wikimedia.org/wiki/File:Ada_Lovelace_portrait.jpg | Alfred Edward Chalon (attr.), c. 1840 | Pubblico dominio | Cap. 1 — ritratto di Ada Lovelace |
 | IMG-01-04 | assets/cap01/IMG-01-04-scheda-fortran.jpg | https://commons.wikimedia.org/wiki/File:FortranCardPROJ039.agr.jpg | Arnold Reinhold | CC BY-SA 2.5 (attribuzione; non modificare, solo ridimensionare) | Cap. 1 — scheda perforata FORTRAN |
 | IMG-01-02 | assets/cap01/IMG-01-02-eniac.jpg | https://commons.wikimedia.org/wiki/File:Two_women_operating_ENIAC_(full_resolution).jpg | Fotografo non identificato dell'U.S. Army, 1946 | Pubblico dominio (opera del governo USA) | Cap. 1 — due programmatrici all'ENIAC |
