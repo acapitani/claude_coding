@@ -14,7 +14,7 @@ RADICE = Path(__file__).resolve().parent.parent
 OUTPUT = RADICE / "output"
 SOFFICE = Path(r"C:\Program Files\LibreOffice\program\soffice.com")
 DOT = Path(r"C:\Program Files\Graphviz\bin\dot.exe")
-
+GS = Path(r"C:\Program Files\gs\gs10.08.0\bin\gswin64c.exe")    # Ghostscript: solo per la stampa
 
 def utf8_console() -> None:
     """La console di Windows usa cp1252: senza questo, stampare ✻ manda in errore lo script."""
@@ -25,13 +25,27 @@ def utf8_console() -> None:
             pass
 
 
-def carica_config(percorso: str | Path = "book.yaml") -> dict:
+def _fondi(base: dict, sopra: dict) -> dict:
+    """Unisce `sopra` in `base`, ricorsivamente sui dizionari."""
+    for k, v in sopra.items():
+        base[k] = _fondi(dict(base[k]), v) if isinstance(v, dict) and isinstance(base.get(k), dict) else v
+    return base
+
+
+def carica_config(percorso: str | Path = "book.yaml", variante: str | None = None) -> dict:
+    """Legge book.yaml. Con `variante` (es. "stampa") applica gli override di `varianti.<nome>`."""
     p = Path(percorso)
     if not p.is_absolute():
         p = RADICE / p
     with open(p, encoding="utf-8") as f:
         cfg = yaml.safe_load(f)
+    if variante:
+        varianti = cfg.get("varianti", {})
+        if variante not in varianti:
+            raise SystemExit(f"variante «{variante}» assente in {p.name}")
+        cfg = _fondi(cfg, varianti[variante])
     cfg["_percorso"] = p
+    cfg["_variante"] = variante
     return cfg
 
 

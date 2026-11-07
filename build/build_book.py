@@ -164,7 +164,7 @@ class Costruttore:
         self.meta = cfg["metadati"]
         self.pagine = pagine or {}
         self.doc = Document()
-        stili.crea_stili(self.doc)
+        stili.crea_stili(self.doc, cfg.get("tipografia"))
         stili.imposta_impostazioni_documento(self.doc)
         self.md = crea_md()
         self.voci: list[dict] = []      # voci dell'indice generale
@@ -955,8 +955,9 @@ def main():
     comune.utf8_console()
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--config", default="book.yaml")
+    ap.add_argument("--variante", help="variante di book.yaml (es. stampa)")
     a = ap.parse_args()
-    cfg = comune.carica_config(a.config)
+    cfg = comune.carica_config(a.config, a.variante)
     f_pagine = comune.OUTPUT / f"{comune.nome_output(cfg)}.pagine.json"
     pagine = json.loads(f_pagine.read_text(encoding="utf-8")) if f_pagine.exists() else None
     docx, struttura = costruisci(cfg, pagine)

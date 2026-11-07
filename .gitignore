@@ -39,3 +39,6 @@ esempi/cap18/report/
 # --- Materiale di terzi: copie locali (fonti della ricerca, template di stampa), non pubblicabili ---
 research/fonti/
 print-template/
+
+# --- Profili colore di terzi per la stampa (si scaricano, vedi README) ---
+build/icc/

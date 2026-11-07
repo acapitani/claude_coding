@@ -59,3 +59,36 @@ appendici:
   - app-c-risorse
   - crediti             # Appendice D, generata da assets/CREDITI.md
   - indice-analitico
+
+# --- Stampa (Pixartprinting) ------------------------------------------------------------------
+# Valori misurati sul template scaricato con il preventivo (print-template/, locale e non versionato):
+# libro con copertina flessibile, brossura fresata, A5. L'interno è il PDF 17 × 24 ridotto in A5.
+# Comando: py build/build_stampa.py  →  output/stampa/
+stampa:
+  stampatore: Pixartprinting
+  prodotto: "Libro con copertina flessibile, brossura fresata"
+  rifilato_mm: [148, 210]          # A5
+  abbondanza_mm: 3                 # su ogni lato, interno e copertina
+  area_sicura_mm: 5                # dal taglio (linea rossa del template)
+  testi_consigliati_mm: {interno: 15, esterno: 10}   # istruzioni, punto 5
+  fascia_colla_mm: 3               # bianca ai lati del dorso, nella copertina interna
+  pagine_preventivo: 196           # pagine interne del preventivo e del template
+  dorso_template_mm: 11.2          # pieghe del template a 151,0 e 162,2 mm
+  spessore_foglio_mm: 0.11429      # calibrato: 11,2 mm / 98 fogli (stessa carta del preventivo)
+  prima_pagina_pdf: 3              # l'interno parte dal frontespizio: copertina e suo retro esclusi
+  verso_dorso: "alto-basso"        # testo del dorso leggibile dall'alto verso il basso
+  profilo_icc: build/icc/Coated_Fogra39L_VIGC_300.icc   # Fogra 39 (registro ICC), non versionato
+  corpo_minimo_pt: 6
+  tratto_minimo_pt: 0.25
+  risoluzione_min_dpi: 300
+  copertina: assets/copertina/cover-stampa.html
+  retro: assets/copertina/retro.json
+
+varianti:
+  stampa:                          # py build/update_indexes.py --variante stampa
+    output: claude-coding-stampa
+    tipografia:
+      inchiostro: "#000000"        # nero puro → solo K dopo la conversione in CMYK
+      testatina_pt: 9              # maiuscoletto ≥ 6 pt anche dopo la riduzione in A5 (× 0,8706)
+    pagina:
+      margini_cm: {testatina: 1.2} # testatina a 10,4 mm dal taglio dopo la riduzione

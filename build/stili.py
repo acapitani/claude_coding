@@ -154,7 +154,12 @@ def _para(s, prima=0, dopo=0, interlinea=None, allinea=None, rientro_sx=None, ma
 
 
 # --- Definizione degli stili ---------------------------------------------------
-def crea_stili(doc) -> None:
+def crea_stili(doc, tipografia: dict | None = None) -> None:
+    """`tipografia` (da book.yaml, sezione omonima o di una variante) può cambiare il colore
+    del testo (`inchiostro`, esadecimale) e il corpo della testatina (`testatina_pt`):
+    la variante di stampa usa il nero puro, che in CMYK diventa solo K."""
+    tipografia = tipografia or {}
+    ink = RGBColor.from_string(tipografia.get("inchiostro", str(INCHIOSTRO)).lstrip("#").upper())
     st = doc.styles
 
     # Lingua e font predefiniti del documento (docDefaults)
@@ -168,7 +173,7 @@ def crea_stili(doc) -> None:
     imposta_font(rpr_default, FONT_CORPO)
 
     normal = st["Normal"]
-    font_stile(normal, FONT_CORPO, 10.5, INCHIOSTRO)
+    font_stile(normal, FONT_CORPO, 10.5, ink)
     _para(normal, 0, 4, 1.2, WD_ALIGN_PARAGRAPH.JUSTIFY)
     normal.paragraph_format.widow_control = True
 
@@ -176,10 +181,10 @@ def crea_stili(doc) -> None:
 
     # Titoli (Heading 1-3 servono al campo TOC)
     h1 = st["Heading 1"]
-    font_stile(h1, FONT_TITOLI, 24, INCHIOSTRO, bold=True, italic=False)
+    font_stile(h1, FONT_TITOLI, 24, ink, bold=True, italic=False)
     _para(h1, 0, 24, 1.0, WD_ALIGN_PARAGRAPH.LEFT, mantieni_succ=True)
     h2 = st["Heading 2"]
-    font_stile(h2, FONT_TITOLI, 13.5, INCHIOSTRO, bold=True, italic=False)
+    font_stile(h2, FONT_TITOLI, 13.5, ink, bold=True, italic=False)
     _para(h2, 14, 5, 1.0, WD_ALIGN_PARAGRAPH.LEFT, mantieni_succ=True)
     h3 = st["Heading 3"]
     font_stile(h3, FONT_TITOLI, 11, ACCENTO, bold=True, italic=False)
@@ -196,7 +201,7 @@ def crea_stili(doc) -> None:
     _para(parte_et, 0, 8, 1.0, WD_ALIGN_PARAGRAPH.CENTER, mantieni_succ=True)
 
     parte = _stile(doc, "Titolo Parte")
-    font_stile(parte, FONT_TITOLI, 30, INCHIOSTRO, bold=True)
+    font_stile(parte, FONT_TITOLI, 30, ink, bold=True)
     _para(parte, 0, 18, 1.0, WD_ALIGN_PARAGRAPH.CENTER)
     livello_struttura(parte, 0)
 
@@ -207,7 +212,7 @@ def crea_stili(doc) -> None:
 
     # Codice e terminale (dentro tabelle a una cella)
     cod = _stile(doc, "Libro Codice")
-    font_stile(cod, FONT_CODICE, 8.5, INCHIOSTRO)
+    font_stile(cod, FONT_CODICE, 8.5, ink)
     _para(cod, 0, 0, 1.0, WD_ALIGN_PARAGRAPH.LEFT)
     term = _stile(doc, "Libro Terminale")
     font_stile(term, FONT_CODICE, 8.5, CREMA)
@@ -222,7 +227,7 @@ def crea_stili(doc) -> None:
         font_stile(tb, FONT_TITOLI, 10, RGBColor.from_string(BORDO_BOX[tipo]), bold=True)
         _para(tb, 0, 3, 1.0, WD_ALIGN_PARAGRAPH.LEFT, mantieni_succ=True)
     tbx = _stile(doc, "Box Testo", base="Normal")
-    font_stile(tbx, FONT_CORPO, 9.5, INCHIOSTRO)
+    font_stile(tbx, FONT_CORPO, 9.5, ink)
     _para(tbx, 0, 3, 1.15, WD_ALIGN_PARAGRAPH.LEFT)
 
     # Figure e didascalie
@@ -244,10 +249,10 @@ def crea_stili(doc) -> None:
 
     # Tabelle
     tab = _stile(doc, "Libro Tabella", base="Normal")
-    font_stile(tab, FONT_CORPO, 9, INCHIOSTRO)
+    font_stile(tab, FONT_CORPO, 9, ink)
     _para(tab, 1, 1, 1.05, WD_ALIGN_PARAGRAPH.LEFT)
     tabh = _stile(doc, "Libro Tabella Intestazione", base="Libro Tabella")
-    font_stile(tabh, FONT_TITOLI, 9, INCHIOSTRO, bold=True)
+    font_stile(tabh, FONT_TITOLI, 9, ink, bold=True)
 
     # Elenchi
     for nome in ("List Bullet", "List Bullet 2", "List Number", "List Number 2"):
@@ -257,7 +262,7 @@ def crea_stili(doc) -> None:
 
     # Intestazioni e piè di pagina
     tes = _stile(doc, "Libro Testatina", base="Normal")
-    font_stile(tes, FONT_TITOLI, 8.5, GRIGIO)
+    font_stile(tes, FONT_TITOLI, tipografia.get("testatina_pt", 8.5), GRIGIO)
     tes.font.small_caps = True
     _para(tes, 0, 0, 1.0)
     pie = _stile(doc, "Libro Piede", base="Normal")
@@ -266,12 +271,12 @@ def crea_stili(doc) -> None:
 
     # Indice generale
     titolo_ind = _stile(doc, "Libro Titolo Indice", base="Normal")
-    font_stile(titolo_ind, FONT_TITOLI, 24, INCHIOSTRO, bold=True)
+    font_stile(titolo_ind, FONT_TITOLI, 24, ink, bold=True)
     _para(titolo_ind, 60, 24, 1.0, WD_ALIGN_PARAGRAPH.LEFT)
     for livello, (size, bold, prima, rientro) in {1: (10.5, True, 7, 0), 2: (9.5, False, 0, 0.6), 3: (10.5, True, 12, 0)}.items():
         nome = f"toc {livello}"
         s = _stile(doc, nome, base="Normal")
-        font_stile(s, FONT_TITOLI if livello != 2 else FONT_CORPO, size, INCHIOSTRO, bold=bold)
+        font_stile(s, FONT_TITOLI if livello != 2 else FONT_CORPO, size, ink, bold=bold)
         _para(s, prima, 1, 1.1, WD_ALIGN_PARAGRAPH.LEFT, rientro_sx=rientro)
         s.paragraph_format.tab_stops.add_tab_stop(Cm(LARGHEZZA_TESTO_CM), WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
     # toc 3 = voci di Parte nell'indice
@@ -280,7 +285,7 @@ def crea_stili(doc) -> None:
 
     # Indice analitico
     ia = _stile(doc, "Libro Indice Analitico", base="Normal")
-    font_stile(ia, FONT_CORPO, 8.5, INCHIOSTRO)
+    font_stile(ia, FONT_CORPO, 8.5, ink)
     _para(ia, 0, 0, 1.05, WD_ALIGN_PARAGRAPH.LEFT, rientro_sx=0.4)
     ia.paragraph_format.first_line_indent = Cm(-0.4)
     ial = _stile(doc, "Libro Indice Lettera", base="Normal")
@@ -289,7 +294,7 @@ def crea_stili(doc) -> None:
 
     # Pagine preliminari
     fr_t = _stile(doc, "Libro Frontespizio Titolo", base="Normal")
-    font_stile(fr_t, FONT_SIMBOLI_MONO, 30, INCHIOSTRO, bold=True)
+    font_stile(fr_t, FONT_SIMBOLI_MONO, 30, ink, bold=True)
     _para(fr_t, 0, 0, 1.0, WD_ALIGN_PARAGRAPH.CENTER)
     fr_a = _stile(doc, "Libro Frontespizio Autore", base="Normal")
     font_stile(fr_a, FONT_TITOLI, 14, GRIGIO)
@@ -298,7 +303,7 @@ def crea_stili(doc) -> None:
     font_stile(col, FONT_CORPO, 8, GRIGIO)
     _para(col, 0, 4, 1.15, WD_ALIGN_PARAGRAPH.LEFT)
     ded = _stile(doc, "Libro Dedica", base="Normal")
-    font_stile(ded, FONT_CORPO, 11, INCHIOSTRO, italic=True)
+    font_stile(ded, FONT_CORPO, 11, ink, italic=True)
     _para(ded, 0, 6, 1.3, WD_ALIGN_PARAGRAPH.RIGHT)
 
     # Niente sillabazione nei titoli e negli elementi di servizio
